@@ -1,4 +1,4 @@
-package com.ThumbsUp.ThumbsUp;
+package edu.uml.ThumbsUp;
 
 import android.app.Activity;
 import android.os.Bundle;

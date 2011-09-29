@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.ThumbsUp.ThumbsUp;
+package uml.edu.ThumbsUp;
 
 public final class R {
     public static final class attr {
