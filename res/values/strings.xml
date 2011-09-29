@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ThumbsUp</string>
+    <string name="mainmenu_newgame">New Game</string>
+    <string name="mainmenu_highscores">High Scores</string>
+    <string name="mainmenu_options">Options</string>
+    <string name="mainmenu_credits">Credits</string>
 </resources>
