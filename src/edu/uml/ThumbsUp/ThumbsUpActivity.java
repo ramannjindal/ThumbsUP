@@ -1,6 +1,6 @@
-package edu.uml.ThumbsUP;
+package edu.uml.thumbsup;
 
-import edu.uml.ThumbsUP.R;
+import edu.uml.thumbsup.R;
 import android.app.Activity;
 import android.os.Bundle;
 
