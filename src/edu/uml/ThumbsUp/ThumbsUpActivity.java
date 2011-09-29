@@ -1,9 +1,10 @@
-package edu.uml.ThumbsUp;
+package edu.uml.ThumbsUP;
 
+import edu.uml.ThumbsUP.R;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class ThumbsUpActivity extends Activity {
+public class ThumbsUPActivity extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
