@@ -4,9 +4,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-    <Button android:layout_width="match_parent" android:id="@+id/Button03" android:layout_height="wrap_content" android:text="@string/mainmenu_credits" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></Button>
-    <Button android:layout_width="match_parent" android:id="@+id/Button02" android:layout_height="wrap_content" android:text="@string/mainmenu_options" android:layout_above="@+id/Button03" android:layout_alignParentLeft="true"></Button>
-    <Button android:layout_width="match_parent" android:id="@+id/Button01" android:layout_height="wrap_content" android:text="@string/mainmenu_highscores" android:layout_above="@+id/Button02" android:layout_alignParentLeft="true"></Button>
-    <Button android:layout_width="match_parent" android:id="@+id/button1" android:layout_height="wrap_content" android:text="@string/mainmenu_newgame" android:layout_above="@+id/Button01" android:layout_alignParentLeft="true"></Button>
+    <Button android:layout_width="match_parent" android:id="@+id/mButton03" android:layout_height="wrap_content" android:text="@string/mainmenu_credits" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></Button>
     <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="125dp" android:text="@string/app_name"></TextView>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/mainmenu_options" android:id="@+id/mButton02" android:layout_above="@+id/mButton03" android:layout_alignParentLeft="true"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/mainmenu_highscores" android:id="@+id/mButton01" android:layout_above="@+id/mButton02" android:layout_alignParentLeft="true"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/mainmenu_newgame" android:id="@+id/mbutton1" android:layout_above="@+id/mButton01" android:layout_alignParentLeft="true"></Button>
 </RelativeLayout>
