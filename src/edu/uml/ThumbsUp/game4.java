@@ -4,23 +4,16 @@ import java.util.ArrayList;
 
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.widget.Toast;
 
 public class game4 extends Activity{
 
@@ -38,7 +31,7 @@ public class game4 extends Activity{
 		super.onDestroy();
 	}
 
-	private void game_help() {
+/*	private void game_help() {
 		// prepare the alert box
 		AlertDialog.Builder helpbox = new AlertDialog.Builder(this);
 		// set the message to display
@@ -52,7 +45,7 @@ public class game4 extends Activity{
 			}
 		});
 		helpbox.show();		
-	}
+	} */
 
 	
 

@@ -1,7 +1,6 @@
 package edu.uml.thumbsup;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 
 public class game8 extends Activity{
