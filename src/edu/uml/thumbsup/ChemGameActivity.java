@@ -141,7 +141,7 @@ public class ChemGameActivity extends Activity {
 		*/
 		return true;
 	}
-	
+/*	
 	private boolean setGUI(String difficulty){
 		gameUI = (LinearLayout) findViewById(R.id.userInterface);
 	
@@ -209,5 +209,5 @@ public class ChemGameActivity extends Activity {
 			
 		return true;
 	}
-
+*/
 }
