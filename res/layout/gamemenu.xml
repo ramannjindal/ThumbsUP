@@ -6,7 +6,7 @@
   android:layout_height="match_parent">
     <Button android:text="Super fun fractons" android:id="@+id/gmbutton1" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
     <Button android:text="game2" android:id="@+id/gmbutton2" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
-    <Button android:text="game3" android:id="@+id/gmbutton3" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
+    <Button android:id="@+id/gmbutton3" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/chem_welcome"></Button>
     <Button android:text="game4" android:id="@+id/gmbutton4" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
     <Button android:text="game5" android:id="@+id/gmbutton5" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
     <Button android:text="game6" android:id="@+id/gmbutton6" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>

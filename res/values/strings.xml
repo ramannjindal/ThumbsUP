@@ -5,4 +5,12 @@
     <string name="mainmenu_highscores">High Scores</string>
     <string name="mainmenu_options">Options</string>
     <string name="mainmenu_credits">Credits</string>
+    <string name="chem_welcome">Equation Balancer!</string>
+    <string name="chem_choice">Choose a Difficulty Setting.</string>
+    <string name="chem_spinner">Difficulty</string>
+    <string name="chem_play">Play!</string>
+    <string name="chem_firstEx">Na</string>
+    <string name="chem_secondEx">Cl</string>
+    <string name="chem_equals">=></string>
+    <string name="chem_submit">Submit</string>
 </resources>
