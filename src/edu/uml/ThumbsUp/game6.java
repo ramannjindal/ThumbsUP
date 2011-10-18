@@ -21,7 +21,6 @@ public class game6 extends Activity{
         
         btnName1a = (Button) this.findViewById(R.id.button1a);        
         btnName1a.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName1a.setText("APPLE");
         	}
@@ -29,7 +28,6 @@ public class game6 extends Activity{
         
         btnName2a = (Button) this.findViewById(R.id.button2a);        
         btnName2a.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName2a.setText("PAPER");
         	}
@@ -37,7 +35,6 @@ public class game6 extends Activity{
         
         btnName3a = (Button) this.findViewById(R.id.button3a);        
         btnName3a.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName3a.setText("PHONE");
         	}
@@ -45,7 +42,6 @@ public class game6 extends Activity{
 
         btnName1b = (Button) this.findViewById(R.id.button1b);        
         btnName1b.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName1b.setText("REVOLVER");
         	}
@@ -53,7 +49,6 @@ public class game6 extends Activity{
         
         btnName2b = (Button) this.findViewById(R.id.button2b);        
         btnName2b.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName2b.setText("FLUSH TOILET");
         	}
@@ -61,7 +56,6 @@ public class game6 extends Activity{
         
         btnName3b = (Button) this.findViewById(R.id.button3b);        
         btnName3b.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName3b.setText("COMPUTER MOUSE");
         	}
@@ -69,7 +63,6 @@ public class game6 extends Activity{
 
         btnName1c = (Button) this.findViewById(R.id.button1c);        
         btnName1c.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName1c.setText("STEAM ENGINE");
         	}
@@ -77,7 +70,6 @@ public class game6 extends Activity{
         
         btnName2c = (Button) this.findViewById(R.id.button2c);        
         btnName2c.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName2c.setText("BATTERY");
         	}
@@ -85,7 +77,6 @@ public class game6 extends Activity{
         
         btnName3c = (Button) this.findViewById(R.id.button3c);        
         btnName3c.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName3c.setText("IRON CASED ROCKETS");
         	}
@@ -93,7 +84,6 @@ public class game6 extends Activity{
 
         btnName1d = (Button) this.findViewById(R.id.button1d);        
         btnName1d.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName1d.setText("HYDROGEN BOMB");
         	}
@@ -101,7 +91,6 @@ public class game6 extends Activity{
         
         btnName2d = (Button) this.findViewById(R.id.button2d);        
         btnName2d.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName2d.setText("RADIO");
         	}
@@ -109,7 +98,6 @@ public class game6 extends Activity{
         
         btnName3d= (Button) this.findViewById(R.id.button3d);        
         btnName3d.setOnClickListener(new OnClickListener(){
-        	@Override
         	public void onClick(View v){
         		btnName3d.setText("PLASTIC SURGERY");
         	}

@@ -23,7 +23,6 @@ public class ThumbsUPActivity extends Activity {
         bCredits = (Button) findViewById(R.id.mButton03);
         
         bNewGame.setOnClickListener(new View.OnClickListener() {
-        	@Override
         	public void onClick(View v) {
         		
 				Intent openGameMenu = new Intent("edu.uml.thumbsup.GAMEMENU");
