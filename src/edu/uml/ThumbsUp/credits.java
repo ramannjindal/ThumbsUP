@@ -1,14 +1,14 @@
 package edu.uml.thumbsup;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.app.Activity;
 
-public class game7 extends Activity{
+public class credits extends Activity{
 
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-        setContentView(R.layout.scoremenu);
+        setContentView(R.layout.credits);
 	}
 	
 }

@@ -77,5 +77,17 @@
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
+		<activity android:name=".scoremenu" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="edu.uml.thumbsup.SCOREMENU"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		<activity android:name=".credits" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="edu.uml.thumbsup.CREDITS"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
 	</application>
 </manifest>

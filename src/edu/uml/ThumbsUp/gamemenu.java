@@ -25,7 +25,6 @@ public class gamemenu extends Activity{
 	
         game1.setOnClickListener(new View.OnClickListener() {
 		
-        	@Override
         	public void onClick(View v) {
 				Intent openGame1 = new Intent("edu.uml.thumbsup.GAME1");
 				startActivity(openGame1);			
@@ -34,7 +33,6 @@ public class gamemenu extends Activity{
         
         game2.setOnClickListener(new View.OnClickListener() {
     		
-        	@Override
         	public void onClick(View v) {
 				Intent openGame2 = new Intent("edu.uml.thumbsup.GAME2");
 				startActivity(openGame2);			
@@ -43,7 +41,6 @@ public class gamemenu extends Activity{
         
         game3.setOnClickListener(new View.OnClickListener() {
     		
-        	@Override
         	public void onClick(View v) {
 				Intent openGame3 = new Intent("edu.uml.thumbsup.GAME3");
 				startActivity(openGame3);			
@@ -52,7 +49,6 @@ public class gamemenu extends Activity{
         
         game4.setOnClickListener(new View.OnClickListener() {
     		
-        	@Override
         	public void onClick(View v) {
 				Intent openGame4 = new Intent("edu.uml.thumbsup.GAME4");
 				startActivity(openGame4);			
@@ -61,7 +57,6 @@ public class gamemenu extends Activity{
         
         game5.setOnClickListener(new View.OnClickListener() {
     		
-        	@Override
         	public void onClick(View v) {
 				Intent openGame5 = new Intent("edu.uml.thumbsup.GAME5");
 				startActivity(openGame5);			
@@ -70,7 +65,6 @@ public class gamemenu extends Activity{
         
         game6.setOnClickListener(new View.OnClickListener() {
     		
-        	@Override
         	public void onClick(View v) {
 				Intent openGame6 = new Intent("edu.uml.thumbsup.GAME6");
 				startActivity(openGame6);			
@@ -79,7 +73,6 @@ public class gamemenu extends Activity{
         
         game7.setOnClickListener(new View.OnClickListener() {
     		
-        	@Override
         	public void onClick(View v) {
 				Intent openGame7 = new Intent("edu.uml.thumbsup.GAME7");
 				startActivity(openGame7);			
@@ -88,7 +81,6 @@ public class gamemenu extends Activity{
         
         game8.setOnClickListener(new View.OnClickListener() {
     		
-        	@Override
         	public void onClick(View v) {
 				Intent openGame8 = new Intent("edu.uml.thumbsup.GAME8");
 				startActivity(openGame8);			
