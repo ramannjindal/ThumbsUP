@@ -28,6 +28,28 @@ public class ThumbsUPActivity extends Activity {
 				startActivity(openGameMenu);
         		
         	}
-        });        
+        });  
+        
+        bHighScores.setOnClickListener( new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+			
+				Intent openScoreMenu = new Intent("edu.uml.thumbsup.SCOREMENU");
+				startActivity(openScoreMenu);
+				
+			}
+		});
+        
+        bCredits.setOnClickListener( new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+			
+				Intent openCredits = new Intent("edu.uml.thumbsup.CREDITS");
+				startActivity(openCredits);
+				
+			}
+		});
     }
 }
