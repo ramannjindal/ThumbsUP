@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+       >
+       
+       
+          <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="A fraction represents a part of a whole.  
+    we typically write fractions as two numbers separated by a line, 
+    sometimes one above the other, sometimes at an angle such as ½, 3/4, etc., 
+    consisting of a numerator (the top number) and a denominator (bottom number). 
+    The numerator represents the number of parts, and the denominator indicating how many equal 
+    parts make up a whole. An example is 3/4, in which the numerator, 3, tells us that the fraction 
+    represents 3 equal parts, and the denominator, 4, tells us that 4 parts equal a whole.
+    "
+    android:textSize="15dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tvDescription"
+    ></TextView>
+       
+      <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="The first rule of addition is that only like quantities can be added; you must first convert to like quantities. you must have the same denominator for exsamble 1/2 and 1/4 have diiferent denominators, so you have to muntiply the  numerator  and denominator by a number to get the same denominator. multiply 1/2 by 2 to get 2/4 now add the  numerators to get (2+1)/4 = 3/4.  "
+    android:textSize="20dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tvDividing"
+    ></TextView>
+     <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="dfhfdhfdhgfdg"
+    android:textSize="20dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tvmultiplying"
+    ></TextView>
+          <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="dfghdfhgfh"
+    android:textSize="20dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tvReducing"
+    ></TextView>
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Rhfdtrestyert54645654"
+    android:textSize="20dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tvAdding"
+    ></TextView>
+  
+    
+    </LinearLayout>
+    </ScrollView>
