@@ -5,7 +5,21 @@
     <string name="mainmenu_highscores">High Scores</string>
     <string name="mainmenu_options">Options</string>
     <string name="mainmenu_credits">Credits</string>
-    <string name="chem_welcome">Equation Balancer!</string>
+    
+    <!--
+    ===============================
+         Game-specific stuff
+    ===============================
+    -->
+    
+    <!-- Game 1 - Super Fun Fractions -->
+    <string name="game1_name">Super Fun Fractions</string>
+    
+    <!-- Game 2 - Scoppa's Game -->
+    <string name="game2_name">Scoppa\'s Game</string>
+    
+    <!-- Game 3 - Equation Balancer -->
+    <string name="game3_name">Equation Balancer</string>
     <string name="chem_choice">Choose a Difficulty Setting.</string>
     <string name="chem_spinner">Difficulty</string>
     <string name="chem_play">Play!</string>
@@ -13,4 +27,19 @@
     <string name="chem_secondEx">Cl</string>
     <string name="chem_equals">=></string>
     <string name="chem_submit">Submit</string>
+    
+    <!-- Game 4 - Color Matching -->
+    <string name="game4_name">Color Matching</string>
+    
+    <!-- Game 5 - History Memory -->
+    <string name="game5_name">History Memory</string>
+    
+    <!-- Game 6 - Inventions -->
+    <string name="game6_name">Inventions</string>
+
+	<!-- Game 7 - Coin Counting -->
+	<string name="game7_name">Coin Counting</string>
+	
+	<!-- Game 8 - Electronics -->
+	<string name="game8_name">Electronics</string>
 </resources>

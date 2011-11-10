@@ -5,7 +5,7 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent">
     <Button android:text="@string/chem_play" android:onClick="myClickHandler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/startButton" android:layout_below="@+id/diffSpinner" android:layout_centerHorizontal="true" android:layout_marginTop="29dp"></Button>
-    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/textView1" android:text="@string/chem_welcome" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="24dp"></TextView>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="24dp" android:text="@string/game3_name"></TextView>
     <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_centerHorizontal="true" android:layout_marginTop="28dp" android:text="@string/chem_choice"></TextView>
     <Spinner android:prompt="@string/chem_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/diffSpinner" android:layout_below="@+id/textView2" android:layout_centerHorizontal="true" android:layout_marginTop="18dp"></Spinner>
     
