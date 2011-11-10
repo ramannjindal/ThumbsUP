@@ -46,6 +46,13 @@
 				<action android:name="edu.uml.thumbsup.GAME3"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
+
+        <activity android:name=".ChemGameActivity">
+            <intent-filter>
+                <action android:name="edu.uml.chemgame.CHEMGAMEACTIVITY"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>   
 		</activity>
 		<activity android:name=".game4" android:label="@string/app_name">
 			<intent-filter>
@@ -71,9 +78,21 @@
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
-		<activity android:name="edu.uml.ThumbsUp.game8" android:label="@string/app_name">
+		<activity android:name=".game8" android:label="@string/app_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME8"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		<activity android:name=".scoremenu" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="edu.uml.thumbsup.SCOREMENU"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		<activity android:name=".credits" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="edu.uml.thumbsup.CREDITS"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
