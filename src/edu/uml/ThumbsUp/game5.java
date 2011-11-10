@@ -1,7 +1,6 @@
 package edu.uml.thumbsup;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -35,6 +34,19 @@ public class game5 extends Activity{
         g5imageView13 = (ImageView) this.findViewById(R.id.g5ImageView13);
         g5imageView14 = (ImageView) this.findViewById(R.id.g5ImageView14);
         g5imageView15 = (ImageView) this.findViewById(R.id.g5ImageView15);
+        
+        Thread timer = new Thread(){
+			public void run(){
+				try{
+					sleep(90000); //1.5 minutes
+				} catch (InterruptedException e){
+					e.printStackTrace();
+				} finally {
+					//print score and finish
+				}
+			}			
+		};
+		timer.start();
 	
 	g5imageView0.setOnClickListener(new OnClickListener(){
 		public void onClick(View v)
