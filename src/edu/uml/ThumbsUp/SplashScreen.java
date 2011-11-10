@@ -17,7 +17,7 @@ public class SplashScreen extends Activity  {
 				} catch (InterruptedException e){
 					e.printStackTrace();
 				} finally {
-					Intent openStartMenu = new Intent("edu.uml.thumbsup.GAMEMENU");
+					Intent openStartMenu = new Intent("edu.uml.thumbsup.THUMBSUPACTIVITY");
 					startActivity(openStartMenu);
 				}
 			}			

@@ -5,9 +5,7 @@
   android:orientation="vertical"
   android:layout_width="match_parent"
   android:layout_height="match_parent">
-<<<<<<< HEAD
     <Button android:text="Super fun fractions" android:id="@+id/gmbutton1" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
-=======
 
 <ScrollView
 android:layout_width="fill_parent"
@@ -17,7 +15,6 @@ android:orientation="vertical"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent" >   
     <Button android:text="Super fun fractons" android:id="@+id/gmbutton1" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
->>>>>>> 1600052ee31b0a87a1f965847cb7653c10b64acc
     <Button android:text="game2" android:id="@+id/gmbutton2" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>
     <Button android:id="@+id/gmbutton3" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/chem_welcome"></Button>
     <Button android:text="game4" android:id="@+id/gmbutton4" android:layout_height="wrap_content" android:layout_width="match_parent"></Button>

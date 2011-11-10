@@ -4,11 +4,6 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent" android:orientation="vertical" android:weightSum="1">
     <TextView android:id="@+id/textView1" android:text="Game 8" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content"></TextView>
-<<<<<<< HEAD
-   
-=======
     <ImageView android:id="@+id/imageView1" android:src="@drawable/light" android:layout_margin="10dip" android:layout_width="match_parent" android:layout_height="wrap_content"></ImageView>
     <ImageView android:layout_width="wrap_content" android:id="@+id/imageView2" android:src="@drawable/battery" android:layout_gravity="center_horizontal" android:layout_height="370dp" android:layout_weight="0.05"></ImageView>
-    
->>>>>>> 1600052ee31b0a87a1f965847cb7653c10b64acc
 </LinearLayout>
