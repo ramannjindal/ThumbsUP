@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ThumbsUPActivity extends Activity {
+public class ThumbsUpActivity extends Activity {
     /** Called when the activity is first created. */
     
     Button bNewGame, bHighScores, bOptions, bCredits ;
