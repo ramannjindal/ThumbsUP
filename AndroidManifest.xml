@@ -14,7 +14,7 @@
 				<category android:name="android.intent.category.LAUNCHER"></category>
 			</intent-filter>
 		</activity>
-		<activity android:name=".ThumbsUpActivity" android:label="@string/app_name">
+		<activity android:name=".ThumbsUPActivity" android:label="@string/app_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.THUMBSUPACTIVITY"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
