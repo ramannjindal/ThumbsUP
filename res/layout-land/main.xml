@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <Button android:id="@+id/mButton_credits" android:layout_height="100dp" android:text="@string/mainmenu_credits" android:textSize="20dp" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_width="265dp"></Button>
+    <Button android:id="@+id/mButton_highscores" android:layout_height="100dp" android:text="@string/mainmenu_highscores" android:textSize="20dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_width="265dp"></Button>
+    <Button android:id="@+id/mButton_options" android:layout_height="100dp" android:text="@string/mainmenu_options" android:textSize="20dp" android:layout_above="@+id/mButton_highscores" android:layout_alignParentRight="true" android:layout_width="265dp"></Button>
+    <Button android:id="@+id/mButton_newgame" android:layout_height="100dp" android:text="@string/mainmenu_newgame" android:textSize="20dp" android:layout_alignBaseline="@+id/mButton_options" android:layout_alignBottom="@+id/mButton_options" android:layout_alignParentLeft="true" android:layout_width="265dp"></Button>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:textSize="50dp" android:id="@+id/textView1" android:layout_height="wrap_content" android:text="@string/app_name"  android:layout_alignParentTop="true" android:layout_centerHorizontal="true"  android:layout_marginTop="5dp"></TextView>
+</RelativeLayout>
