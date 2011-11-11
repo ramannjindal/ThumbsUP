@@ -2,105 +2,199 @@ package edu.uml.thumbsup;
 
 //Prathibas Game
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-public class game6 extends Activity{
-	private Button btnName1a,btnName2a, btnName3a;
-	private Button btnName1b,btnName2b, btnName3b;
-	private Button btnName1c,btnName2c, btnName3c;
-	private Button btnName1d,btnName2d, btnName3d;	
+
+public class game6 extends Activity {
 	
+	public static final String LOG_TAG = "Droido";
+	ImageView iv;
+	TextView  tv1;
+	Button startGame;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game6);    
-        
-        btnName1a = (Button) this.findViewById(R.id.button1a);        
-        btnName1a.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName1a.setText("APPLE");
-        	}
+        setContentView(R.layout.game6);
+        iv = (ImageView) findViewById(R.id.image);
+    	tv1 = (TextView)findViewById(R.id.textView1);
+    	startGame= (Button)findViewById(R.id.startgame);
+    	//Log.v(LOG_TAG,"working");
+    	
+    	final String[] inventors = getResources().getStringArray(R.array.inventors);
+    	final String[] inventions = getResources().getStringArray(R.array.inventions);
+    	
+        Button button = (Button) findViewById(R.id.button1);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.telephone);
+            	tv1.setText(inventors[0]+ "  invented  " + inventions[0]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
         });
         
-        btnName2a = (Button) this.findViewById(R.id.button2a);        
-        btnName2a.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName2a.setText("PAPER");
-        	}
-        });
-        
-        btnName3a = (Button) this.findViewById(R.id.button3a);        
-        btnName3a.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName3a.setText("PHONE");
-        	}
+        button = (Button) findViewById(R.id.button2);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.steam_engine);
+            	tv1.setText(inventors[1]+ "  invented  " + inventions[1]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
         });
 
-        btnName1b = (Button) this.findViewById(R.id.button1b);        
-        btnName1b.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName1b.setText("REVOLVER");
-        	}
-        });
-        
-        btnName2b = (Button) this.findViewById(R.id.button2b);        
-        btnName2b.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName2b.setText("FLUSH TOILET");
-        	}
-        });
-        
-        btnName3b = (Button) this.findViewById(R.id.button3b);        
-        btnName3b.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName3b.setText("COMPUTER MOUSE");
-        	}
+        button = (Button) findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.mouse);
+            	tv1.setText(inventors[2]+ "  invented  " + inventions[2]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
         });
 
-        btnName1c = (Button) this.findViewById(R.id.button1c);        
-        btnName1c.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName1c.setText("STEAM ENGINE");
-        	}
-        });
-        
-        btnName2c = (Button) this.findViewById(R.id.button2c);        
-        btnName2c.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName2c.setText("BATTERY");
-        	}
-        });
-        
-        btnName3c = (Button) this.findViewById(R.id.button3c);        
-        btnName3c.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName3c.setText("IRON CASED ROCKETS");
-        	}
+        button = (Button) findViewById(R.id.button4);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.hydrogenbomb);
+            	tv1.setText(inventors[3]+ "  invented  " + inventions[3]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
         });
 
-        btnName1d = (Button) this.findViewById(R.id.button1d);        
-        btnName1d.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName1d.setText("HYDROGEN BOMB");
-        	}
+        button = (Button) findViewById(R.id.button5);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.battery);
+            	tv1.setText(inventors[4]+ "  invented  " + inventions[4]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button6);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.radio);
+            	tv1.setText(inventors[5]+ "  invented  " + inventions[5]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button7);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.revolver);
+            	tv1.setText(inventors[6]+ "  invented  " + inventions[6]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button8);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.motorcycle);
+            	tv1.setText(inventors[7]+ "  invented  " + inventions[7]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button9);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.ironbox);
+            	tv1.setText(inventors[8]+ "  invented  " + inventions[8]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button10);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.surgeon);
+            	tv1.setText(inventors[9]+ "  invented  " + inventions[9]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button11);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.typewriter);
+            	tv1.setText(inventors[10]+ "  invented  " + inventions[10]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button12);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.telegraph);
+            	tv1.setText(inventors[11]+ "  invented  " + inventions[11]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button13);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.sewingmachine);
+            	tv1.setText(inventors[12]+ "  invented  " + inventions[12]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button14);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.mircowave);
+            	tv1.setText(inventors[13]+ "  invented  " + inventions[13]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button15);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.flushtoilet);
+            	tv1.setText(inventors[14]+ "  invented  " + inventions[14]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
+        });
+
+        button = (Button) findViewById(R.id.button16);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {  
+            	//Log.v(LOG_TAG,inventors[1]);
+            	iv.setBackgroundResource(R.drawable.fountainpen);
+            	tv1.setText(inventors[15]+ "  invented  " + inventions[15]);
+            	startGame.setVisibility(View.VISIBLE);
+            }
         });
         
-        btnName2d = (Button) this.findViewById(R.id.button2d);        
-        btnName2d.setOnClickListener(new OnClickListener(){
+        startGame.setOnClickListener(new View.OnClickListener() {
         	public void onClick(View v){
-        		btnName2d.setText("RADIO");
-        	}
-        });
-        
-        btnName3d= (Button) this.findViewById(R.id.button3d);        
-        btnName3d.setOnClickListener(new OnClickListener(){
-        	public void onClick(View v){
-        		btnName3d.setText("PLASTIC SURGERY");
-        	}
-        });    
-    }
+        		Intent myIntent = new Intent(game6.this, playGame.class);
+        		game6.this.startActivity(myIntent);
+        	}		
+		});
+
+            }
 }

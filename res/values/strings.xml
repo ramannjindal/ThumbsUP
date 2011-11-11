@@ -42,4 +42,54 @@
 	
 	<!-- Game 8 - Electronics -->
 	<string name="game8_name">Electronics</string>
+
+    <string name="title6">"LEARN and PLAY"</string>
+    <string name="hello6">Hello World, FamousInventions!</string>
+    <string name="app_name6">FamousInventions</string>
+    <string name="invented">invented</string>
+    <string name="q1">who invented Telephone?</string>
+    <string name="q2">who invented Radio?</string>
+    <string name="q3">who invented Microwave?</string>
+    <string name="q4">who invented Sewing machine?</string>
+    <string name="q5">who invented Fountain pen?</string>
+    <string name="q6">who invented Revolver?</string>
+    <string-array name="inventors">
+        <item>GRAHAM BELL</item>
+        <item>JAMES WATT</item>
+        <item>DOUGLAS ENGELBART</item>
+        <item>EDWARD TELLER</item>
+        <item>ALESSANDRO VOLTA</item>
+        <item>MARCONI</item>
+        <item>SAMEUL COLT</item>
+        <item>SYLVESTER ROPER</item>
+        <item>HENRY SEELEY</item>
+        <item>SUSHRATA</item>
+        <item>CHRISTOPHER SHOLES</item>
+        <item>SAMUEL MORSE</item> 
+        <item>MERRITT SINGER</item>
+        <item>SPENCER</item>
+        <item>JOHN HARINGTON</item> 
+        <item>LEWIS WATERMAN</item>      
+    </string-array>
+    <string-array name="inventions">
+        <item>TELEPHONE</item>
+        <item>STEAM ENGINE</item>
+        <item>COMPUTER MOUSE</item>
+        <item>HYDROGEN BOMB</item>
+        <item>BATTERY</item>
+        <item>RADIO</item>
+        <item>REVOLVER</item>
+        <item>MOTORCYCLE</item>
+        <item>IRON BOX</item>
+        <item>PLASTIC SURGERY</item>
+        <item>TYPEWRITER</item>
+        <item>TELEGRAPH</item>
+        <item>SEWING MACHINE</item>
+        <item>MICROWAVE</item>
+        <item>FLUSH TOILET</item>  
+        <item>FOUNTAIN PEN</item>     
+    </string-array>  
+
+
+
 </resources>
