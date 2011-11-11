@@ -47,9 +47,9 @@
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 
-        <activity android:name=".ChemGameActivity">
+        <activity android:name=".ChemGameActivity" android:label="@string/game3_name">
             <intent-filter>
-                <action android:name="edu.uml.thumbsup.chemgame.CHEMGAMEACTIVITY"></action>
+                <action android:name="edu.uml.thumbsup.CHEMGAMEACTIVITY"></action>
                 <category android:name="android.intent.category.DEFAULT"></category>
             </intent-filter>
         </activity>   

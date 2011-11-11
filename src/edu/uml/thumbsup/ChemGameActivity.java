@@ -14,22 +14,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ChemGameActivity extends Activity {
-	/** Called when the activity is first created. */
 	RelativeLayout gameUI;
 	int inputKey[][];
 	double score = 100;
 	String diffSelection;
 	int attempted= 0;
 	
-	@Override
 	public void onCreate(Bundle savedInstanceState) {
-
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.chem_game);
 		Bundle extras = getIntent().getExtras(); 
 	    diffSelection = extras.getString("difficultySelection");
 		setGUI(diffSelection);
-
 	}
 	
 	public void submitHandler(View view) {

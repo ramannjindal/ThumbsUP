@@ -30,7 +30,7 @@ public class game3 extends Activity {
 
 		switch (view.getId()) {
 		case R.id.startButton:
-			Intent startGame = new Intent("edu.uml.thumbsup.chemgame.CHEMGAMEACTIVITY");
+			Intent startGame = new Intent("edu.uml.thumbsup.CHEMGAMEACTIVITY");
 			startGame.putExtra(
 					"difficultySelection", 
 					s1.getSelectedItem().toString()
