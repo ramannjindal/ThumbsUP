@@ -27,7 +27,7 @@ public class playGame extends Activity {
 	    Button ansButton = (Button)findViewById(R.id.selected);
 	    ansButton.setOnClickListener(new View.OnClickListener(){
         
-		@Override
+		//@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
 	     if(rb2.isChecked() == true){
