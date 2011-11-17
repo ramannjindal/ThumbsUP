@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text="" android:id="@+id/question"
+    />
+<RadioGroup android:id="@+id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RadioButton android:text="RadioButton" android:id="@+id/radio0" android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="true"></RadioButton>
+    <RadioButton android:text="RadioButton" android:id="@+id/radio1" android:layout_height="wrap_content" android:layout_width="wrap_content"></RadioButton>
+    <RadioButton android:text="RadioButton" android:id="@+id/radio2" android:layout_height="wrap_content" android:layout_width="wrap_content"></RadioButton>
+    <RadioButton android:text="RadioButton" android:id="@+id/radio3" android:layout_height="wrap_content" android:layout_width="wrap_content"></RadioButton>
+</RadioGroup>
+
+<TextView android:textSize="50dip" 
+android:id="@+id/TextView01" 
+android:textColor="#ffff00" 
+android:text="0" 
+android:layout_height="wrap_content" 
+android:textStyle="bold" 
+android:gravity="center" 
+android:layout_width="wrap_content"
+android:layout_marginLeft="120dp"></TextView> 
+</LinearLayout>

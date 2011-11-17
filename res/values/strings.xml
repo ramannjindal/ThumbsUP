@@ -16,7 +16,91 @@
     <string name="game1_name">Super Fun Fractions</string>
     
     <!-- Game 2 - Scoppa's Game -->
-    <string name="game2_name">Scoppa\'s Game</string>
+    <string name="game2_name">*~* THE MORE YOU KNOW! *~*</string>
+    <string-array name="topics_array">
+        <item>Science</item>
+        <item>Technology</item>
+        <item>History</item>
+        <item>Music</item>
+        <item>Movies</item>
+        <item>Sports</item>
+        <item>Politics</item>
+        <item>Religion</item>
+        <item>Belgium</item>        
+    </string-array>
+    
+    <string-array name="factArray1"> 
+    <item>FACT ARRAY 1 FACT 1</item> 
+    <item>FACT ARRAY 1 FACT 2</item> 
+    <item>FACT ARRAY 1 FACT 3</item> 
+    <item>FACT ARRAY 1 FACT 4</item> 
+    <item>FACT ARRAY 1 FACT 5</item>
+    </string-array>
+    
+    <string-array name="factArray2"> 
+    <item>FACT ARRAY 2 FACT 1</item> 
+    <item>FACT ARRAY 2 FACT 2</item> 
+    <item>FACT ARRAY 2 FACT 3</item> 
+    <item>FACT ARRAY 2 FACT 4</item> 
+    <item>FACT ARRAY 2 FACT 5</item>
+    </string-array>
+    
+    
+    <string-array name="factArray3"> 
+    <item>FACT ARRAY 3 FACT 1</item> 
+    <item>FACT ARRAY 3 FACT 2</item> 
+    <item>FACT ARRAY 3 FACT 3</item> 
+    <item>FACT ARRAY 3 FACT 4</item> 
+    <item>FACT ARRAY 3 FACT 5</item>
+</string-array>
+<string-array name="factArray4"> 
+    <item>FACT ARRAY 4 FACT 1</item> 
+    <item>FACT ARRAY 4 FACT 2</item> 
+    <item>FACT ARRAY 4 FACT 3</item> 
+    <item>FACT ARRAY 4 FACT 4</item> 
+    <item>FACT ARRAY 4 FACT 5</item>
+    </string-array>
+    
+    <string-array name="factArray5"> 
+    <item>FACT ARRAY 5 FACT 1</item> 
+    <item>FACT ARRAY 5 FACT 2</item> 
+    <item>FACT ARRAY 5 FACT 3</item> 
+    <item>FACT ARRAY 5 FACT 4</item> 
+    <item>FACT ARRAY 5 FACT 5</item>
+    </string-array>
+    
+    
+    <string-array name="factArray6"> 
+    <item>FACT ARRAY 6 FACT 1</item> 
+    <item>FACT ARRAY 6 FACT 2</item> 
+    <item>FACT ARRAY 6 FACT 3</item> 
+    <item>FACT ARRAY 6 FACT 4</item> 
+    <item>FACT ARRAY 6 FACT 5</item>
+</string-array>
+<string-array name="factArray7"> 
+    <item>FACT ARRAY 7 FACT 1</item> 
+    <item>FACT ARRAY 7 FACT 2</item> 
+    <item>FACT ARRAY 7 FACT 3</item> 
+    <item>FACT ARRAY 7 FACT 4</item> 
+    <item>FACT ARRAY 7 FACT 5</item>
+    </string-array>
+    
+    <string-array name="factArray8"> 
+    <item>FACT ARRAY 8 FACT 1</item> 
+    <item>FACT ARRAY 8 FACT 2</item> 
+    <item>FACT ARRAY 8 FACT 3</item> 
+    <item>FACT ARRAY 8 FACT 4</item> 
+    <item>FACT ARRAY 8 FACT 5</item>
+    </string-array>
+    
+    
+    <string-array name="factArray9"> 
+    <item>FACT ARRAY 9 FACT 1</item> 
+    <item>FACT ARRAY 9 FACT 2</item> 
+    <item>FACT ARRAY 9 FACT 3</item> 
+    <item>FACT ARRAY 9 FACT 4</item> 
+    <item>FACT ARRAY 9 FACT 5</item>
+</string-array> 
     
     <!-- Game 3 - Equation Balancer -->
     <string name="game3_name">Equation Balancer</string>
