@@ -20,7 +20,7 @@ public class game4 extends Activity {
 
 public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.game8);
+		setContentView(R.layout.game4);
 		
 		}
 }
