@@ -3,11 +3,10 @@
 <RelativeLayout 
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
-  android:layout_height="fill_parent">
-    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:textSize="50dp" android:id="@+id/textView1" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="53dp"></TextView>
-  
-    <Button android:id="@+id/mButton_highscores" android:text="@string/mainmenu_highscores" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:textSize="20dp" android:layout_width="160dp" android:layout_height="160dp"></Button>
-    <Button android:id="@+id/mButton_credits" android:text="@string/mainmenu_credits" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:textSize="20dp" android:layout_width="160dp" android:layout_height="160dp"></Button>
-    <Button android:id="@+id/mButton_options" android:text="@string/mainmenu_options" android:layout_alignTop="@+id/mButton_newgame" android:layout_alignParentRight="true" android:textSize="20dp" android:layout_width="160dp" android:layout_height="160dp"></Button>
-    <Button android:id="@+id/mButton_newgame" android:text="@string/mainmenu_newgame" android:textSize="20dp" android:layout_centerVertical="true" android:layout_alignParentLeft="true" android:layout_width="160dp" android:layout_height="160dp"></Button>
+  android:layout_height="fill_parent"
+  android:background="@drawable/background">
+    <Button android:layout_width="150dp" android:textSize="20dp" android:layout_height="30dp" android:text="@string/mainmenu_newgame" android:id="@+id/mButton_newgame" android:background="@drawable/button3" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="29dp"></Button>
+    <Button android:layout_width="150dp" android:textSize="20dp" android:layout_height="30dp" android:text="@string/mainmenu_credits" android:id="@+id/mButton_credits" android:background="@drawable/button3" android:layout_below="@+id/mButton_options" android:layout_alignLeft="@+id/mButton_newgame" android:layout_marginTop="12dp"></Button>
+    <Button android:layout_width="150dp" android:textSize="20dp" android:layout_height="30dp" android:text="@string/mainmenu_options" android:id="@+id/mButton_options" android:background="@drawable/button3" android:layout_below="@+id/mButton_highscores" android:layout_alignLeft="@+id/mButton_credits" android:layout_marginTop="12dp"></Button>
+    <Button android:layout_width="150dp" android:textSize="20dp" android:layout_height="30dp" android:text="@string/mainmenu_highscores" android:id="@+id/mButton_highscores" android:background="@drawable/button3" android:layout_below="@+id/mButton_newgame" android:layout_alignLeft="@+id/mButton_options" android:layout_marginTop="12dp"></Button>
 </RelativeLayout>
