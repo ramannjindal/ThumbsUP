@@ -3,11 +3,11 @@ package edu.uml.thumbsup;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
+//import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 
 public class playGame extends Activity {
