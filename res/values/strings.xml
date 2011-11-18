@@ -173,7 +173,23 @@
         <item>FLUSH TOILET</item>  
         <item>FOUNTAIN PEN</item>     
     </string-array>  
-
+    
+    <string name="hello">Choose the following color</string>
+    <string name="bonus_game">Save Marine life</string>
+    <string-array name="colors"> 
+    <item>BLACK</item> 
+    <item>BLUE</item> 
+    <item>BROWN</item> 
+    <item>DARK BLUE</item>
+    <item>GREEN</item> 
+    <item>GREY</item>
+    <item>ORANGE</item> 
+    <item>PINK</item> 
+    <item>PURPLE</item> 
+    <item>RED</item> 
+    <item>WHITE</item> 
+    <item>YELLOW</item>
+    </string-array> 
 
 
 </resources>
