@@ -7,19 +7,19 @@
   android:layout_height="match_parent">  
 <ScrollView
 android:layout_width="fill_parent"
-android:layout_height="fill_parent" android:background="@drawable/white">
+android:layout_height="fill_parent" android:background="@drawable/grey">
 <LinearLayout
 android:orientation="vertical"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent" >   
-    <Button android:text="@string/game1_name" android:id="@+id/gmbutton1" android:background="@drawable/buttonblue" android:layout_height="40dp" android:layout_marginTop="30dp" android:layout_width="250dp" android:layout_gravity="center"></Button>
-    <Button android:text="@string/game2_name" android:id="@+id/gmbutton2" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center"></Button>
-    <Button android:text="@string/game3_name" android:id="@+id/gmbutton3" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center"></Button>
-    <Button android:text="@string/game4_name" android:id="@+id/gmbutton4" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center"></Button>
-    <Button android:text="@string/game5_name" android:id="@+id/gmbutton5" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center"></Button>
-    <Button android:text="@string/game6_name" android:id="@+id/gmbutton6" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center"></Button>
-    <Button android:text="@string/game7_name" android:id="@+id/gmbutton_coincounting" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center"></Button>
-    <Button android:text="@string/game8_name" android:id="@+id/gmbutton8" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center"></Button>
+    <Button android:text="@string/game1_name" android:id="@+id/gmbutton1" android:background="@drawable/buttonblue" android:layout_height="40dp" android:layout_marginTop="30dp" android:layout_width="250dp" android:layout_gravity="center" android:textStyle="bold"></Button>
+    <Button android:text="@string/game2_name" android:id="@+id/gmbutton2" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center" android:textStyle="bold"></Button>
+    <Button android:text="@string/game3_name" android:id="@+id/gmbutton3" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center" android:textStyle="bold"></Button>
+    <Button android:text="@string/game4_name" android:id="@+id/gmbutton4" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center" android:textStyle="bold"></Button>
+    <Button android:text="@string/game5_name" android:id="@+id/gmbutton5" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center" android:textStyle="bold"></Button>
+    <Button android:text="@string/game6_name" android:id="@+id/gmbutton6" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center" android:textStyle="bold"></Button>
+    <Button android:text="@string/game7_name" android:id="@+id/gmbutton_coincounting" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center" android:textStyle="bold"></Button>
+    <Button android:text="@string/game8_name" android:id="@+id/gmbutton8" android:background="@drawable/buttonblue" android:layout_marginTop="10dp" android:layout_height="40dp" android:layout_width="250dp" android:layout_gravity="center" android:textStyle="bold"></Button>
 </LinearLayout> 
 </ScrollView>
 </LinearLayout>
