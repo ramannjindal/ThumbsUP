@@ -1,26 +1,22 @@
 package edu.uml.thumbsup;
 
-import java.util.ArrayList;
+
 import java.util.Random;
 import java.util.Vector;
+
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
+
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
+
 import android.media.MediaPlayer;
+
 import android.os.Bundle;
 import android.os.CountDownTimer;
+
 import android.util.Log;
-import android.view.MotionEvent;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
+
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -71,7 +67,7 @@ public class game4 extends Activity {
                       // The neutral button was clicked
                      Toast.makeText(getApplicationContext(), "'EXIT' button clicked", Toast.LENGTH_LONG).show();
                      //finish();
-               //      bgSong.release();
+                     bgSong.release();
                      finish();
                      }
                });
@@ -120,11 +116,11 @@ public class game4 extends Activity {
 			setContentView(R.layout.game4);	
 			Log.v(LOG_TAG, "XML WORKING FINE");
 			
-		//	bgSong = MediaPlayer.create(game4.this,R.raw.bgmusic) ;
+			bgSong = MediaPlayer.create(game4.this,R.raw.bgmusic) ;
 	        MyCount counter = new MyCount(500000,1000);
 	        counter.start();
 	        
-	    //  bgSong.start();
+	        bgSong.start();
 	        repeat();
 	        
 	        
