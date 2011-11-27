@@ -111,8 +111,9 @@ public class game4 extends Activity {
 	
 	
 	
-		public void onCreate(Bundle savedInstanceState){
-			super.onCreate(savedInstanceState);
+	 	@Override
+		public void onCreate(Bundle onsaveInstanceState){
+			super.onCreate(onsaveInstanceState);
 			setContentView(R.layout.game4);	
 			Log.v(LOG_TAG, "XML WORKING FINE");
 			
@@ -123,8 +124,19 @@ public class game4 extends Activity {
 	        bgSong.start();
 	        repeat();
 	        
-	        
 	        final ImageButton blackbutton = (ImageButton) findViewById(R.id.black);
+	        final ImageButton bluebutton = (ImageButton) findViewById(R.id.blue);
+	        final ImageButton brownbutton = (ImageButton) findViewById(R.id.brown);
+	        final ImageButton greenbutton = (ImageButton) findViewById(R.id.green);
+	        final ImageButton greybutton = (ImageButton) findViewById(R.id.grey);
+	        final ImageButton orangebutton = (ImageButton) findViewById(R.id.orange);
+	        final ImageButton pinkbutton = (ImageButton) findViewById(R.id.pink);
+	        final ImageButton purplebutton = (ImageButton) findViewById(R.id.purple);
+	        final ImageButton redbutton = (ImageButton) findViewById(R.id.red);
+	        final ImageButton yellowbutton = (ImageButton) findViewById(R.id.yellow);
+	        final ImageButton whitebutton = (ImageButton) findViewById(R.id.white);
+	        
+	     	        
 	        blackbutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -138,7 +150,7 @@ public class game4 extends Activity {
 	            }
 	        });
 	        
-	        final ImageButton bluebutton = (ImageButton) findViewById(R.id.blue);
+	        
 	        bluebutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -153,7 +165,6 @@ public class game4 extends Activity {
 	        });
 	        
 	        
-	        final ImageButton brownbutton = (ImageButton) findViewById(R.id.brown);
 	        brownbutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -180,8 +191,7 @@ public class game4 extends Activity {
 	                }
 	            }
 	        });
-	        
-	        final ImageButton greenbutton = (ImageButton) findViewById(R.id.green);
+	                
 	        greenbutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -195,7 +205,7 @@ public class game4 extends Activity {
 	            }
 	        });
 	        
-	        final ImageButton greybutton = (ImageButton) findViewById(R.id.grey);
+	        
 	        greybutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -209,7 +219,7 @@ public class game4 extends Activity {
 	            }
 	        });
 
-	        final ImageButton orangebutton = (ImageButton) findViewById(R.id.orange);
+	        
 	        orangebutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -223,7 +233,7 @@ public class game4 extends Activity {
 	            }
 	        });
 	        
-	        final ImageButton pinkbutton = (ImageButton) findViewById(R.id.pink);
+	        
 	        pinkbutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -237,7 +247,8 @@ public class game4 extends Activity {
 	            }
 	        });
 	        
-	        final ImageButton purplebutton = (ImageButton) findViewById(R.id.purple);
+
+	        
 	        purplebutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -251,7 +262,7 @@ public class game4 extends Activity {
 	            }
 	        });
 	        
-	        final ImageButton redbutton = (ImageButton) findViewById(R.id.red);
+	        
 	        redbutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -265,7 +276,7 @@ public class game4 extends Activity {
 	            }
 	        });
 	        
-	        final ImageButton whitebutton = (ImageButton) findViewById(R.id.white);
+	        
 	        whitebutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -279,7 +290,7 @@ public class game4 extends Activity {
 	            }
 	        });
 	        
-	        final ImageButton yellowbutton = (ImageButton) findViewById(R.id.yellow);
+	        
 	        yellowbutton.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
 	            	Log.v(LOG_TAG, "button clicked");
@@ -292,6 +303,6 @@ public class game4 extends Activity {
 	                }
 	            }
 	        });
-		
-		}
+	 
+   }
 }
