@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class gamemenu extends Activity{
 	int gameNumber = 0;
-	static int totalGames = 8;
+	static int totalGames = 7;
 	Button bSelectedGame, bArrowRight, bArrowLeft;
 	
 	@Override
@@ -61,9 +61,6 @@ public class gamemenu extends Activity{
 			bSelectedGame.setText(R.string.game6_name);
 			break;
 		case 6:
-			bSelectedGame.setText(R.string.game7_name);
-			break;
-		case 7:
 			bSelectedGame.setText(R.string.game8_name);
 			break;
 		}
@@ -96,10 +93,6 @@ public class gamemenu extends Activity{
 			startActivity(openGame6);
 			break;
 		case 6:
-			Intent openGame7 = new Intent("edu.uml.thumbsup.GAME7");
-			startActivity(openGame7);
-			break;
-		case 7:
 			Intent openGame8 = new Intent("edu.uml.thumbsup.GAME8");
 			startActivity(openGame8);
 			break;
