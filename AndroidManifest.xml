@@ -5,8 +5,6 @@
 
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
 	
-		
-	
 	
 		<activity android:name=".SplashScreen" android:label="@string/app_name">
 			<intent-filter>
@@ -20,7 +18,7 @@
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
-		<activity android:name=".gamemenu" android:label="@string/app_name">
+		<activity android:name=".gamemenu" android:label="@string/mainmenu_title">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAMEMENU"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
@@ -29,56 +27,63 @@
 		
 		
 	
-		<activity android:name=".game1" android:label="@string/app_name">
+		<activity android:name=".game1" android:label="@string/game1_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME1"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
-		<activity android:name=".game2" android:label="@string/app_name">
+		<activity android:name=".game2" android:label="@string/game2_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME2"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
-		<activity android:name=".game3" android:label="@string/app_name">
+		<activity android:name=".game3" android:label="@string/game3_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME3"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
-
-        <activity android:name=".ChemGameActivity">
             <intent-filter>
-                <action android:name="edu.uml.chemgame.CHEMGAMEACTIVITY"></action>
+                <action android:name="edu.uml.chemgame.RETURNTOSTART"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>   
+        </activity>
+        <activity android:name=".ChemGameActivity"  android:label="@string/game3_name">
+            <intent-filter>
+                <action android:name="edu.uml.thumbsup.CHEMGAMEACTIVITY"></action>
                 <category android:name="android.intent.category.DEFAULT"></category>
             </intent-filter>
         </activity>   
-		</activity>
-		<activity android:name=".game4" android:label="@string/app_name">
+		
+		<activity android:name=".game4" android:label="@string/game4_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME4"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
-		<activity android:name=".game5" android:label="@string/app_name">
+		<activity android:name=".game5" android:label="@string/game5_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME5"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
-		<activity android:name=".game6" android:label="@string/app_name">
+	
+		<activity android:name=".game6" android:label="@string/game6_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME6"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
-		<activity android:name=".game7" android:label="@string/app_name">
+	    <activity android:label="@string/game6_name" android:name="playGame"/>
+	    
+		<activity android:name=".CoinCounting" android:label="@string/game7_name">
 			<intent-filter>
-				<action android:name="edu.uml.thumbsup.GAME7"></action>
+				<action android:name="edu.uml.thumbsup.COINCOUNTING"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
-		<activity android:name=".game8" android:label="@string/app_name">
+		<activity android:name=".game8" android:label="@string/game8_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME8"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
@@ -96,5 +101,7 @@
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
+		<activity android:name=".Facts"></activity>
+	<activity android:name=".Trivia"></activity>
 	</application>
 </manifest>

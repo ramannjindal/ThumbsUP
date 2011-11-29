@@ -1,11 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ThumbsUp</string>
+    <string name="app_name">ThumbsUP</string>
+    <string name="mainmenu_title">Select A Game To Play</string>
     <string name="mainmenu_newgame">New Game</string>
     <string name="mainmenu_highscores">High Scores</string>
     <string name="mainmenu_options">Options</string>
     <string name="mainmenu_credits">Credits</string>
-    <string name="chem_welcome">Equation Balancer!</string>
+    
+    <!--
+    ===============================
+         Game-specific stuff
+    ===============================
+    -->
+    
+    <!-- Game 1 - Super Fun Fractions -->
+    <string name="game1_name">Super Fun Fractions</string>
+    
+    <!-- Game 2 - Scoppa's Game -->
+    <string name="game2_name">*~* THE MORE YOU KNOW! *~*</string>
+    <string-array name="topics_array">
+        <item>Science</item>
+        <item>Technology</item>
+        <item>History</item>
+        <item>Music</item>
+        <item>Movies</item>
+        <item>Sports</item>
+        <item>Politics</item>
+        <item>Religion</item>
+        <item>Belgium</item>        
+    </string-array>
+    
+    <string-array name="factArray1"> 
+    <item>FACT ARRAY 1 FACT 1</item> 
+    <item>FACT ARRAY 1 FACT 2</item> 
+    <item>FACT ARRAY 1 FACT 3</item> 
+    <item>FACT ARRAY 1 FACT 4</item> 
+    <item>FACT ARRAY 1 FACT 5</item>
+    </string-array>
+    
+    <string-array name="factArray2"> 
+    <item>FACT ARRAY 2 FACT 1</item> 
+    <item>FACT ARRAY 2 FACT 2</item> 
+    <item>FACT ARRAY 2 FACT 3</item> 
+    <item>FACT ARRAY 2 FACT 4</item> 
+    <item>FACT ARRAY 2 FACT 5</item>
+    </string-array>
+    
+    
+    <string-array name="factArray3"> 
+    <item>FACT ARRAY 3 FACT 1</item> 
+    <item>FACT ARRAY 3 FACT 2</item> 
+    <item>FACT ARRAY 3 FACT 3</item> 
+    <item>FACT ARRAY 3 FACT 4</item> 
+    <item>FACT ARRAY 3 FACT 5</item>
+</string-array>
+<string-array name="factArray4"> 
+    <item>FACT ARRAY 4 FACT 1</item> 
+    <item>FACT ARRAY 4 FACT 2</item> 
+    <item>FACT ARRAY 4 FACT 3</item> 
+    <item>FACT ARRAY 4 FACT 4</item> 
+    <item>FACT ARRAY 4 FACT 5</item>
+    </string-array>
+    
+    <string-array name="factArray5"> 
+    <item>FACT ARRAY 5 FACT 1</item> 
+    <item>FACT ARRAY 5 FACT 2</item> 
+    <item>FACT ARRAY 5 FACT 3</item> 
+    <item>FACT ARRAY 5 FACT 4</item> 
+    <item>FACT ARRAY 5 FACT 5</item>
+    </string-array>
+    
+    
+    <string-array name="factArray6"> 
+    <item>FACT ARRAY 6 FACT 1</item> 
+    <item>FACT ARRAY 6 FACT 2</item> 
+    <item>FACT ARRAY 6 FACT 3</item> 
+    <item>FACT ARRAY 6 FACT 4</item> 
+    <item>FACT ARRAY 6 FACT 5</item>
+</string-array>
+<string-array name="factArray7"> 
+    <item>FACT ARRAY 7 FACT 1</item> 
+    <item>FACT ARRAY 7 FACT 2</item> 
+    <item>FACT ARRAY 7 FACT 3</item> 
+    <item>FACT ARRAY 7 FACT 4</item> 
+    <item>FACT ARRAY 7 FACT 5</item>
+    </string-array>
+    
+    <string-array name="factArray8"> 
+    <item>FACT ARRAY 8 FACT 1</item> 
+    <item>FACT ARRAY 8 FACT 2</item> 
+    <item>FACT ARRAY 8 FACT 3</item> 
+    <item>FACT ARRAY 8 FACT 4</item> 
+    <item>FACT ARRAY 8 FACT 5</item>
+    </string-array>
+    
+    
+    <string-array name="factArray9"> 
+    <item>FACT ARRAY 9 FACT 1</item> 
+    <item>FACT ARRAY 9 FACT 2</item> 
+    <item>FACT ARRAY 9 FACT 3</item> 
+    <item>FACT ARRAY 9 FACT 4</item> 
+    <item>FACT ARRAY 9 FACT 5</item>
+</string-array> 
+    
+    <!-- Game 3 - Equation Balancer -->
+    <string name="game3_name">Equation Balancer</string>
     <string name="chem_choice">Choose a Difficulty Setting.</string>
     <string name="chem_spinner">Difficulty</string>
     <string name="chem_play">Play!</string>
@@ -13,4 +112,85 @@
     <string name="chem_secondEx">Cl</string>
     <string name="chem_equals">=></string>
     <string name="chem_submit">Submit</string>
+    
+    <!-- Game 4 - Color Matching -->
+    <string name="game4_name">Color Matching</string>
+    
+    <!-- Game 5 - History Memory -->
+    <string name="game5_name">History Memory</string>
+    
+    <!-- Game 6 - Inventions -->
+    <string name="game6_name">Inventions</string>
+
+	<!-- Game 7 - Coin Counting -->
+	<string name="game7_name">Coin Counting</string>
+	
+	<!-- Game 8 - Electronics -->
+	<string name="game8_name">Electronics</string>
+
+    <string name="title6">"LEARN and PLAY"</string>
+    <string name="hello6">Hello World, FamousInventions!</string>
+    <string name="app_name6">FamousInventions</string>
+    <string name="invented">invented</string>
+    <string name="q1">who invented Telephone?</string>
+    <string name="q2">who invented Radio?</string>
+    <string name="q3">who invented Microwave?</string>
+    <string name="q4">who invented Sewing machine?</string>
+    <string name="q5">who invented Fountain pen?</string>
+    <string name="q6">who invented Revolver?</string>
+    <string-array name="inventors">
+        <item>GRAHAM BELL</item>
+        <item>JAMES WATT</item>
+        <item>DOUGLAS ENGELBART</item>
+        <item>EDWARD TELLER</item>
+        <item>ALESSANDRO VOLTA</item>
+        <item>MARCONI</item>
+        <item>SAMEUL COLT</item>
+        <item>SYLVESTER ROPER</item>
+        <item>HENRY SEELEY</item>
+        <item>SUSHRATA</item>
+        <item>CHRISTOPHER SHOLES</item>
+        <item>SAMUEL MORSE</item> 
+        <item>MERRITT SINGER</item>
+        <item>SPENCER</item>
+        <item>JOHN HARINGTON</item> 
+        <item>LEWIS WATERMAN</item>      
+    </string-array>
+    <string-array name="inventions">
+        <item>TELEPHONE</item>
+        <item>STEAM ENGINE</item>
+        <item>COMPUTER MOUSE</item>
+        <item>HYDROGEN BOMB</item>
+        <item>BATTERY</item>
+        <item>RADIO</item>
+        <item>REVOLVER</item>
+        <item>MOTORCYCLE</item>
+        <item>IRON BOX</item>
+        <item>PLASTIC SURGERY</item>
+        <item>TYPEWRITER</item>
+        <item>TELEGRAPH</item>
+        <item>SEWING MACHINE</item>
+        <item>MICROWAVE</item>
+        <item>FLUSH TOILET</item>  
+        <item>FOUNTAIN PEN</item>     
+    </string-array>  
+    
+    <string name="hello">Choose the following color</string>
+    <string name="bonus_game">Save Marine life</string>
+    <string-array name="colors"> 
+    <item>BLACK</item> 
+    <item>BLUE</item> 
+    <item>BROWN</item> 
+    <item>DARK BLUE</item>
+    <item>GREEN</item> 
+    <item>GREY</item>
+    <item>ORANGE</item> 
+    <item>PINK</item> 
+    <item>PURPLE</item> 
+    <item>RED</item> 
+    <item>WHITE</item> 
+    <item>YELLOW</item>
+    </string-array> 
+
+
 </resources>

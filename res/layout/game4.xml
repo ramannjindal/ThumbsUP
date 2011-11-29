@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent">
-    <TextView android:id="@+id/textView1" android:text="Game 4" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content"></TextView>
-    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout  android:orientation="vertical"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"> 
+                   <TextView android:text="@string/hello"
+                             android:layout_width="wrap_content"
+                     		 android:layout_height="wrap_content"
+                     		 android:textAppearance="?android:attr/textAppearanceMedium"
+                     		 />
+                  <TextView android:textAppearance="?android:attr/textAppearanceLarge" 
+                            android:id="@+id/generatecolor" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TableLayout android:layout_height="wrap_content" android:id="@+id/tableLayout1" android:layout_width="match_parent">
+       <!--   <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/generatecolor" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        </TableRow> -->
+        <TableRow android:id="@+id/tableRow2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center">
+            <ImageButton android:id="@+id/blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue" ></ImageButton>
+            <ImageButton android:id="@+id/green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/green"></ImageButton>
+            <ImageButton android:id="@+id/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/white"></ImageButton>           
+        </TableRow>
+        <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center">
+            <ImageButton android:id="@+id/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/red"></ImageButton>
+            <ImageButton android:id="@+id/purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/purple"></ImageButton>
+            <ImageButton android:id="@+id/grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/grey"></ImageButton>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center">
+            <ImageButton android:id="@+id/orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/orange"></ImageButton>
+            <ImageButton android:id="@+id/pink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pink"></ImageButton>
+            <ImageButton android:id="@+id/brown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/brown"></ImageButton>
+        </TableRow>
+            <TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center">
+            <ImageButton android:id="@+id/yellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yellow"></ImageButton>
+            <ImageButton android:id="@+id/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/black"></ImageButton>
+            <ImageButton android:id="@+id/darkblue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/darkblue"></ImageButton>
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
