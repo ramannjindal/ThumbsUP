@@ -26,7 +26,10 @@
       <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text="The first rule of addition is that only like quantities can be added; you must first convert to like quantities. you must have the same denominator for exsamble 1/2 and 1/4 have diiferent denominators, so you have to muntiply the  numerator  and denominator by a number to get the same denominator. multiply 1/2 by 2 to get 2/4 now add the  numerators to get (2+1)/4 = 3/4.  "
+    android:text="The first rule of addition is that only like quantities can be added;
+     you must first convert to like quantities. you must have the same denominator for exsamble
+      1/2 and 1/4 have diiferent denominators, so you have to muntiply the  numerator  and denominator 
+      by a number to get the same denominator. multiply 1/2 by 2 to get 2/4 now add the  numerators to get (2+1)/4 = 3/4.  "
     android:textSize="20dp"
     android:layout_gravity="center"
     android:gravity="center"
