@@ -8,7 +8,8 @@ import android.widget.Button;
 
 public class gamemenu extends Activity{
 	int gameNumber = 0;
-	static int totalGames = 7;
+	/* BE SURE TO UPDATE THIS IF WE ADD/REMOVE GAMES */
+	static int totalGames = 6;
 	Button bSelectedGame, bArrowRight, bArrowLeft;
 	
 	@Override
@@ -35,6 +36,7 @@ public class gamemenu extends Activity{
         bArrowLeft.setOnClickListener(new View.OnClickListener() {
         	public void onClick(View v) {
         		gameNumber = (gameNumber - 1) % totalGames;
+        		gameNumber = (gameNumber < 0 ? 6 : gameNumber);
         		ChangeCurrentButtonText();
         	}
         });

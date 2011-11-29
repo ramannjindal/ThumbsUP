@@ -14,15 +14,15 @@ public class playGame extends Activity {
 
 	private RadioButton rButtons[] = new RadioButton[10];
 	private TextView sol;
-	
+
 	public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.game);
-                
-        sol = (TextView)findViewById(R.id.textView1);
-        Button ansButton = (Button)findViewById(R.id.selected);
-        
-        ansButton.setOnClickListener(new View.OnClickListener() {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.game);
+
+		sol = (TextView)findViewById(R.id.textView1);
+		Button ansButton = (Button)findViewById(R.id.selected);
+
+		ansButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				int count = checkStates();
 				int ans = scores(count);	
@@ -30,27 +30,27 @@ public class playGame extends Activity {
 			}
 
 		});
-               
+
 	}
-	
-		public int scores(int count){
-			int score = count * 10;
-			return score;
+
+	public int scores(int count){
+		int score = count * 10;
+		return score;
+	}
+
+	public int checkStates(){
+		int val = 0;
+		RadioButton rButton[] = new RadioButton[10];
+
+		for(int i=1; i<10;i++){
+			rButton[i] = (RadioButton)findViewById(R.id.option1);
 		}
-	
-		public int checkStates(){
-			int val = 0;
-			RadioButton rButton[] = new RadioButton[10];
-			
-			for(int i=1; i<10;i++){
-				rButton[i] = (RadioButton)findViewById(R.id.option1);
-			}
-			return val;
-		}
-	
-	
+		return val;
+	}
+
+
 }
-      /*  
+/*  
         rButtons[1]=(RadioButton)findViewById(R.id.option1);
         rButtons[2]=(RadioButton)findViewById(R.id.option2);
         rButtons[3]=(RadioButton)findViewById(R.id.option3);
@@ -61,7 +61,7 @@ public class playGame extends Activity {
         rButtons[8]=(RadioButton)findViewById(R.id.option8);
         rButtons[9]=(RadioButton)findViewById(R.id.option9);
         rButtons[10]=(RadioButton)findViewById(R.id.option10);
-        
+
 	private void checkStates(RadioButton[] buttons){
 		for(int i=1;i<=10;i++){
 			if(buttons[i].isChecked()){
@@ -70,5 +70,5 @@ public class playGame extends Activity {
 		}
 		scores();
 	}
-	*/
-	
+ */
+
