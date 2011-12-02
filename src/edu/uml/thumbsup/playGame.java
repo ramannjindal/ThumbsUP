@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class playGame extends Activity {
 
-	private RadioButton rButtons[] = new RadioButton[10];
+	private RadioButton rButtons[] = new RadioButton[12];
 	private TextView sol;
 
 	public void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,15 @@ public class playGame extends Activity {
 		setContentView(R.layout.game);
 		
 		rButtons[1] = (RadioButton)findViewById(R.id.option1);
-
+		rButtons[2] = (RadioButton)findViewById(R.id.option2);
+		rButtons[3] = (RadioButton)findViewById(R.id.option3);
+		rButtons[4] = (RadioButton)findViewById(R.id.option4);
+		rButtons[5] = (RadioButton)findViewById(R.id.option5);
+		rButtons[6] = (RadioButton)findViewById(R.id.option6);
+		rButtons[7] = (RadioButton)findViewById(R.id.option7);
+		rButtons[8] = (RadioButton)findViewById(R.id.option8);
+		rButtons[9] = (RadioButton)findViewById(R.id.option9);
+		rButtons[10] = (RadioButton)findViewById(R.id.option10);
 		
 		
 		
@@ -37,13 +45,22 @@ public class playGame extends Activity {
 			
 			public int checkStates(){
 				int val = 0;	
-				if(rButtons[1].isChecked() == true){
-					sol.setText("Checked");
-					val++;
+				if(rButtons[2].isChecked() == true){
+			    	val++;
 				}
-				else{
-					sol.setText("Unchecked");
+				if(rButtons[3].isChecked() == true){
+			    	val++;
 				}
+				if(rButtons[6].isChecked() == true){
+			    	val++;
+				}
+				if(rButtons[8].isChecked() == true){
+			    	val++;
+				}
+				if(rButtons[9].isChecked() == true){
+			    	val++;
+				}
+							
 				return val;
 			}
 			
