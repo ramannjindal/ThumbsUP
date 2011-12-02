@@ -1,19 +1,21 @@
 package edu.uml.thumbsup;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 //import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RadioButton;
-import android.widget.TextView;
+//import android.widget.TextView;
 //import android.widget.Toast;
+import android.widget.Toast;
 
 
 public class playGame extends Activity {
 
 	private RadioButton rButtons[] = new RadioButton[12];
-	private TextView sol;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,21 +32,32 @@ public class playGame extends Activity {
 		rButtons[9] = (RadioButton)findViewById(R.id.option9);
 		rButtons[10] = (RadioButton)findViewById(R.id.option10);
 		
-		
-		
-		sol = (TextView)findViewById(R.id.textView1);
+				
 		Button ansButton = (Button)findViewById(R.id.selected);
 
 		ansButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				int count = checkStates();		
 				int ans = scores(count);	
-				sol.setText("Score: " + ans);
+				
+		  //SINGLE LINE TOAST MESSAGE
+				//Toast.makeText(getApplicationContext(),"Congratulations! Your Score is: "+ans+"/100" ,Toast.LENGTH_LONG).show();
+		 
+		 //MULTIPLE LINE TOAST MESSAGE
+				Context context = getApplicationContext();
+				CharSequence text = "Congratulations! Your Score is: "+ans+"/100";
+				int duration = Toast.LENGTH_LONG;
+				Toast toast = Toast.makeText(context, text, duration);
+				toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+				toast.show();
+				
+				
+				finish();
 			}
 			
 			
 			public int checkStates(){
-				int val = 0;	
+				int val = 0;	 
 				if(rButtons[2].isChecked() == true){
 			    	val++;
 				}
@@ -66,7 +79,7 @@ public class playGame extends Activity {
 			
 			
 			public int scores(int count){
-				int score = count * 10;
+				int score = count * 20;
 				return score;
 			}
 		});

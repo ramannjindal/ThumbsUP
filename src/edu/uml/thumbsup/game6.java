@@ -193,6 +193,7 @@ public class game6 extends Activity {
 			public void onClick(View v){
 				Intent myIntent = new Intent(game6.this, playGame.class);
 				game6.this.startActivity(myIntent);
+				finish();
 			}		
 		});
 
