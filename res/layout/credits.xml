@@ -7,11 +7,11 @@
     <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:text="Thank you to our team:" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_weight="0.08"></TextView>
     <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Chris Adler" android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content"></TextView>
     <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Caleb Brandon              - Scrum Master" android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_height="wrap_content"></TextView>
-    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Prathiba Dyavegowda" android:layout_width="wrap_content" android:id="@+id/textView4" android:layout_height="wrap_content"></TextView>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Prathiba D" android:layout_width="wrap_content" android:id="@+id/textView4" android:layout_height="wrap_content"></TextView>
     <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Mike Feole" android:layout_width="wrap_content" android:id="@+id/textView5" android:layout_height="wrap_content"></TextView>
     <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Paul Gendreau" android:layout_width="wrap_content" android:id="@+id/textView6" android:layout_height="wrap_content"></TextView>
     <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Anthony Scoppa" android:layout_width="wrap_content" android:id="@+id/textView7" android:layout_height="wrap_content"></TextView>
     <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Elad Shahar                   - Product Owner" android:layout_width="wrap_content" android:id="@+id/textView8" android:layout_height="wrap_content"></TextView>
-    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Sunil Balaganchi Thammaiah" android:layout_width="wrap_content" android:id="@+id/textView9" android:layout_height="wrap_content" android:layout_weight="0.16"></TextView>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:text="Sunil B T" android:layout_width="wrap_content" android:id="@+id/textView9" android:layout_height="wrap_content" android:layout_weight="0.16"></TextView>
     
 </LinearLayout>

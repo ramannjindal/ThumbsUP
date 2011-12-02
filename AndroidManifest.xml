@@ -56,12 +56,13 @@
             </intent-filter>
         </activity>   
 		
-		<activity android:name=".game4" android:label="@string/game4_name">
+		<activity android:name=".game4" android:label="@string/game4_name" android:screenOrientation="portrait">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME4"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
+		
 		<activity android:name=".game5" android:label="@string/game5_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME5"></action>
