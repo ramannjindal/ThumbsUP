@@ -69,13 +69,13 @@
 			</intent-filter>
 		</activity>
 	
-		<activity android:name=".game6" android:label="@string/game6_name">
+		<activity android:name=".game6" android:label="@string/game6_name" android:screenOrientation="portrait">                                   "landscape" | "portrait" |>
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME6"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
 			</intent-filter>
 		</activity>
-	    <activity android:label="@string/game6_name" android:name="playGame"/>
+	    <activity android:label="@string/game6_name" android:name="playGame" android:screenOrientation="portrait"/>
 		<activity android:name=".game8" android:label="@string/game8_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME8"></action>

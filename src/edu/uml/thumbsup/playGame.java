@@ -46,12 +46,11 @@ public class playGame extends Activity {
 		 //MULTIPLE LINE TOAST MESSAGE
 				Context context = getApplicationContext();
 				CharSequence text = "Congratulations! Your Score is: "+ans+"/100";
-				int duration = Toast.LENGTH_LONG;
+				int duration = Toast.LENGTH_SHORT;
 				Toast toast = Toast.makeText(context, text, duration);
 				toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
 				toast.show();
-				
-				
+		        
 				finish();
 			}
 			
