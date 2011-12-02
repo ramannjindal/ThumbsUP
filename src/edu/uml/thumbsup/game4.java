@@ -67,7 +67,6 @@ public class game4 extends Activity {
                       // The neutral button was clicked
                      Toast.makeText(getApplicationContext(), "'EXIT' button clicked", Toast.LENGTH_LONG).show();
                      //finish();
-                     bgSong.release();
                      finish();
                      }
                });
@@ -121,7 +120,7 @@ public class game4 extends Activity {
 	        MyCount counter = new MyCount(500000,1000);
 	        counter.start();
 	        
-	        bgSong.start();
+	        
 	        repeat();
 	        
 	        final ImageButton blackbutton = (ImageButton) findViewById(R.id.black);
