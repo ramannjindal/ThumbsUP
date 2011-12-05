@@ -1,5 +1,5 @@
 package edu.uml.thumbsup;
-//Paul Gendreau
+
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -23,51 +23,64 @@ public class game1 extends Activity{
 	Button Reducing;
 	Button Adding;
 	Button helpmenu;
+	Button Subtracting;
 	TextView displayhome;
-	
+	TextView displayscore;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game1);
         
+        displayhome = (TextView)findViewById(R.id.tvDisplayhome);
+        displayscore = (TextView)findViewById(R.id.Score);
+        Adding = (Button) findViewById(R.id.bAdding);
+        Subtracting = (Button) findViewById(R.id.bSubtracting);
+        Reducing = (Button) findViewById(R.id.bReducing);
         Dividing = (Button) findViewById(R.id.bDividing);
         multiplying = (Button) findViewById(R.id.bmultiplying);
-        Reducing = (Button) findViewById(R.id.bReducing);
-        Adding = (Button) findViewById(R.id.bAdding);
         helpmenu = (Button) findViewById(R.id.bHelp);
-        displayhome = (TextView)findViewById(R.id.tvDisplayhome);
+        
+        
+        
+        Reducing.setOnClickListener(new View.OnClickListener() {
+   			public void onClick(View v) {
+   				
+   				setContentView(R.layout.game1r);
+   			}
+   		});
+        
+        Adding.setOnClickListener(new View.OnClickListener() {
+   			public void onClick(View v) {
+   				
+   				setContentView(R.layout.game1a);
+   			}
+   		});
+        
+        Subtracting.setOnClickListener(new View.OnClickListener() {
+   			public void onClick(View v) {
+   				
+   				setContentView(R.layout.game1s);	
+   			}
+   		});
         
         Dividing.setOnClickListener(new View.OnClickListener() {
         	
-        //	@Override
+       
         	public void onClick(View v) {
-		//		Intent openGameh = new Intent("edu.uml.thumbsup.GAME1HELP");
-		//		startActivity(openGameh);			
-        //	}
-        			
+		
+        		setContentView(R.layout.game1d);
 			}
 		});
         
         multiplying.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
    				
-   					
+   				setContentView(R.layout.game1m);
    			}  
    		});
         
-        Reducing.setOnClickListener(new View.OnClickListener() {
-   			public void onClick(View v) {
-   				
-   				
-   			}
-   		});
-        Adding.setOnClickListener(new View.OnClickListener() {
-   			public void onClick(View v) {
-   				
-   					
-   			}
-   		});
+    
         helpmenu.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
    				

@@ -11,12 +11,22 @@
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
     android:text="Working with fractions please select a game or help"
-    android:textSize="30dp"
+    android:textSize="20dp"
     android:layout_gravity="center"
     android:gravity="center"
     android:id="@+id/tvDisplayhome"
     ></TextView>
-
+    
+ <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Score 0"
+    android:textSize="20dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/gamescore"
+    ></TextView>
+    
  <Button
  android:layout_width="250dp" 
  android:layout_height="wrap_content" 
@@ -25,6 +35,27 @@
  android:textSize="20dp"
  android:id="@+id/bReducing"
  ></Button>
+ 
+ <Button
+ android:layout_width="250dp" 
+ android:layout_height="wrap_content" 
+ android:text="adding fractions"
+ android:layout_gravity="center"
+ android:textSize="20dp"
+ android:id="@+id/bAdding"
+ ></Button> 
+ 
+ 
+ <Button
+ android:layout_width="250dp" 
+ android:layout_height="wrap_content" 
+ android:text="Subtracting fractions"
+ android:layout_gravity="center"
+ android:textSize="20dp"
+ android:id="@+id/bSubtracting"
+ ></Button>
+
+
   <Button
  android:layout_width="250dp" 
  android:layout_height="wrap_content" 
@@ -42,14 +73,8 @@
  android:textSize="20dp"
  android:id="@+id/bDividing"
  ></Button>
- <Button
- android:layout_width="250dp" 
- android:layout_height="wrap_content" 
- android:text="adding fractions"
- android:layout_gravity="center"
- android:textSize="20dp"
- android:id="@+id/bAdding"
- ></Button> 
+
+ 
   <Button
  android:layout_width="250dp" 
  android:layout_height="wrap_content" 
@@ -57,6 +82,7 @@
  android:layout_gravity="center"
  android:textSize="20dp"
  android:id="@+id/bHelp"
- ></Button>    
+ ></Button>  
+   
 </LinearLayout>
 </ScrollView>
