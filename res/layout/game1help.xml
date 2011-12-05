@@ -9,7 +9,16 @@ android:layout_height="fill_parent">
     android:layout_height="fill_parent"
        >
        
-       
+         <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Fractions"
+    android:textSize="25dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tviFractions"
+    ></TextView>
+    
           <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
@@ -19,72 +28,130 @@ android:layout_height="fill_parent">
     consisting of a numerator (the top number) and a denominator (bottom number). 
     The numerator represents the number of parts, and the denominator indicating how many equal 
     parts make up a whole. An example is 3/4, in which the numerator, 3, tells us that the fraction 
-    represents 3 equal parts, and the denominator, 4, tells us that 4 parts equal a whole.
-    "
+    represents 3 equal parts, and the denominator, 4, tells us that 4 parts equal a whole."
     android:textSize="15dp"
-    android:layout_gravity="center"
-    android:gravity="center"
+    android:layout_gravity="left"
+    android:gravity="left"
     android:id="@+id/tvDescription"
     ></TextView>
     
-        <TextView  
+     <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text=" Addition"
+    android:text="Reducing"
+    android:textSize="25dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tvReducing"
+    ></TextView>
+    
+     <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Dividing the numerator and denominator of a fraction by the same non-zero number will also yield an equivalent fraction. 
+    This is called reducing or simplifying the fraction. A simple fraction in which the numerator and denominator are coprime that is,
+     the only positive integer that goes into both the numerator and denominator evenly is 1 is said to be irreducible, in lowest terms,
+      or in simplest terms. For example, 3/9 is not in lowest terms because both 3 and 9 can be exactly divided by 3. In contrast, 3/8 is in 
+      lowest terms—the only positive integer that goes into both 3 and 8 evenly is 1."
+    android:textSize="15dp"
+    android:layout_gravity="left"
+    android:gravity="left"
+    android:id="@+id/tviReducing"
+    ></TextView>
+    
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Addition"
+    android:textSize="25dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tvAdding"
+    ></TextView>
+    
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="The first rule of addition is that only like quantities can be added;
+     you must first convert to like quantities. you must have the same denominator for exsamble
+      1/2 and 1/4 have diiferent denominators, so you have to muntiply the  numerator and denominator 
+      by a number to get the same denominator. multiply 1/2 by 2 to get 2/4 now add the  numerators to get (2+1)/4 = 3/4.  "
+    android:textSize="15dp"
+    android:layout_gravity="left"
+    android:gravity="left"
+    android:id="@+id/tvDividing"
+    ></TextView>
+    
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Subtracting"
+    android:textSize="25dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tvSubtracting"
+    ></TextView>
+    
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="The first rule of Subtracting is that only like quantities can be added;
+     you must first convert to like quantities. you must have the same denominator for exsamble
+      1/2 and 1/4 have diiferent denominators, so you have to muntiply the  numerator and denominator 
+      by a number to get the same denominator. multiply 1/2 by 2 to get 2/4 now Subtract the numerators to get (2-1)/4 = 1/4."
+    android:textSize="15dp"
+    android:layout_gravity="left"
+    android:gravity="left"
+    android:id="@+id/tviSubtracting"
+    ></TextView>
+    
+   
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Multyplying"
+    android:textSize="25dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/tvMultyplying"
+    ></TextView>
+    
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="To multiply fractions, multiply the numerators and multiply the denominators. A short cut for multiplying fractions is called
+     cancellation. In effect, we reduce the answer to lowest terms during multiplication. A two is a common factor in both the numerator of the left 
+     fraction and the denominator of the right and is divided out of both.
+     Three is a common factor of the left denominator and right numerator and is divided out of both."
+    android:textSize="15dp"
+    android:layout_gravity="left"
+    android:gravity="left"
+    android:id="@+id/tviMultyplying"
+    ></TextView>
+    
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Dividing"
     android:textSize="25dp"
     android:layout_gravity="center"
     android:gravity="center"
     android:id="@+id/tvDividing"
     ></TextView>
     
-      <TextView  
+    <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text="The first rule of addition is that only like quantities can be added;
-     you must first convert to like quantities. you must have the same denominator for exsamble
-      1/2 and 1/4 have diiferent denominators, so you have to muntiply the  numerator  and denominator 
-      by a number to get the same denominator. multiply 1/2 by 2 to get 2/4 now add the  numerators to get (2+1)/4 = 3/4.  "
-    android:textSize="20dp"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:id="@+id/tvDividing"
+    android:text="To divide a fraction by a whole number, you may either divide the numerator by the number,
+     if it goes evenly into the numerator, or multiply the denominator by the number. For example, 10/3 divided by 
+     5 equals 2/3 and also equals 10/(3X5) = 10/15, which reduces to 2/3. To divide a fraction by a fraction ,
+     multiply by the reciprocal of that fraction. 1/2 divided by 3/4 = (1X4)/(2X3) = 4/6 = 2/3."
+    android:textSize="15dp"
+    android:layout_gravity="left"
+    android:gravity="left"
+    android:id="@+id/tviDividing"
     ></TextView>
-     <TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="Reducing"
-    android:textSize="20dp"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:id="@+id/tvmultiplying"
-    ></TextView>
-          <TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="Subtracting"
-    android:textSize="20dp"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:id="@+id/tvReducing"
-    ></TextView>
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="Deviding"
-    android:textSize="20dp"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:id="@+id/tvAdding"
-    ></TextView>
-  <TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="Multyplying"
-    android:textSize="20dp"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:id="@+id/tvAdding"
-    ></TextView>
+  
     
     </LinearLayout>
     </ScrollView>
