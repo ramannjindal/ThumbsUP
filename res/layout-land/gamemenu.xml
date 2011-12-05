@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    
+	<RelativeLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent" android:background="@drawable/background">
+    <Button android:layout_height="wrap_content" android:background="@drawable/arrowleft" android:layout_width="wrap_content" android:id="@+id/arrow_left_button" android:layout_alignBaseline="@+id/arrow_right_button" android:layout_alignBottom="@+id/arrow_right_button" android:layout_toLeftOf="@+id/arrow_right_button"></Button>
+    <Button android:text="@string/game1_name" android:layout_height="50dp" android:background="@drawable/button3" android:layout_width="175dp" android:textSize="20dp" android:id="@+id/game_button" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="134dp"></Button>
+    <Button android:layout_height="wrap_content" android:background="@drawable/arrowright" android:layout_width="wrap_content" android:id="@+id/arrow_right_button" android:layout_below="@+id/game_button" android:layout_alignParentRight="true" android:layout_marginRight="99dp"></Button>
+    </RelativeLayout>
+    
+    
+</LinearLayout>

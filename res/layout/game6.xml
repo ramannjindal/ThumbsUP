@@ -1,42 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" android:orientation="vertical">
-  <TextView android:layout_height="wrap_content" android:id="@+id/titletext" android:layout_width="fill_parent" android:gravity="center" android:textSize="14px" android:text="@string/title6" android:textColor="#FF3366" android:textStyle="bold"></TextView>  
-  <ScrollView android:layout_height="wrap_content" android:id="@+id/scrollView1" android:layout_width="match_parent">
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content" android:id="@+id/scrollView1" android:layout_width="match_parent">
     <HorizontalScrollView android:id="@+id/horizontalScrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-    <TableLayout android:layout_height="wrap_content" android:id="@+id/tableLayout1" android:layout_width="match_parent">
-        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <Button android:text="GRAHAM BELL" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="JAMES WATT" android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="DOUGLAS ENGELBART" android:id="@+id/button3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="EDWARD TELLER" android:id="@+id/button4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-        </TableRow>
-        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <Button android:text="ALESSANDRO VOLTA" android:id="@+id/button5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="MARCONI" android:id="@+id/button6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="SAMEUL COLT" android:id="@+id/button7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="SYLVESTER ROPER" android:id="@+id/button8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-        </TableRow>
-        <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <Button android:text="HENRY SEELEY" android:id="@+id/button9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="SUSHRATA" android:id="@+id/button10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="CHRISTOPHER SHOLES" android:id="@+id/button11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="SAMUEL MORSE" android:id="@+id/button12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-        </TableRow>
-        <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content">
-            <Button android:text="MERRITT SINGER" android:id="@+id/button13" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-            <Button android:text="SPENCER" android:id="@+id/button14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="JOHN HARINGTON" android:id="@+id/button15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-            <Button android:text="LEWIS WATERMAN" android:id="@+id/button16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></Button>
-        </TableRow>
-    </TableLayout>
-  </HorizontalScrollView>
- </ScrollView>
-  <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:gravity="right">
-       <ImageView android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:id="@+id/image" android:layout_alignParentTop="true" android:layout_width="wrap_content"></ImageView>
-       <TextView android:layout_centerHorizontal="true" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="fill_parent" android:layout_below="@+id/image" android:layout_height="wrap_content" android:gravity="center"></TextView>
-  </RelativeLayout>
-  <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
-      <Button android:text="Start Game" android:id="@+id/startgame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textStyle="bold" android:gravity="center" android:visibility="invisible"></Button></LinearLayout>
-  </LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+    				  android:layout_height="fill_parent" 
+    				  android:orientation="vertical">
+    				  
+  			<TextView android:layout_height="wrap_content" 
+  					  android:id="@+id/titletext" 
+  					  android:layout_width="fill_parent" 
+  					  android:gravity="center" 
+  					  android:text="@string/title6" 
+  					  android:textColor="#FF3366" 
+  					  android:textStyle="bold" 
+  					  android:textSize="30px"></TextView>  
+ 
+			    <TableLayout android:layout_height="wrap_content" android:id="@+id/tableLayout1" android:layout_width="wrap_content">
+			        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			            <Button android:text="GRAHAM BELL" android:id="@+id/button1" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			            <Button android:text="JAMES WATT" android:id="@+id/button2" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			        </TableRow>
+			        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			            <Button android:text="ALESSANDRO VOLTA" android:id="@+id/button5" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			            <Button android:text="MARCONI" android:id="@+id/button6" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			        </TableRow>
+			        <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			            <Button android:text="HENRY SEELEY" android:id="@+id/button9" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			            <Button android:text="SUSHRATA" android:id="@+id/button10" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			        </TableRow>
+			        <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			            <Button android:text="MERRITT SINGER" android:id="@+id/button13" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			            <Button android:text="SPENCER" android:id="@+id/button14" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			        </TableRow>
+			        <TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			            <Button android:textStyle="bold" android:text="DOUGLAS ENGELBART" android:id="@+id/button3" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			            <Button android:textStyle="bold" android:text="SYLVESTER ROPER" android:id="@+id/button8" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			        </TableRow>
+			        <TableRow android:id="@+id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			            <Button android:textStyle="bold" android:text="LEWIS WATERMAN" android:id="@+id/button16" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			            <Button android:textStyle="bold" android:text="EDWARD TELLER" android:id="@+id/button4" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			        </TableRow>
+			        <TableRow android:id="@+id/tableRow7" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			            <Button android:textStyle="bold" android:text="SAMEUL COLT" android:id="@+id/button7" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			            <Button android:textStyle="bold" android:text="SAMUEL MORSE" android:id="@+id/button12" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			        </TableRow>
+			        <TableRow android:id="@+id/tableRow8" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			            <Button android:textStyle="bold" android:text="CHRISTOPHER SHOLES" android:id="@+id/button11" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			            <Button android:textStyle="bold" android:text="JOHN HARINGTON" android:id="@+id/button15" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+			        </TableRow>
+			    </TableLayout>
+			
+			 
+			  <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:gravity="right">
+			       <ImageView android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:id="@+id/image" android:layout_alignParentTop="true" android:layout_width="wrap_content"></ImageView>
+			       <TextView android:layout_centerHorizontal="true" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="fill_parent" android:layout_below="@+id/image" android:layout_height="wrap_content" android:gravity="center"></TextView>
+			  </RelativeLayout>
+			  <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+			      <Button android:text="Start Game" android:id="@+id/startgame" android:layout_height="wrap_content" android:textStyle="bold" android:gravity="center" android:visibility="invisible" android:layout_width="180dp" android:layout_gravity="center"></Button></LinearLayout>
+			  </LinearLayout>
+			  
+    </HorizontalScrollView>
+</ScrollView>
