@@ -31,67 +31,47 @@
     ></TextView>
     
  <Button
- android:layout_width="250dp" 
- android:layout_height="wrap_content" 
  android:text="Reducing fractions"
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
  android:id="@+id/bReducing"
- ></Button>
+ android:layout_width="250dp" android:layout_height="50dp"></Button>
  
  <Button
- android:layout_width="250dp" 
- android:layout_height="wrap_content" 
  android:text="adding fractions"
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
  android:id="@+id/bAdding"
- ></Button> 
+ android:layout_width="250dp" android:layout_height="50dp"></Button> 
  
  
  <Button
- android:layout_width="250dp" 
- android:layout_height="wrap_content" 
  android:text="Subtracting fractions"
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
  android:id="@+id/bSubtracting"
- ></Button>
-
-
-  <Button
- android:layout_width="250dp" 
- android:layout_height="wrap_content" 
- android:text="multiplying fractions"
- android:layout_gravity="center"
- android:background="@drawable/button3"
- android:textSize="20dp"
- android:id="@+id/bmultiplying"
- ></Button>
+ android:layout_width="250dp" android:layout_height="50dp"></Button>
+ <Button android:textSize="20dp" android:background="@drawable/button3" android:layout_height="52dp" android:text="multiplying fractions" android:id="@+id/bmultiplying" android:layout_width="257dp" android:layout_gravity="center"></Button>
  
   <Button
- android:layout_width="250dp" 
- android:layout_height="wrap_content" 
  android:text="dividing fractions"
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
  android:id="@+id/bDividing"
- ></Button>
+ android:layout_width="250dp" android:layout_height="50dp"></Button>
 
  
   <Button
- android:layout_width="250dp" 
- android:layout_height="wrap_content" 
  android:text="Help"
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
  android:id="@+id/bHelp"
- ></Button>  
+ android:layout_width="250dp" android:layout_height="50dp"></Button>  
    
 </LinearLayout>
 </ScrollView>
