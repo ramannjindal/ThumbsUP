@@ -4,7 +4,9 @@
   android:orientation="vertical"
   android:layout_width="match_parent"
   android:layout_height="match_parent">
-    <RelativeLayout android:layout_width="wrap_content" android:id="@+id/userInterface" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginTop="32dp" android:layout_alignParentRight="true"></RelativeLayout>
-    <Button android:text="@string/chem_submit" android:layout_width="wrap_content" android:onClick="submitHandler" android:id="@+id/button1" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="180dp"></Button>
+    <Button android:text="@string/chem_hint" android:id="@+id/button2" android:layout_width="wrap_content" android:onClick="getHint" android:layout_height="wrap_content" android:layout_below="@+id/button1" android:layout_centerHorizontal="true" android:layout_marginTop="29dp"></Button>
+    <Button android:text="@string/chem_submit" android:id="@+id/button1" android:layout_width="wrap_content" android:onClick="submitHandler" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_centerHorizontal="true"></Button>
+    <TextView android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:id="@+id/scoreDisplay"></TextView>
+    <RelativeLayout android:layout_width="match_parent" android:id="@+id/userInterface" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true" android:layout_marginTop="67dp"></RelativeLayout>
     
 </RelativeLayout>
