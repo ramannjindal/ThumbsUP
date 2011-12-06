@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 
 public class gamemenu extends Activity{
@@ -20,6 +23,12 @@ super.onCreate(savedInstanceState);
         bSelectedGame = (Button) findViewById(R.id.game_button);
         bSelectedGame.setOnClickListener(new View.OnClickListener() {
          public void onClick(View v) {
+        	 AnimationSet set = new AnimationSet(true);
+        	 Animation animation = new TranslateAnimation(Animation.RELATIVE_TO_SELF,30,Animation.RELATIVE_TO_SELF,30);
+        	 animation.setDuration(1000);
+        	 set.addAnimation(animation);
+        	 bSelectedGame.startAnimation(set);
+        	 
          LaunchSelectedGame();
          }
         });
