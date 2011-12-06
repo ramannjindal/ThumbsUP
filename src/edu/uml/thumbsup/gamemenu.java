@@ -24,8 +24,8 @@ public class gamemenu extends Activity{
 		bSelectedGame.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				AnimationSet set = new AnimationSet(true);
-				Animation animation = new AlphaAnimation(10,90);
-				animation.setDuration(1000);
+				Animation animation = new AlphaAnimation(0,10);
+				animation.setDuration(100);
 				set.addAnimation(animation);
 				bSelectedGame.startAnimation(set);
 
