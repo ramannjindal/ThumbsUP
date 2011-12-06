@@ -120,7 +120,6 @@ public class game4 extends Activity {
 	        MyCount counter = new MyCount(500000,1000);
 	        counter.start();
 	        
-	        
 	        repeat();
 	        
 	        final ImageButton blackbutton = (ImageButton) findViewById(R.id.black);

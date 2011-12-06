@@ -4,161 +4,48 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ImageView;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 
-public class game5 extends Activity{
+public class game5 extends Activity implements OnClickListener {
 
-	public ImageView g5imageView0, g5imageView1, g5imageView2, g5imageView3, g5imageView4, g5imageView5 ;
-	public ImageView g5imageView6, g5imageView7, g5imageView8, g5imageView9, g5imageView10, g5imageView11 ;
-	public ImageView g5imageView12, g5imageView13, g5imageView14, g5imageView15 ;
+	static final int numImageButtons = 16;
+	
+	ImageButton[] imageButtons = new ImageButton[numImageButtons];
+	ImageButton aButton;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.game5);
         
-        g5imageView0 = (ImageView) this.findViewById(R.id.g5imageView1);
-        g5imageView1 = (ImageView) this.findViewById(R.id.g5ImageView01);
-        g5imageView2 = (ImageView) this.findViewById(R.id.g5ImageView02);
-        g5imageView3 = (ImageView) this.findViewById(R.id.g5ImageView03);
-        g5imageView4 = (ImageView) this.findViewById(R.id.g5imageView04);
-        g5imageView5 = (ImageView) this.findViewById(R.id.g5ImageView05);
-        g5imageView6 = (ImageView) this.findViewById(R.id.g5ImageView06);
-        g5imageView7 = (ImageView) this.findViewById(R.id.g5ImageView07);
-        g5imageView8 = (ImageView) this.findViewById(R.id.g5imageView08);
-        g5imageView9 = (ImageView) this.findViewById(R.id.g5ImageView09);
-        g5imageView10 = (ImageView) this.findViewById(R.id.g5ImageView10);
-        g5imageView11 = (ImageView) this.findViewById(R.id.g5ImageView11);
-        g5imageView12 = (ImageView) this.findViewById(R.id.g5imageView12);
-        g5imageView13 = (ImageView) this.findViewById(R.id.g5ImageView13);
-        g5imageView14 = (ImageView) this.findViewById(R.id.g5ImageView14);
-        g5imageView15 = (ImageView) this.findViewById(R.id.g5ImageView15);
+        imageButtons[0]  = (ImageButton) this.findViewById(R.id.imageButton00);
+        imageButtons[1]  = (ImageButton) this.findViewById(R.id.imageButton01);
+        imageButtons[2]  = (ImageButton) this.findViewById(R.id.imageButton02);
+        imageButtons[3]  = (ImageButton) this.findViewById(R.id.imageButton03);
+        imageButtons[4]  = (ImageButton) this.findViewById(R.id.imageButton04);
+        imageButtons[5]  = (ImageButton) this.findViewById(R.id.imageButton05);
+        imageButtons[6]  = (ImageButton) this.findViewById(R.id.imageButton06);
+        imageButtons[7]  = (ImageButton) this.findViewById(R.id.imageButton07);
+        imageButtons[8]  = (ImageButton) this.findViewById(R.id.imageButton08);
+        imageButtons[9]  = (ImageButton) this.findViewById(R.id.imageButton09);
+        imageButtons[10] = (ImageButton) this.findViewById(R.id.imageButton10);
+        imageButtons[11] = (ImageButton) this.findViewById(R.id.imageButton11);
+        imageButtons[12] = (ImageButton) this.findViewById(R.id.imageButton12);
+        imageButtons[13] = (ImageButton) this.findViewById(R.id.imageButton13);
+        imageButtons[14] = (ImageButton) this.findViewById(R.id.imageButton14);
+        imageButtons[15] = (ImageButton) this.findViewById(R.id.imageButton15);
         
-        Thread timer = new Thread(){
-			public void run(){
-				try{
-					sleep(90000); //1.5 minutes
-				} catch (InterruptedException e){
-					e.printStackTrace();
-				} finally {
-					//print score and finish
-				}
-			}			
-		};
-		timer.start();
-	
-	g5imageView0.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
+        for (int i = 0; i < numImageButtons; i++) {
+        	imageButtons[i].setOnClickListener(this);
+        	imageButtons[i].setImageResource(R.drawable.green);
+        }
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
 		
-		}
-	});
-	
-	g5imageView1.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});	
-	
-	g5imageView2.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView3.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView4.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView5.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView6.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView7.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView8.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView9.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView10.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView11.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView12.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView13.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView14.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
-	g5imageView15.setOnClickListener(new OnClickListener(){
-		public void onClick(View v)
-		{
-		
-		}
-	});
-	
 	}
 }
