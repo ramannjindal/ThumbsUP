@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/white">
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+       >
+       
+       
+  <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Multiply 3/8 by 3/4"
+    android:textSize="30dp"
+    android:layout_gravity="center"
+    android:textColor="#2F2E86"
+    android:gravity="center"
+    android:id="@+id/tvmDisplay"
+    ></TextView>
+    
+     <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Score 0"
+    android:textSize="30dp"
+    android:layout_gravity="center"
+    android:textColor="#00FF00"
+    android:gravity="center"
+    android:id="@+id/gameScore"
+    ></TextView> 
+    
+ <Button
+ android:text="9/32"
+ android:layout_gravity="center"
+ android:background="@drawable/button3"
+ android:textSize="20dp"
+ android:id="@+id/bmAnswers0"
+ android:layout_width="258dp" android:layout_height="43dp"></Button>
+ 
+  <Button
+ android:text="9/16"
+ android:layout_gravity="center"
+ android:background="@drawable/button3"
+ android:textSize="20dp"
+ android:id="@+id/bmAnswers1"
+ android:layout_width="256dp" android:layout_height="46dp"></Button>
+ 
+ <Button
+ android:text="9/8"
+ android:layout_gravity="center"
+ android:background="@drawable/button3"
+ android:textSize="20dp"
+ android:id="@+id/bmAnswers2"
+ android:layout_width="258dp" android:layout_height="48dp"></Button> 
+  
+    
+    </LinearLayout>
+    </ScrollView>
