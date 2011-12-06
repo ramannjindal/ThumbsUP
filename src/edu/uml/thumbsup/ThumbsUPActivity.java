@@ -5,6 +5,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.widget.Button;
 
 public class ThumbsUPActivity extends Activity {
@@ -22,6 +25,13 @@ public class ThumbsUPActivity extends Activity {
         bNewGame.setOnClickListener(new View.OnClickListener() {
         	public void onClick(View v) {
 				Intent openGameMenu = new Intent("edu.uml.thumbsup.GAMEMENU");
+				
+				AnimationSet set = new AnimationSet(true);
+				Animation animation = new AlphaAnimation(0,10);
+				animation.setDuration(100);
+				set.addAnimation(animation);
+				bNewGame.startAnimation(set); 
+				
 				startActivity(openGameMenu);
         	}
         });  
@@ -29,6 +39,13 @@ public class ThumbsUPActivity extends Activity {
         bHighScores.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Intent openScoreMenu = new Intent("edu.uml.thumbsup.SCOREMENU");
+				
+				AnimationSet set = new AnimationSet(true);
+				Animation animation = new AlphaAnimation(0,10);
+				animation.setDuration(100);
+				set.addAnimation(animation);
+				bHighScores.startAnimation(set); 
+				
 				startActivity(openScoreMenu);
 			}
 		});
@@ -36,6 +53,13 @@ public class ThumbsUPActivity extends Activity {
         bCredits.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Intent openCredits = new Intent("edu.uml.thumbsup.CREDITS");
+				
+				AnimationSet set = new AnimationSet(true);
+				Animation animation = new AlphaAnimation(0,10);
+				animation.setDuration(100);
+				set.addAnimation(animation);
+				bCredits.startAnimation(set);
+				
 				startActivity(openCredits);
 			}
 		});
