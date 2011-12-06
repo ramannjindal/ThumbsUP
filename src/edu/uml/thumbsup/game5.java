@@ -1,19 +1,29 @@
 package edu.uml.thumbsup;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 
 public class game5 extends Activity implements OnClickListener {
 
-	static final int numImageButtons = 16;
+	private static final int numImageButtons = 16;
+	private static final int numImages = 8; // There should be 1 image for every 2 buttons
 	
-	ImageButton[] imageButtons = new ImageButton[numImageButtons];
-	ImageButton aButton;
+	private ImageButton[] imageButtons = new ImageButton[numImageButtons];
+	private int[] imageAssignments = new int[numImageButtons];
+	private ImageButton selectedButton = null;
+	
+	private static final Integer images[] = {
+		R.drawable.green, R.drawable.grey, R.drawable.blue, R.drawable.black,
+		R.drawable.brown, R.drawable.yellow, R.drawable.white, R.drawable.orange
+	};
+	private static final int thumbsUpImage = R.drawable.icon;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
@@ -37,15 +47,40 @@ public class game5 extends Activity implements OnClickListener {
         imageButtons[14] = (ImageButton) this.findViewById(R.id.imageButton14);
         imageButtons[15] = (ImageButton) this.findViewById(R.id.imageButton15);
         
+        ArrayList<Integer> imageButtonArray = new ArrayList<Integer>();
         for (int i = 0; i < numImageButtons; i++) {
         	imageButtons[i].setOnClickListener(this);
-        	imageButtons[i].setImageResource(R.drawable.green);
+        	imageButtonArray.add(i);
+        	imageButtons[i].setImageResource(thumbsUpImage);
+        }
+        
+        Collections.shuffle(imageButtonArray);
+        
+        for (int i = 0; i < numImageButtons; i++) {
+        	int j = imageButtonArray.get(i);
+        	imageAssignments[j] = images[i % numImages];
+        	imageButtons[j].setTag(images[i % numImages]);
+        	//imageButtons[j].setImageResource(images[i % numImages]);
         }
 	}
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		
+		ImageButton ib = (ImageButton)v;
+		ib.setImageResource((Integer)ib.getTag());
+		if (ib != selectedButton) {
+			if (selectedButton == null) {
+				selectedButton = ib;
+			} else {
+				if (ib.getTag() == selectedButton.getTag()) {
+					ib.setVisibility(View.INVISIBLE);
+					selectedButton.setVisibility(View.INVISIBLE);
+				} else {
+					ib.setImageResource(thumbsUpImage);
+					selectedButton.setImageResource(thumbsUpImage);
+				}
+				selectedButton = null;
+			}
+		}
 	}
 }
