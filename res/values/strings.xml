@@ -104,7 +104,7 @@
 	</string-array> 
     
     <!-- Game 3 - Equation Balancer -->
-    <string name="game3_name">Equation Balancer!</string>
+    <string name="game3_name">Equation Balancer</string>
     <string name="chem_choice">Choose a Difficulty Setting.</string>
     <string name="chem_spinner">Difficulty</string>
     <string name="chem_play">Play!</string>
