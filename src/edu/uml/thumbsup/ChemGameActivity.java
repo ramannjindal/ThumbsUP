@@ -14,25 +14,29 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ChemGameActivity extends Activity {
+	/** Called when the activity is first created. */
 	RelativeLayout gameUI;
+	TextView scoreDisp;
 	int inputKey[][];
 	double score = 100;
 	String diffSelection;
 	int attempted= 0;
-	
+
+	@Override
 	public void onCreate(Bundle savedInstanceState) {
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.chem_game);
 		Bundle extras = getIntent().getExtras(); 
 	    diffSelection = extras.getString("difficultySelection");
 		setGUI(diffSelection);
+
 	}
 	
 	public void submitHandler(View view) {
 		boolean pass, passArray[];
 		int i, answer, red, black;
 		EditText temp;
-		Intent returnStart; 
 		
 		red = this.getResources().getColor(R.color.red);
 		black = this.getResources().getColor(R.color.black);
@@ -40,6 +44,7 @@ public class ChemGameActivity extends Activity {
 		pass = true;
 		attempted += 1;
 		
+		//check each individual editText for the correct answer
 		for(i = 0; i < inputKey.length ; i++){
 			temp = (EditText) gameUI.getChildAt(inputKey[i][0]);
 			
@@ -47,6 +52,8 @@ public class ChemGameActivity extends Activity {
 				answer = Integer.parseInt(temp.getText().toString()); 	
 
 				if(answer == inputKey[i][1]){
+					//if the answer is correct, set the corresponding point in
+					//passArray to tru
 					passArray[i] = true;
 				}
 			}
@@ -56,6 +63,8 @@ public class ChemGameActivity extends Activity {
 			temp = (EditText) gameUI.getChildAt(inputKey[i][0]);
 			
 			if( passArray[i] == false ){
+				//if any individual node in passArray is false, do not pass
+				//and set the corresponding text color to red.
 				pass = false;
 				temp.setTextColor(red);
 			}else{
@@ -65,8 +74,7 @@ public class ChemGameActivity extends Activity {
 		
 		if(pass == true){
 			
-			Toast.makeText(this, "Good Job, Thumbs UP!\n" +
-					"You got it after " + attempted + " tries!" ,
+			Toast.makeText(this, "Good Job, Thumbs UP!" ,
 					Toast.LENGTH_LONG).show();
 			
 			if(attempted == 0 ){
@@ -78,25 +86,68 @@ public class ChemGameActivity extends Activity {
 			}else if(diffSelection.compareTo("Medium") == 0 ){
 				score = score * 1.2;
 			}
+			if(score > 100) score = 100;
 			
-			returnStart = new Intent("edu.uml.chemgame.RETURNTOSTART");
-			returnStart.putExtra("score", score );
-			returnStart.putExtra("tried", attempted);
-			startActivity(returnStart);	
+			// code to pass score will go here
+			finish();
+			
 		}else{
 			Toast.makeText(this, "Not Quite, Try again",
 					Toast.LENGTH_LONG).show();
-			score = score * 0.2;
+			score = score * 0.9;
 		}
+		scoreDisp.setText("Score: " + score);
 			return;
 	}
-
+	public void getHint(View view) {
+		int guess;
+		EditText temp;
+		boolean done = false;
+		int helpVal = 0;
+		
+		while(done == false ){
+			//test to ensure not out of bounds
+			if(helpVal < inputKey.length){				
+				temp = (EditText) gameUI.getChildAt(inputKey[helpVal][0]);
+				
+				//test to see if a guess has been made
+				if ( temp.getText().toString().length() != 0){
+					guess = Integer.parseInt(temp.getText().toString()); 
+					
+					//test to see if left most guess is correct
+					if(guess == inputKey[helpVal][1]){
+						//if the guess is correct, move to the next slot
+						helpVal +=1;
+					}else{
+						//incorrect guess has been made, give left most answer
+						temp.setText( Integer.toString(inputKey[helpVal][1]));
+						score = score * .8;
+						scoreDisp.setText("Score: " + score);
+						done = true;				 	
+					}
+				}else{	
+					//no guess has been made, give left most answer
+					temp.setText( Integer.toString(inputKey[helpVal][1]));
+					score = score * .8;
+					scoreDisp.setText("Score: " + score);
+					done = true;
+				}
+			}else{
+				//out of bounds, end loop
+				done = true;
+			}
+		}
+	return;
+	}
 	private boolean setGUI(String difficulty){
 		int keypos = 0;
 		gameUI = (RelativeLayout) findViewById(R.id.userInterface);
+		scoreDisp = (TextView) findViewById(R.id.scoreDisplay);
+		
+		scoreDisp.setText("Score: " + score);
 		
 		if(difficulty.compareTo("Easy") == 0){
-			inputKey = new int[4][2];
+			inputKey = new int[3][2];
 			
 			EditText et1 = new EditText(this);
 			TextView tv1 = new TextView(this);
@@ -104,7 +155,7 @@ public class ChemGameActivity extends Activity {
 			TextView tv3 = new TextView(this);
 			TextView tv4 = new TextView(this);
 			TextView tv5 = new TextView(this);
-			EditText et3 = new EditText(this);
+			TextView tv6 = new TextView(this);
 			EditText et4 = new EditText(this);
 			EditText et5 = new EditText(this);
 
@@ -166,31 +217,21 @@ public class ChemGameActivity extends Activity {
 			tv2.setLayoutParams(tv2lp);
 			gameUI.addView(tv2);
 				
-	
-			RelativeLayout.LayoutParams et3lp = 
+			RelativeLayout.LayoutParams tv6lp = 
 					new RelativeLayout.LayoutParams(defaultLayoutParams);
-			et3lp.addRule(RelativeLayout.RIGHT_OF, 
+			tv6lp.addRule(RelativeLayout.RIGHT_OF, 
 					gameUI.getChildAt(1).getId() );
-			et3lp.addRule(RelativeLayout.BELOW, 
+			tv6lp.addRule(RelativeLayout.BELOW, 
 					gameUI.getChildAt(2).getId());
-			et3lp.setMargins(30, 0, 0, 0);
+			tv6lp.setMargins(30, -10, 0, 0);
 			
-			et3.setHint("X");
-			et3.setId(8);
-			et3.setTextSize(20);
-			et3.setInputType(InputType.TYPE_CLASS_NUMBER);
-			et3.setHeight(45);
-			et3.setWidth(45);
-			et3.setPadding(0, 0, 0, 0);
-			et3.setGravity(Gravity.CENTER); // 17 = center gravity
-			et3.setFilters(FilterArray);
-			et3.setLayoutParams(et3lp);
-			gameUI.addView(et3);
-	
-			inputKey[keypos][0] = 3;
-			inputKey[keypos][1] = 2;
-			keypos += 1;
-			
+			tv6.setText("2");
+			tv6.setId(8);
+			tv6.setTextSize(30);
+			tv6.setPadding(0, 0, 0, 0);
+			tv6.setLayoutParams(tv6lp);
+			gameUI.addView(tv6);			
+
 			RelativeLayout.LayoutParams tv3lp = 
 					new RelativeLayout.LayoutParams(defaultLayoutParams);
 			tv3lp.addRule(RelativeLayout.RIGHT_OF, 
@@ -284,10 +325,6 @@ public class ChemGameActivity extends Activity {
 
 			
 		}else if(difficulty.compareTo("Medium") == 0){
-	
-			inputKey = new int[0][0];
-	
-			
 			
 			inputKey = new int[4][2];
 			

@@ -16,7 +16,7 @@ public class game3 extends Activity {
 		setContentView(R.layout.game3);
 		
 		  s1 = (Spinner) findViewById(R.id.diffSpinner); 
-		  ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource( 
+		  ArrayAdapter adapter = ArrayAdapter.createFromResource( 
 				  this, 
 				  R.array.difficulty,
 				  android.R.layout.simple_spinner_item);
@@ -36,8 +36,10 @@ public class game3 extends Activity {
 					s1.getSelectedItem().toString()
 					);
 			startActivity(startGame);
-
 			return;
 		}
+	}
+	public void backHandler(View view) {
+	finish();
 	}
 }
