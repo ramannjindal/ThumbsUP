@@ -16,7 +16,7 @@
     <!-- Game 1 - Super Fun Fractions -->
     <string name="game1_name">Super Fun Fractions</string>
     
-    <!-- Game 2 - Scoppa's Game -->
+    <!-- Game 2 - The More You Know - Anthony Scoppa -->
     <string name="game2_name">*~* THE MORE YOU KNOW! *~*</string>
     <string-array name="topics_array">
         <item>Science</item>
@@ -31,77 +31,77 @@
     </string-array>
     
     <string-array name="factArray1"> 
-    <item>FACT ARRAY 1 FACT 1</item> 
-    <item>FACT ARRAY 1 FACT 2</item> 
-    <item>FACT ARRAY 1 FACT 3</item> 
-    <item>FACT ARRAY 1 FACT 4</item> 
-    <item>FACT ARRAY 1 FACT 5</item>
+	    <item>FACT ARRAY 1 FACT 1</item> 
+	    <item>FACT ARRAY 1 FACT 2</item> 
+	    <item>FACT ARRAY 1 FACT 3</item> 
+	    <item>FACT ARRAY 1 FACT 4</item> 
+	    <item>FACT ARRAY 1 FACT 5</item>
     </string-array>
     
     <string-array name="factArray2"> 
-    <item>FACT ARRAY 2 FACT 1</item> 
-    <item>FACT ARRAY 2 FACT 2</item> 
-    <item>FACT ARRAY 2 FACT 3</item> 
-    <item>FACT ARRAY 2 FACT 4</item> 
-    <item>FACT ARRAY 2 FACT 5</item>
+	    <item>FACT ARRAY 2 FACT 1</item> 
+	    <item>FACT ARRAY 2 FACT 2</item> 
+	    <item>FACT ARRAY 2 FACT 3</item> 
+	    <item>FACT ARRAY 2 FACT 4</item> 
+	    <item>FACT ARRAY 2 FACT 5</item>
     </string-array>
     
     
     <string-array name="factArray3"> 
-    <item>FACT ARRAY 3 FACT 1</item> 
-    <item>FACT ARRAY 3 FACT 2</item> 
-    <item>FACT ARRAY 3 FACT 3</item> 
-    <item>FACT ARRAY 3 FACT 4</item> 
-    <item>FACT ARRAY 3 FACT 5</item>
-</string-array>
-<string-array name="factArray4"> 
-    <item>FACT ARRAY 4 FACT 1</item> 
-    <item>FACT ARRAY 4 FACT 2</item> 
-    <item>FACT ARRAY 4 FACT 3</item> 
-    <item>FACT ARRAY 4 FACT 4</item> 
-    <item>FACT ARRAY 4 FACT 5</item>
+	    <item>FACT ARRAY 3 FACT 1</item> 
+	    <item>FACT ARRAY 3 FACT 2</item> 
+	    <item>FACT ARRAY 3 FACT 3</item> 
+	    <item>FACT ARRAY 3 FACT 4</item> 
+	    <item>FACT ARRAY 3 FACT 5</item>
+	</string-array>
+	<string-array name="factArray4"> 
+	    <item>FACT ARRAY 4 FACT 1</item> 
+	    <item>FACT ARRAY 4 FACT 2</item> 
+	    <item>FACT ARRAY 4 FACT 3</item> 
+	    <item>FACT ARRAY 4 FACT 4</item> 
+	    <item>FACT ARRAY 4 FACT 5</item>
     </string-array>
     
     <string-array name="factArray5"> 
-    <item>FACT ARRAY 5 FACT 1</item> 
-    <item>FACT ARRAY 5 FACT 2</item> 
-    <item>FACT ARRAY 5 FACT 3</item> 
-    <item>FACT ARRAY 5 FACT 4</item> 
-    <item>FACT ARRAY 5 FACT 5</item>
+	    <item>FACT ARRAY 5 FACT 1</item> 
+	    <item>FACT ARRAY 5 FACT 2</item> 
+	    <item>FACT ARRAY 5 FACT 3</item> 
+	    <item>FACT ARRAY 5 FACT 4</item> 
+	    <item>FACT ARRAY 5 FACT 5</item>
     </string-array>
     
     
     <string-array name="factArray6"> 
-    <item>FACT ARRAY 6 FACT 1</item> 
-    <item>FACT ARRAY 6 FACT 2</item> 
-    <item>FACT ARRAY 6 FACT 3</item> 
-    <item>FACT ARRAY 6 FACT 4</item> 
-    <item>FACT ARRAY 6 FACT 5</item>
-</string-array>
-<string-array name="factArray7"> 
-    <item>FACT ARRAY 7 FACT 1</item> 
-    <item>FACT ARRAY 7 FACT 2</item> 
-    <item>FACT ARRAY 7 FACT 3</item> 
-    <item>FACT ARRAY 7 FACT 4</item> 
-    <item>FACT ARRAY 7 FACT 5</item>
+	    <item>FACT ARRAY 6 FACT 1</item> 
+	    <item>FACT ARRAY 6 FACT 2</item> 
+	    <item>FACT ARRAY 6 FACT 3</item> 
+	    <item>FACT ARRAY 6 FACT 4</item> 
+	    <item>FACT ARRAY 6 FACT 5</item>
+	</string-array>
+	<string-array name="factArray7"> 
+	    <item>FACT ARRAY 7 FACT 1</item> 
+	    <item>FACT ARRAY 7 FACT 2</item> 
+	    <item>FACT ARRAY 7 FACT 3</item> 
+	    <item>FACT ARRAY 7 FACT 4</item> 
+	    <item>FACT ARRAY 7 FACT 5</item>
     </string-array>
     
     <string-array name="factArray8"> 
-    <item>FACT ARRAY 8 FACT 1</item> 
-    <item>FACT ARRAY 8 FACT 2</item> 
-    <item>FACT ARRAY 8 FACT 3</item> 
-    <item>FACT ARRAY 8 FACT 4</item> 
-    <item>FACT ARRAY 8 FACT 5</item>
+	    <item>FACT ARRAY 8 FACT 1</item> 
+	    <item>FACT ARRAY 8 FACT 2</item> 
+	    <item>FACT ARRAY 8 FACT 3</item> 
+	    <item>FACT ARRAY 8 FACT 4</item> 
+	    <item>FACT ARRAY 8 FACT 5</item>
     </string-array>
     
     
     <string-array name="factArray9"> 
-    <item>FACT ARRAY 9 FACT 1</item> 
-    <item>FACT ARRAY 9 FACT 2</item> 
-    <item>FACT ARRAY 9 FACT 3</item> 
-    <item>FACT ARRAY 9 FACT 4</item> 
-    <item>FACT ARRAY 9 FACT 5</item>
-</string-array> 
+	    <item>FACT ARRAY 9 FACT 1</item> 
+	    <item>FACT ARRAY 9 FACT 2</item> 
+	    <item>FACT ARRAY 9 FACT 3</item> 
+	    <item>FACT ARRAY 9 FACT 4</item> 
+	    <item>FACT ARRAY 9 FACT 5</item>
+	</string-array> 
     
     <!-- Game 3 - Equation Balancer -->
     <string name="game3_name">Equation Balancer</string>
@@ -115,19 +115,28 @@
     
     <!-- Game 4 - Color Matching -->
     <string name="game4_name">Color Matching</string>
+    <string name="hello">Choose the following color</string>
+    <string name="bonus_game">Save Marine life</string>
+    <string-array name="colors"> 
+	    <item>BLACK</item> 
+	    <item>BLUE</item> 
+	    <item>BROWN</item> 
+	    <item>DARK BLUE</item>
+	    <item>GREEN</item> 
+	    <item>GREY</item>
+	    <item>ORANGE</item> 
+	    <item>PINK</item> 
+	    <item>PURPLE</item> 
+	    <item>RED</item> 
+	    <item>WHITE</item> 
+	    <item>YELLOW</item>
+    </string-array> 
     
     <!-- Game 5 - History Memory -->
     <string name="game5_name">History Memory</string>
     
     <!-- Game 6 - Inventions -->
     <string name="game6_name">Inventions</string>
-
-	<!-- Game 7 - Coin Counting -->
-	<string name="game7_name">Coin Counting</string>
-	
-	<!-- Game 8 - Electronics -->
-	<string name="game8_name">Electronics</string>
-
     <string name="title6">"LEARN and PLAY"</string>
     <string name="hello6">Hello World, FamousInventions!</string>
     <string name="app_name6">FamousInventions</string>
@@ -174,23 +183,12 @@
         <item>FLUSH TOILET</item>  
         <item>FOUNTAIN PEN</item>     
     </string-array>  
-    
-    <string name="hello">Choose the following color</string>
-    <string name="bonus_game">Save Marine life</string>
-    <string-array name="colors"> 
-    <item>BLACK</item> 
-    <item>BLUE</item> 
-    <item>BROWN</item> 
-    <item>DARK BLUE</item>
-    <item>GREEN</item> 
-    <item>GREY</item>
-    <item>ORANGE</item> 
-    <item>PINK</item> 
-    <item>PURPLE</item> 
-    <item>RED</item> 
-    <item>WHITE</item> 
-    <item>YELLOW</item>
-    </string-array> 
+
+	<!-- Game 7 - Coin Counting -->
+	<string name="game7_name">Coin Counting</string>
+	
+	<!-- Game 8 - Electronics -->
+	<string name="game8_name">Electronics</string>
 
 
 </resources>
