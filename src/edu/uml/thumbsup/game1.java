@@ -2,6 +2,7 @@ package edu.uml.thumbsup;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -52,8 +53,9 @@ public class game1 extends Activity{
         
         Adding.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
-   				
-   				setContentView(R.layout.game1a);
+   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1A");
+   				startActivity(openGame1a);
+   				//setContentView(R.layout.game1a);
    			}
    		});
         
