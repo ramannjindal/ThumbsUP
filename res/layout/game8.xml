@@ -9,32 +9,32 @@
             <TextView android:text="Score: " android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/Score"></TextView>
         </TableRow>
         <TableRow android:baselineAligned="false" android:layout_width="wrap_content" android:id="@+id/tableRow1" android:layout_height="0dp" android:layout_weight="1">
-            <ImageView android:src="@drawable/straight_wire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Wire01"></ImageView>
+            <ImageView android:src="@drawable/straight_wire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Wire00"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/curved_wire" android:id="@+id/Wire01"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/resistor" android:layout_weight="1" android:layout_width="0dp" android:id="@+id/Resistor00"></ImageView>
             <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/curved_wire" android:id="@+id/Wire02"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:src="@drawable/resistor" android:id="@+id/Resistor01" android:layout_weight="1" android:layout_width="0dp"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/curved_wire" android:id="@+id/Wire03"></ImageView>
         </TableRow>
         <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow2" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/curved_wire" android:id="@+id/Wire03"></ImageView>
             <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/curved_wire" android:id="@+id/Wire04"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/curved_wire" android:id="@+id/Wire05"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/straight_wire" android:id="@+id/Wire06"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:src="@drawable/resistor" android:id="@+id/Resistor02" android:layout_weight="1" android:layout_width="0dp"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/straight_wire" android:id="@+id/Wire05"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/resistor" android:layout_weight="1" android:layout_width="0dp" android:id="@+id/Resistor01"></ImageView>
         </TableRow>
         <TableRow android:id="@+id/tableRow3" android:layout_height="0dp" android:layout_width="wrap_content" android:layout_weight="1">
-            <ImageView android:layout_height="wrap_content" android:src="@drawable/curved_wire" android:layout_weight="1" android:layout_width="0dp" android:id="@+id/Wire07"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:src="@drawable/resistor" android:id="@+id/Resistor03" android:layout_weight="1" android:layout_width="0dp"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:src="@drawable/straight_wire" android:layout_weight="1" android:layout_width="0dp" android:id="@+id/Wire08"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:src="@drawable/curved_wire" android:layout_weight="1" android:layout_width="0dp" android:id="@+id/Wire09"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/curved_wire" android:layout_weight="1" android:layout_width="0dp" android:id="@+id/Wire06"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/resistor" android:layout_weight="1" android:layout_width="0dp" android:id="@+id/Resistor02"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/straight_wire" android:layout_weight="1" android:layout_width="0dp" android:id="@+id/Wire07"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/curved_wire" android:layout_weight="1" android:layout_width="0dp" android:id="@+id/Wire08"></ImageView>
         </TableRow>
         <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow4" android:layout_height="0dp" android:layout_weight="1">
-            <ImageView android:layout_height="wrap_content" android:src="@drawable/resistor" android:id="@+id/Resistor04" android:layout_weight="1" android:layout_width="0dp"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/straight_wire" android:id="@+id/Wire10"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/curved_wire" android:id="@+id/Wire11"></ImageView>
-            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/straight_wire" android:id="@+id/Wire12"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/resistor" android:layout_weight="1" android:layout_width="0dp" android:id="@+id/Resistor03"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/straight_wire" android:id="@+id/Wire09"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/curved_wire" android:id="@+id/Wire10"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp" android:src="@drawable/straight_wire" android:id="@+id/Wire11"></ImageView>
         </TableRow>
         <TableRow android:layout_height="0dp" android:layout_width="wrap_content" android:id="@+id/TableRow5" android:baselineAligned="true" android:layout_weight="1">
             <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/battery" android:id="@+id/Battery"></ImageView>
         </TableRow>
     </TableLayout>
-    <TextView android:layout_weight="0.81" android:text="Here there be text." android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/TextView01"></TextView>
+    <TextView android:layout_weight="0.81" android:text="Here there be text." android:layout_height="25dp" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/TextView01"></TextView>
 </LinearLayout>

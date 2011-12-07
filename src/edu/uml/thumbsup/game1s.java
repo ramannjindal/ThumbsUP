@@ -35,7 +35,7 @@ public class game1s extends Activity{
         sanswers0 = (Button) findViewById(R.id.bsAnswers0);
         sanswers1 = (Button) findViewById(R.id.bsAnswers1);
         sanswers2 = (Button) findViewById(R.id.bsAnswers2);
-        displayScore = (TextView)findViewById(R.id.Score);
+//        displayScore = (TextView)findViewById(R.id.Score);
         sdisplay = (TextView)findViewById(R.id.tvsDisplay);
        
         

@@ -34,7 +34,7 @@ public class game1 extends Activity{
         setContentView(R.layout.game1);
         
         displayhome = (TextView)findViewById(R.id.tvDisplayhome);
-        displayscore = (TextView)findViewById(R.id.Score);
+//        displayscore = (TextView)findViewById(R.id.Score);
         Adding = (Button) findViewById(R.id.bAdding);
         Subtracting = (Button) findViewById(R.id.bSubtracting);
         Reducing = (Button) findViewById(R.id.bReducing);

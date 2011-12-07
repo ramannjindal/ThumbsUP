@@ -64,7 +64,7 @@ public class game5 extends Activity implements OnClickListener {
         }
 	}
 
-	@Override
+	//@Override
 	public void onClick(View v) {
 		ImageButton ib = (ImageButton)v;
 		ib.setImageResource((Integer)ib.getTag());
