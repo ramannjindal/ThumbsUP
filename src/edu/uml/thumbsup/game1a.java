@@ -31,7 +31,12 @@ public class game1a extends Activity{
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.game1a);
 	        
-	       // continue1 = (Button)findViewById(R.id.bContinue);
+	        adisplay = (TextView)findViewById(R.id.tvaDisplay);
+	        displayScore = (TextView)findViewById(R.id.gameScore);
+	        aanswers0 = (Button) findViewById(R.id.baAnswers0);
+	        aanswers1 = (Button) findViewById(R.id.baAnswers1);
+	        aanswers2 = (Button) findViewById(R.id.baAnswers2);
+	      
 	      
 	       
 	        

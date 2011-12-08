@@ -27,12 +27,7 @@
 		
 	
 		
-		<activity android:name=".game1a" android:label="@string/app_name">
-			<intent-filter>
-				<action android:name="edu.uml.thumbsup.GAME1A"></action>
-				<category android:name="android.intent.category.DEFAULT"></category>
-			</intent-filter>
-		</activity>
+	
 	
 		<activity android:name=".game1" android:label="@string/game1_name">
 			<intent-filter>
@@ -62,6 +57,53 @@
                 <category android:name="android.intent.category.DEFAULT"></category>
             </intent-filter>
         </activity>   
+		
+		
+		
+		
+			<activity android:name=".game1a" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="edu.uml.thumbsup.GAME1A"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".game1s" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="edu.uml.thumbsup.GAME1S"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".game1r" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="edu.uml.thumbsup.GAME1R"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".game1d" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="edu.uml.thumbsup.GAME1D"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".game1m" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="edu.uml.thumbsup.GAME1M"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".game1help" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="edu.uml.thumbsup.GAME1HELP"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		
+		
 		
 		<activity android:name=".game4" 
 				  android:label="@string/game4_name" 

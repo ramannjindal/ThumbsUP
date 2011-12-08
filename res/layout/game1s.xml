@@ -10,8 +10,6 @@ android:background="@drawable/white">
     android:layout_height="fill_parent"
        >
        
-     
-
   <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
@@ -20,7 +18,7 @@ android:background="@drawable/white">
     android:layout_gravity="center"
     android:textColor="#2F2E86"
     android:gravity="center"
-    android:id="@+id/tvsDisplay"
+    android:id="@+id/tvdDisplay"
     ></TextView>
     
     <TextView  
@@ -35,11 +33,11 @@ android:background="@drawable/white">
     ></TextView> 
     
  <Button
- android:text="1/4"
+ android:text="2/3"
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
- android:id="@+id/bsAnswers0"
+ android:id="@+id/bdAnswers0"
  android:layout_width="250dp"
  android:layout_height="50dp"></Button>
  
@@ -48,16 +46,16 @@ android:background="@drawable/white">
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
- android:id="@+id/bsAnswers1"
+ android:id="@+id/bdAnswers1"
  android:layout_width="250dp" 
 android:layout_height="50dp"></Button>
  
   <Button 
-  android:text="1/3"
+  android:text="1/4"
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
- android:id="@+id/bsAnswers1"
+ android:id="@+id/bdAnswers2"
  android:layout_width="250dp" 
 android:layout_height="50dp"></Button> 
   

@@ -13,12 +13,6 @@ public class game1 extends Activity{
     /** Called when the activity is first created. */
 	
 	int    score = 0;
-	String s0 = "1/4";
-	String s1 = "1/3";
-	String s2 = "1/2";
-	double a = .25;
-	double b = .3;
-	double c = .5;
 	Button Dividing;
 	Button multiplying;
 	Button Reducing;
@@ -46,8 +40,8 @@ public class game1 extends Activity{
         
         Reducing.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
-   				
-   				setContentView(R.layout.game1r);
+   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1R");
+   				startActivity(openGame1a);
    			}
    		});
         
@@ -55,38 +49,36 @@ public class game1 extends Activity{
    			public void onClick(View v) {
    				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1A");
    				startActivity(openGame1a);
-   				//setContentView(R.layout.game1a);
+   				
    			}
    		});
         
         Subtracting.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
-   				
-   				setContentView(R.layout.game1s);	
+   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1S");
+   				startActivity(openGame1a);
    			}
    		});
         
         Dividing.setOnClickListener(new View.OnClickListener() {
-        	
-       
         	public void onClick(View v) {
-		
-        		setContentView(R.layout.game1d);
+        		Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1A");
+   				startActivity(openGame1a);
 			}
 		});
         
         multiplying.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
-   				
-   				setContentView(R.layout.game1m);
+   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1A");
+   				startActivity(openGame1a);
    			}  
    		});
         
     
         helpmenu.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
-   				
-   			 setContentView(R.layout.game1help);
+   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1HELP");
+   				startActivity(openGame1a);
    			}
    		});
         

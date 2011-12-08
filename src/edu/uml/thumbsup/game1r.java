@@ -20,10 +20,10 @@ public class game1r extends Activity{
 	double b = .3;
 	double c = .5;
 	Button continue1;
-	Button answers0;
-	Button answers1;
-	Button answers2;
-	TextView display;
+	Button ranswers0;
+	Button ranswers1;
+	Button ranswers2;
+	TextView rdisplay;
 	TextView displayScore;
 	
     @Override
@@ -31,9 +31,14 @@ public class game1r extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game1r);
         
+        rdisplay = (TextView)findViewById(R.id.tvrDisplay);
+        displayScore = (TextView)findViewById(R.id.gameScore);
+        ranswers0 = (Button) findViewById(R.id.brAnswers0);
+        ranswers1 = (Button) findViewById(R.id.brAnswers1);
+        ranswers2 = (Button) findViewById(R.id.brAnswers2);
        // continue1 = (Button) findViewById(R.id.bContinue);
        
-        answers0.setOnClickListener(new View.OnClickListener() {
+        ranswers0.setOnClickListener(new View.OnClickListener() {
         	
         	public void onClick(View v) {
 		
@@ -41,14 +46,14 @@ public class game1r extends Activity{
 			}
 		});
         
-        answers1.setOnClickListener(new View.OnClickListener() {
+        ranswers1.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
    				
    				func(b,s2);	
    			}  
    		});
         
-        answers2.setOnClickListener(new View.OnClickListener() {
+        ranswers2.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
    				
    				func(c,s1);	
@@ -63,19 +68,14 @@ public class game1r extends Activity{
     	if(z == .25){
     	score += 100;
     	displayScore.setText("score " + score);
-    	display.setText("you are correct " + s + " is equal to 4/16");
+    	rdisplay.setText("you are correct " + s + " is equal to 4/16");
 
-			Intent openGameHelp = new Intent("edu.uml.thumbsup.game1help");
-			startActivity(openGameHelp);			
-    	
-    	
     	
     	}
     	else{
-    	display.setText("you are incorrect " + s + " is not equal to 4/16");
+    	rdisplay.setText("you are incorrect " + s + " is not equal to 4/16");
     	}
-    	
-    	 
+    		 
 		
 	}
     }
