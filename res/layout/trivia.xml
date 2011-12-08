@@ -9,7 +9,7 @@
     android:layout_height="wrap_content"
     android:text="" 
     android:id="@+id/question"
-    android:textSize="16px"
+    android:textSize="22px"
     />
 <RadioGroup android:id="@+id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content">
     <RadioButton android:text="RadioButton" android:id="@+id/radio0" android:layout_height="wrap_content" android:layout_width="wrap_content" ></RadioButton>
