@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 public class game5 extends Activity implements OnClickListener {
@@ -21,16 +22,22 @@ public class game5 extends Activity implements OnClickListener {
 	private int[] imageAssignments = new int[numImageButtons];
 	private ImageButton prevButton = null, currButton = null;
 	
+	private TextView tvScore;
+	
 	private static final Integer images[] = {
-		R.drawable.green, R.drawable.grey, R.drawable.blue, R.drawable.black,
-		R.drawable.brown, R.drawable.yellow, R.drawable.white, R.drawable.orange
+		R.drawable.ada, R.drawable.babbage, R.drawable.chen, R.drawable.darwin,
+		R.drawable.luther, R.drawable.rasputin, R.drawable.tesla, R.drawable.washington
 	};
 	private static final int thumbsUpImage = R.drawable.icon;
+	
+	private int score = 0; 
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.game5);
+        
+        tvScore = (TextView) this.findViewById(R.id.game5_score);
         
         imageButtons[0]  = (ImageButton) this.findViewById(R.id.imageButton00);
         imageButtons[1]  = (ImageButton) this.findViewById(R.id.imageButton01);
@@ -72,19 +79,38 @@ public class game5 extends Activity implements OnClickListener {
 			if (prevButton == null) {
 				prevButton = currButton;
 			} else {
+				for (int i = 0; i < numImageButtons; i++) {
+					imageButtons[i].setEnabled(false);
+				}
 				if (currButton.getTag() == prevButton.getTag()) {
-					currButton.setEnabled(false);
-					prevButton.setEnabled(false);
-					prevButton = null;
-					currButton = null;
+					score += 10;
+					tvScore.setText("Score: " + score);
+					
+					v.postDelayed(new Runnable() {
+						public void run() {
+							currButton.setVisibility(View.INVISIBLE);
+							prevButton.setVisibility(View.INVISIBLE);
+							prevButton = null;
+							currButton = null;
+							for (int i = 0; i < numImageButtons; i++) {
+								imageButtons[i].setEnabled(true);
+							}
+						}
+					}, 500);
 				} else {
+					score -= 1;
+					tvScore.setText("Score: " + score);
+					
 					v.postDelayed(new Runnable() {
 						public void run() {
 							currButton.setImageResource(thumbsUpImage);
 							prevButton.setImageResource(thumbsUpImage);
 							prevButton = currButton = null;
+							for (int i = 0; i < numImageButtons; i++) {
+								imageButtons[i].setEnabled(true);
+							}
 						}	
-					}, 1000);
+					}, 500);
 				}
 			}
 		}
