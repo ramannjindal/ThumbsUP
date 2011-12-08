@@ -12,7 +12,7 @@ public class game2 extends Activity{
     @Override
     public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.main);
+    setContentView(R.layout.game2);
 
     Button facts = (Button) findViewById(R.id.button01);
     facts.setOnClickListener(new View.OnClickListener() {
