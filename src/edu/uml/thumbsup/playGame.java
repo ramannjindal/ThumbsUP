@@ -1,5 +1,12 @@
 package edu.uml.thumbsup;
 
+/* DEVELOPER - PRATHIBA DYAVEGOWDA
+ * UML ID - 01155594
+ * This class is used to generate the questions 'inventors' to the game
+ * In this class we connect to the SQLite DB and CREATE, INSERT, DROP and FETCH data
+ * from the database to generate the questions.
+ */
+
 import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
@@ -11,12 +18,9 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
-//import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
-//import android.widget.TextView;
-//import android.widget.Toast;
 import android.widget.Toast;
 
 
@@ -27,8 +31,7 @@ public class playGame extends Activity {
 	//TODO
 	TextView[] nxttv = new TextView[5];
 	OnClickListener listener1 = null;
-	Button button1;
-	
+	Button button1,ansButton; 
 	//DATABASE IMPLEMENTATION
 	DatabaseHelper mOpenHelper;
     
@@ -37,6 +40,7 @@ public class playGame extends Activity {
 	private static final String TABLE_NAME = "inventions";
 	private static final String ITEM = "item";
 	private static final String INVENTOR = "inventor";
+	private static final String WRONGINVENTOR = "wronginventor";
 
 	private static class DatabaseHelper extends SQLiteOpenHelper {
 		  
@@ -48,7 +52,7 @@ public class playGame extends Activity {
 	    public void onCreate(SQLiteDatabase db) {
 
 	      String sql = "CREATE TABLE " + TABLE_NAME + " (" + ITEM
-	          + " text not null, " + INVENTOR + " text not null " + ");";
+	          + " text not null, " + INVENTOR + " text not null, " + WRONGINVENTOR + " text not null " + ");";
 	      Log.i("haiyang:createDB=", sql);
 	      db.execSQL(sql);
 
@@ -90,7 +94,7 @@ public class playGame extends Activity {
 		rButtons[10] = (RadioButton)findViewById(R.id.option10);
 		
 				
-		Button ansButton = (Button)findViewById(R.id.selected);
+		ansButton = (Button)findViewById(R.id.selected);
 
 		ansButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -113,16 +117,16 @@ public class playGame extends Activity {
 			
 			public int checkStates(){
 				int val = 0;	 
-				if(rButtons[2].isChecked() == true){
+				if(rButtons[1].isChecked() == true){
 			    	val++;
 				}
 				if(rButtons[3].isChecked() == true){
 			    	val++;
 				}
-				if(rButtons[6].isChecked() == true){
+				if(rButtons[5].isChecked() == true){
 			    	val++;
 				}
-				if(rButtons[8].isChecked() == true){
+				if(rButtons[7].isChecked() == true){
 			    	val++;
 				}
 				if(rButtons[9].isChecked() == true){
@@ -154,6 +158,10 @@ public class playGame extends Activity {
 	         insertItem();
 	         showItems();
 	         button1.setVisibility(View.GONE);
+	         ansButton.setVisibility(View.VISIBLE);
+	         for(int u=1;u<11;u++){
+	        	 rButtons[u].setVisibility(View.VISIBLE);
+	         }
 	        }
 	     };
 	  } 
@@ -161,7 +169,7 @@ public class playGame extends Activity {
 	 private void CreateTable() {
 		    SQLiteDatabase db = mOpenHelper.getWritableDatabase();
 		    String sql = "CREATE TABLE " + TABLE_NAME + " (" + ITEM
-		        + " text not null, " + INVENTOR + " text not null " + ");";
+		        + " text not null, " + INVENTOR + " text not null, " +  WRONGINVENTOR + " text not null " + ");";
 		    Log.i("createDB=", sql);
 
 		    try {
@@ -186,16 +194,16 @@ public class playGame extends Activity {
 		  
 		  private void insertItem() {
 		    SQLiteDatabase db = mOpenHelper.getWritableDatabase();
-		    String sql1 = "insert into " + TABLE_NAME + " (" + ITEM + ", " + INVENTOR
-		        + ") values('RADIO', 'MARCONI');";
-		    String sql2 = "insert into " + TABLE_NAME + " (" + ITEM + ", " + INVENTOR
-		        + ") values('TELEPHONE', 'GRAHAMBELL');";
-		    String sql3 = "insert into " + TABLE_NAME + " (" + ITEM + ", " + INVENTOR
-		    + ") values('MICROWAVE', 'SPENCER');";
-		    String sql4 = "insert into " + TABLE_NAME + " (" + ITEM + ", " + INVENTOR
-		    + ") values('REVOLVER', 'SAMUEL COLT');";
-		    String sql5 = "insert into " + TABLE_NAME + " (" + ITEM + ", " + INVENTOR
-		    + ") values('SEWING MACHINE', 'MERRITT SINGER');";
+		    String sql1 = "insert into " + TABLE_NAME + " (" + ITEM + ", " + INVENTOR + "," + WRONGINVENTOR
+		        + ") values('RADIO', 'MARCONI', 'SPENCER');";
+		    String sql2 = "insert into " + TABLE_NAME + " (" + ITEM + ", " + INVENTOR + "," + WRONGINVENTOR
+		        + ") values('TELEPHONE', 'GRAHAMBELL', 'SUSRUTHA');";
+		    String sql3 = "insert into " + TABLE_NAME + " (" + ITEM + ", " + INVENTOR + "," + WRONGINVENTOR
+		    + ") values('MICROWAVE', 'SPENCER' , 'ARYABHATTA');";
+		    String sql4 = "insert into " + TABLE_NAME + " (" + ITEM + ", " + INVENTOR + "," + WRONGINVENTOR
+		    + ") values('REVOLVER', 'SAMUEL COLT', 'EDWARD TELLER');";
+		    String sql5 = "insert into " + TABLE_NAME + " (" + ITEM + ", " + INVENTOR + "," + WRONGINVENTOR
+		    + ") values('SEWING MACHINE', 'MERRITT SINGER', 'JAMES WATT');";
 
 		    try {
 		      Log.i("sql1=", sql1);
@@ -226,19 +234,24 @@ public class playGame extends Activity {
 
 			Log.i("Sunil:", "********");  
 		    SQLiteDatabase db = mOpenHelper.getReadableDatabase();
-		    String col[] = { ITEM, INVENTOR };
+		    String col[] = { ITEM, INVENTOR, WRONGINVENTOR };
 		    Cursor cur = db.query(TABLE_NAME, col, null, null, null, null, null);    
 		   
 		    if(cur.moveToFirst()){
 		    /* Get the indices of the Columns we will need */
 		    	int itemColumn = cur.getColumnIndex("item");
 		    	int inventorColumn = cur.getColumnIndex("inventor");
-		        int i=0;
+		    	int wronginventorColumn = cur.getColumnIndex("wronginventor");
+		        int i=0,j=1;
 		    	do{
 		    		String itemName = cur.getString(itemColumn);
 		    		String inventorName = cur.getString(inventorColumn);
-		             
+		    		String wronginventorName = cur.getString(wronginventorColumn);
+		    		
 		            nxttv[i].setText("WHO INVENTED " + itemName);
+		            rButtons[j].setText(inventorName);j++;      
+		            rButtons[j].setText(wronginventorName);j++;
+		            
 		            Log.i("Sunil:",itemName);
 		            Log.i("Sunil:",inventorName);
 		            i++;

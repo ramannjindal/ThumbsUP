@@ -19,16 +19,16 @@
                     	android:id="@+id/QueGroup1" android:weightSum="1">
             	<RadioButton android:checked="false" 
             				 android:textColorHighlight="#008000" 
-            				 android:text="JAMES WATT" 
             				 android:id="@+id/option1" 
             				 android:width="350dp"
-				             android:height="20dp" android:layout_marginLeft="20dp"></RadioButton>
+				             android:height="20dp" 
+				             android:layout_marginLeft="20dp" android:visibility="invisible"></RadioButton>
         	
         		<RadioButton android:checked="false" 
-        					 android:textColorHighlight="#008000" 
-        					 android:text="GRAHAM BELL" 
+        					 android:textColorHighlight="#008000"  
         					 android:id="@+id/option2" 
-        					 android:layout_marginLeft="20dp" android:layout_marginBottom="5dp"></RadioButton>     
+        					 android:layout_marginLeft="20dp" 
+        					 android:layout_marginBottom="5dp" android:visibility="invisible"></RadioButton>     
         	</RadioGroup>
         	
         	
@@ -45,12 +45,12 @@
                      android:id="@+id/QueGroup2">
             <RadioButton android:checked="false"
                          android:id="@+id/option3" 
-                         android:text="MARCONI" 
-                         android:textColorHighlight="#008000" android:layout_marginLeft="20dp"/>
+                         android:textColorHighlight="#008000" 
+                         android:layout_marginLeft="20dp" android:visibility="invisible"/>
             <RadioButton android:checked="false"
                          android:id="@+id/option4" 
-                         android:text="ALESSANDRO VOLTA" 
-                         android:textColorHighlight="#008000" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp"/>
+                         android:textColorHighlight="#008000" 
+                         android:layout_marginLeft="20dp" android:layout_marginBottom="5dp" android:visibility="invisible"/>
         </RadioGroup>
        
        
@@ -66,12 +66,13 @@
                     android:id="@+id/QueGroup3" android:layout_height="wrap_content">
              <RadioButton android:checked="false"
                           android:id="@+id/option5" 
-                          android:text="SUSHRATA" 
-                          android:textColorHighlight="#008000" android:layout_marginLeft="20dp"/>
+                          android:textColorHighlight="#008000" 
+                          android:layout_marginLeft="20dp" android:visibility="invisible"/>
              <RadioButton android:checked="false"
-                          android:id="@+id/option6" 
-                          android:text="SPENCER" 
-                          android:textColorHighlight="#008000" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp"/>
+                          android:id="@+id/option6"  
+                          android:textColorHighlight="#008000" 
+                          android:layout_marginLeft="20dp" 
+                          android:layout_marginBottom="5dp" android:visibility="invisible"/>
         </RadioGroup>
   
   
@@ -87,13 +88,14 @@
                     android:orientation="vertical"
                     android:id="@+id/QueGroup4">
             	 <RadioButton android:checked="false"
-                	          android:id="@+id/option7"  
-               		          android:text="DOUGLAS ENGELBART" 
-               	              android:textColorHighlight="#008000" android:layout_marginLeft="20dp"/>
+                	          android:id="@+id/option7"   
+               	              android:textColorHighlight="#008000" 
+               	              android:layout_marginLeft="20dp" android:visibility="invisible"/>
                  <RadioButton android:checked="false"
-                              android:id="@+id/option8" 
-                              android:text="SAMEUL COLT" 
-                              android:textColorHighlight="#008000" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp"/>
+                              android:id="@+id/option8"  
+                              android:textColorHighlight="#008000" 
+                              android:layout_marginLeft="20dp" 
+                              android:layout_marginBottom="5dp" android:visibility="invisible"/>
        	  </RadioGroup>
    
    
@@ -110,17 +112,18 @@
                     android:id="@+id/QueGroup5">
              <RadioButton android:checked="false"
                           android:id="@+id/option9" 
-                          android:text="MERRITT SINGER" 
-                          android:textColorHighlight="#008000" android:layout_marginLeft="20dp"/>
+                          android:textColorHighlight="#008000" 
+                          android:layout_marginLeft="20dp" android:visibility="invisible"/>
              <RadioButton android:checked="false"
                           android:id="@+id/option10" 
-                          android:text="SYLVESTER ROPER" 
-                          android:textColorHighlight="#008000" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp"/>
+                          android:textColorHighlight="#008000" 
+                          android:layout_marginLeft="20dp" 
+                          android:layout_marginBottom="5dp" android:visibility="invisible"/>
         </RadioGroup>
         
         
     
-             <Button android:id="@+id/selected" android:background="@drawable/submitbtn" android:textColor="#000000" android:textStyle="bold" android:textSize="22dp" android:layout_height="70dp" android:text=" Continue" android:layout_width="130dp" android:layout_gravity="center"></Button>
+             <Button android:id="@+id/selected" android:background="@drawable/submitbtn" android:textColor="#000000" android:textStyle="bold" android:textSize="22dp" android:layout_height="70dp" android:text="Submit" android:layout_width="130dp" android:layout_gravity="center" android:visibility="invisible"></Button>
          <TextView android:id="@+id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
 
 	

@@ -7,6 +7,7 @@ import java.util.Vector;
 import android.app.Activity;
 import android.app.AlertDialog;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Resources;
 
@@ -17,6 +18,7 @@ import android.os.CountDownTimer;
 
 import android.util.Log;
 
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -32,8 +34,7 @@ public class game4 extends Activity {
 	Vector<String> alreadyUsed = new Vector<String>();
 	int count = 0; 
 	long timer;
-	
-	
+		
 	public void repeat(){
 	    Resources res = getResources();      
         //fetches values from the array in string.xml
@@ -80,7 +81,20 @@ public class game4 extends Activity {
 	
 	int scores(){
 		int value;
+		int[] score_array = getResources().getIntArray(R.array.scores);
+		
 		value = (((int)(timer) - (count*30))/10)*2;
+		if(value >= score_array[3]){
+			score_array[3]= value;
+		}
+		else{
+			Context context = getApplicationContext();
+			CharSequence text = "No the Highest Score";
+			int duration = Toast.LENGTH_SHORT;
+			Toast toast = Toast.makeText(context, text, duration);
+			toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+			toast.show();	
+		}
 		return value;
 	}
 	

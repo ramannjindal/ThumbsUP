@@ -18,7 +18,7 @@
     <string name="game1a_name">Add Fractions</string>
     
     <!-- Game 2 - The More You Know - Anthony Scoppa -->
-    <string name="game2_name">*~* THE MORE YOU KNOW! *~*</string>
+    <string name="game2_name">The More You Know</string>
     <string-array name="topics_array">
         <item>Science</item>
         <item>Technology</item>
