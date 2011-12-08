@@ -130,7 +130,7 @@ public class game4 extends Activity {
 			setContentView(R.layout.game4);	
 			Log.v(LOG_TAG, "XML WORKING FINE");
 			
-			bgSong = MediaPlayer.create(game4.this,R.raw.bgmusic) ;
+			final MediaPlayer mpButtonClick = MediaPlayer.create(this, R.raw.button_click);
 	        MyCount counter = new MyCount(500000,1000);
 	        counter.start();
 	        
@@ -154,6 +154,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("BLACK")){
 	                	blackbutton.setVisibility(View.INVISIBLE);  
+	                	mpButtonClick.start();
 	                  	repeat();
 	                }
 	                else{
@@ -168,6 +169,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("BLUE")){
 	                	bluebutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	repeat();
 	                }
 	                else{
@@ -182,6 +184,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("BROWN")){
 	                	brownbutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	repeat();
 	                }
 	                else{
@@ -196,6 +199,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("DARK BLUE")){
 	                	darkbluebutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	repeat();
 	                }
 	                else{
@@ -209,6 +213,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("GREEN")){
 	                	greenbutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -223,6 +228,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("GREY")){
 	                	greybutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -237,6 +243,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("ORANGE")){
 	                	orangebutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -251,6 +258,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("PINK")){
 	                	pinkbutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -266,6 +274,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("PURPLE")){
 	                	purplebutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -280,6 +289,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("RED")){
 	                	redbutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -294,6 +304,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("WHITE")){
 	                	whitebutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -308,6 +319,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("YELLOW")){
 	                	yellowbutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
