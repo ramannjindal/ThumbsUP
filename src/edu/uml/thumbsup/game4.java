@@ -92,11 +92,12 @@ public class game4 extends Activity {
 	
 	int scores(){
 		int value;
-		int[] score_array = getResources().getIntArray(R.array.scores);
+		//int[] score_array = getResources().getIntArray(R.array.scores);
 		
 		value = (((int)(timer) - (count*30))/10)*2;
-		if(value >= score_array[3]){
-			score_array[3]= value;
+		
+		if(value >= Global.scores[3]){
+			Global.scores[3]= value;
 		}
 		else{
 			Context context = getApplicationContext();
