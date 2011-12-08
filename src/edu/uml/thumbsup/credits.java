@@ -1,5 +1,7 @@
 package edu.uml.thumbsup;
 
+/* Developer - Mike Feole */
+
 import android.os.Bundle;
 import android.app.Activity;
 

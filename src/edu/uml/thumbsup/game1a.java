@@ -11,7 +11,9 @@ import android.widget.TextView;
 public class game1a extends Activity{
 
 	 /** Called when the activity is first created. */
+
 	//    int []score_array = getResources().getIntArray(R.array.scores);
+
 		int    score = 0;
 		String s0 = "3/4";
 		String s1 = "1/3";
@@ -77,6 +79,7 @@ public class game1a extends Activity{
 	    	//      Global.score[0] = score;
 	    	//	displayScore.setText("We have a new high score!"+ score);}
 	    	    
+
 	    	
 	    	
 	    	}

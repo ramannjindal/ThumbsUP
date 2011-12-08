@@ -1,5 +1,7 @@
 package edu.uml.thumbsup;
 
+/* Developer - Caleb Brandon & Mike Feole */
+
 import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;

@@ -1,5 +1,7 @@
 package edu.uml.thumbsup;
 
+/* Developers - Mike Feole & Elad Shahar */
+
 import java.util.ArrayList;
 import java.util.Collections;
 

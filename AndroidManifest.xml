@@ -110,7 +110,6 @@
 		<activity android:name=".game4" 
 				  android:label="@string/game4_name" 
 				  android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden">
-=======
 			<intent-filter>
 				<action android:name="edu.uml.chemgame.RETURNTOSTART"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
@@ -125,7 +124,6 @@
 
 		<activity android:name=".game4" android:label="@string/game4_name"
 			android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden">
->>>>>>> d56be7f883bfe1e7c1c8e5f90abfb42684d9539c
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME4"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
