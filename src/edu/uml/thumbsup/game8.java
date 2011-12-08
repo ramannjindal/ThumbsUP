@@ -140,7 +140,7 @@ public class game8 extends Activity{
 		for(int ID : straightIDs)
 			if(ID == tag)
 				btmp = BitmapFactory.decodeResource(getResources(), R.drawable.straight_wire);
-
+		
 		// Rotation part
 		int w = btmp.getWidth();
 		int h = btmp.getHeight();
