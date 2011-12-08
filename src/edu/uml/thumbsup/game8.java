@@ -15,18 +15,18 @@ import android.widget.TextView;
 
 
 public class game8 extends Activity{
-	// Score begins as 250 since 16 spins and score decrements accrue on start
-	private int score = 250;
+	private int score   = 100;
+	private int penalty = 5;
 
-	private TextView tv;
+	private TextView helpTV;
 	private TextView scoreTV;
 
 	private ImageView light;
 	private ImageView battery;
 
 	private Tile[] resistors   = new Tile[4];
-	private Tile[] straitWires = new Tile[5];
-	private Tile[] curvedWires = new Tile[7];
+	private Tile[] straitwires = new Tile[4];
+	private Tile[] curvedwires = new Tile[8];
 
 
 	@Override
@@ -35,13 +35,13 @@ public class game8 extends Activity{
 		setContentView(R.layout.game8);
 
 		/**
-		 * Non-rotatable Views
+		 * Non-rotatable objects, i.e.:
+		 *  text views, the light, and the battery
 		 **/
-		tv = (TextView)this.findViewById(R.id.TextView01);
-		tv.setText("Select an item to see its description.");
+		helpTV = (TextView)this.findViewById(R.id.TextView01);
 
 		scoreTV = (TextView)this.findViewById(R.id.Score);
-		scoreTV.setText("Score: 100");
+		scoreTV.setText("Score: " + score);
 
 		light = (ImageView)this.findViewById(R.id.Light);
 		light.setOnClickListener(
@@ -49,7 +49,7 @@ public class game8 extends Activity{
 				{
 					public void onClick(View v)
 					{
-						tv.setText("A light emitting diode (LED) which requires 3 Volts.");
+						helpTV.setText("A light emitting diode (LED) which requires 3 Volts.");
 					}
 				});        
 		battery = (ImageView)this.findViewById(R.id.Battery);
@@ -58,65 +58,84 @@ public class game8 extends Activity{
 				{
 					public void onClick(View v)
 					{
-						tv.setText("A battery which provides 9 Volts.");
+						helpTV.setText("A battery which provides 9 Volts.");
 					}
 				});
 
 		/**
-		 * Rotatable Views
+		 * Rotatable objects, i.e.:
+		 *  all the wires and resistors
 		 **/
-		resistors[0] = new Tile((ImageView)this.findViewById(R.id.Resistor00));
-		resistors[1] = new Tile((ImageView)this.findViewById(R.id.Resistor01));
-		resistors[2] = new Tile((ImageView)this.findViewById(R.id.Resistor02));
-		resistors[3] = new Tile((ImageView)this.findViewById(R.id.Resistor03));
+		resistors[0] = new Tile((ImageView)this.findViewById(R.id.resistor0));
+		resistors[1] = new Tile((ImageView)this.findViewById(R.id.resistor1));
+		resistors[2] = new Tile((ImageView)this.findViewById(R.id.resistor2));
+		resistors[3] = new Tile((ImageView)this.findViewById(R.id.resistor3));
 
-		for(final Tile resistor : resistors){
-			RotateImageView(resistor);
-			resistor.graphic.setOnClickListener(
+		for(final Tile resistor : resistors){						// For each resistor...
+			RotateImageView(resistor);								//  ...apply random start rotation
+			resistor.graphic.setOnClickListener(					//  ...set up the click events
 					new OnClickListener(){
 						public void onClick(View v){
-							tv.setText("A resistor that lowers current by 1.5 Volts.");
+							helpTV.setText("A resistor that lowers current by 1.5 Volts.");
 							scoreTV.setText("Score: " + score);
-							RotateImageView(resistor);
+
+							RotateImageView(resistor);				// Rotate the object on click
+
+							if(DidIWin())
+								onDestroy();
+
+							score = Math.max(0, score - penalty);	// Keep the score non-negative
 						}
 					});
 		}
 
 
-		straitWires[0] = new Tile((ImageView)this.findViewById(R.id.Wire00));
-		straitWires[1] = new Tile((ImageView)this.findViewById(R.id.Wire05));
-		straitWires[2] = new Tile((ImageView)this.findViewById(R.id.Wire07));
-		straitWires[3] = new Tile((ImageView)this.findViewById(R.id.Wire09));
-		straitWires[4] = new Tile((ImageView)this.findViewById(R.id.Wire11));
+		straitwires[0] = new Tile((ImageView)this.findViewById(R.id.wire00));
+		straitwires[1] = new Tile((ImageView)this.findViewById(R.id.wire07));
+		straitwires[2] = new Tile((ImageView)this.findViewById(R.id.wire09));
+		straitwires[3] = new Tile((ImageView)this.findViewById(R.id.wire11));
 
-		for(final Tile strait : straitWires){
-			RotateImageView(strait);
-			strait.graphic.setOnClickListener(
+		for(final Tile strait : straitwires){						// For each straight wire...
+			RotateImageView(strait);								//  ...apply random start rotation
+			strait.graphic.setOnClickListener(						//  ...set up the click events
 					new OnClickListener(){
 						public void onClick(View v){
-							tv.setText("A wire through which current may run.");
+							helpTV.setText("A wire through which current may run.");
 							scoreTV.setText("Score: " + score);
-							RotateImageView(strait);
+
+							RotateImageView(strait);				// Rotate the object on click
+
+							if(DidIWin())
+								onDestroy();
+
+							score = Math.max(0, score - penalty);	// Keep the score non-negative
 						}
 					});
 		}
 
-		curvedWires[0] = new Tile((ImageView)this.findViewById(R.id.Wire01));
-		curvedWires[1] = new Tile((ImageView)this.findViewById(R.id.Wire02));
-		curvedWires[2] = new Tile((ImageView)this.findViewById(R.id.Wire03));
-		curvedWires[3] = new Tile((ImageView)this.findViewById(R.id.Wire04));
-		curvedWires[4] = new Tile((ImageView)this.findViewById(R.id.Wire06));
-		curvedWires[5] = new Tile((ImageView)this.findViewById(R.id.Wire08));
-		curvedWires[6] = new Tile((ImageView)this.findViewById(R.id.Wire10));
+		curvedwires[0] = new Tile((ImageView)this.findViewById(R.id.wire01));
+		curvedwires[1] = new Tile((ImageView)this.findViewById(R.id.wire02));
+		curvedwires[2] = new Tile((ImageView)this.findViewById(R.id.wire03));
+		curvedwires[3] = new Tile((ImageView)this.findViewById(R.id.wire04));
+		curvedwires[4] = new Tile((ImageView)this.findViewById(R.id.wire05));
+		curvedwires[5] = new Tile((ImageView)this.findViewById(R.id.wire06));
+		curvedwires[6] = new Tile((ImageView)this.findViewById(R.id.wire08));
+		curvedwires[7] = new Tile((ImageView)this.findViewById(R.id.wire10));
 
-		for(final Tile curved : curvedWires){
-			RotateImageView(curved);
-			curved.graphic.setOnClickListener(
+		for(final Tile curved : curvedwires){						// For each curved wire...
+			RotateImageView(curved);								//  ...apply random start rotation
+			curved.graphic.setOnClickListener(						//  ...set up the click events
 					new OnClickListener(){
 						public void onClick(View v){
-							tv.setText("A wire through which current may run.");
+							helpTV.setText("A wire through which current may run.");
 							scoreTV.setText("Score: " + score);
-							RotateImageView(curved);
+
+							RotateImageView(curved);				// Rotate the object on click
+
+							if(DidIWin())
+								onDestroy();
+
+							score = Math.max(0, score - penalty);	// Keep the score non-negative
 						}
 					});
 		}
@@ -124,13 +143,19 @@ public class game8 extends Activity{
 
 	// Rotates an ImageView by 90
 	private void RotateImageView(Tile tile_){
+		/**
+		 * Set up stage
+		 **/
+		// Variables for for the current object's ID and a blank bitmap
 		Integer tag = (Integer)tile_.graphic.getId();
 		Bitmap btmp = null;
 
-		int[] straightIDs = {R.id.Wire00,R.id.Wire05,R.id.Wire07,R.id.Wire09,R.id.Wire11};
-		int[] resistorIDs = {R.id.Resistor00,R.id.Resistor01,R.id.Resistor02,R.id.Resistor03};
-		int[] curvedIDs   = {R.id.Wire01,R.id.Wire02,R.id.Wire03,R.id.Wire04,R.id.Wire06,R.id.Wire08,R.id.Wire10};
-		
+		// These contain all the IDs for the rotatable objects loaded into this intent
+		int[] straightIDs = {R.id.wire00,R.id.wire05,R.id.wire07,R.id.wire09,R.id.wire11};
+		int[] resistorIDs = {R.id.resistor0,R.id.resistor1,R.id.resistor2,R.id.resistor3};
+		int[] curvedIDs   = {R.id.wire01,R.id.wire02,R.id.wire03,R.id.wire04,R.id.wire06,R.id.wire08,R.id.wire10};
+
+		// Compare the current object's ID to each of the other IDs
 		for(int ID : resistorIDs)
 			if(ID == tag)
 				btmp = BitmapFactory.decodeResource(getResources(), R.drawable.resistor);
@@ -140,27 +165,76 @@ public class game8 extends Activity{
 		for(int ID : straightIDs)
 			if(ID == tag)
 				btmp = BitmapFactory.decodeResource(getResources(), R.drawable.straight_wire);
-		
-		// Rotation part
+
+		/**
+		 * Actual rotation stage
+		 **/
+		// Variables for the newly filled bitmap's dimensions
 		int w = btmp.getWidth();
 		int h = btmp.getHeight();
 
+		// Creates a rotation matrix for the bitmap
 		Matrix m = new Matrix();
 		m.postRotate(90 + tile_.rotation);
 
+		// Applies the matrix to the bitmap, and stores it in a BitmapDrawable
 		Bitmap bm = Bitmap.createBitmap(btmp,0,0,w,h,m,true);
 		BitmapDrawable bitmap = new BitmapDrawable(bm);
 
-		tile_.graphic.setImageDrawable(bitmap); 
-
+		// Change the object's graphic and rotation value
+		tile_.graphic.setImageDrawable(bitmap);
 		tile_.rotation = (tile_.rotation + 90) % 360;
+	}
 
-		// Lower the score
-		score = Math.max(0, score - 10);
+	// Badly made victory decider
+	private Boolean DidIWin(){
+		int winConditions = 0;		// Count of correctly rotated objects
+
+		if(resistors[0].rotation == 90 || resistors[0].rotation == 270)
+			winConditions++;
+		if(resistors[1].rotation == 0  || resistors[1].rotation == 180)
+			winConditions++;
+		if(resistors[2].rotation == 90 || resistors[2].rotation == 270)
+			winConditions++;
+		if(resistors[3].rotation == 0  || resistors[3].rotation == 180)
+			winConditions++;
+
+		if(straitwires[0].rotation == 0  || straitwires[0].rotation == 180)
+			winConditions++;
+		if(straitwires[1].rotation == 90 || straitwires[1].rotation == 270)
+			winConditions++;
+
+		if(curvedwires[0].rotation == 0)
+			winConditions++;
+		if(curvedwires[1].rotation == 90)
+			winConditions++;
+		if(curvedwires[2].rotation == 270)
+			winConditions++;
+		if(curvedwires[3].rotation == 180)
+			winConditions++;
+		if(curvedwires[5].rotation == 0)
+			winConditions++;
+		if(curvedwires[6].rotation == 180)
+			winConditions++;
+		
+		if(winConditions == 12)
+			return true;
+
+		return false;
+	}
+
+	@Override
+	public void onDestroy(){
+		super.onDestroy();
+
+		if(DidIWin())
+			if(score >= Global.scores[6])		// Compares and edits the high scores
+				Global.scores[6] = score;
 	}
 }
 
-
+// A basic class that contains an ImageView
+//  and some rotation data
 class Tile{
 	public ImageView graphic;
 	public int rotation;
@@ -169,6 +243,7 @@ class Tile{
 	public Tile(ImageView graphic_){
 		graphic = graphic_;
 
+		// Rotation begins as a random quarter turn
 		Random rand = new Random();
 		rotation = (rand.nextInt(4) * 90) % 360;
 	}
