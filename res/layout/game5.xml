@@ -35,6 +35,7 @@ android:layout_width="fill_parent" android:layout_height="wrap_content" android:
     <ImageButton android:layout_weight="0.15" android:src="@drawable/icon" android:id="@+id/imageButton14" android:layout_width="70dp" android:layout_height="70dp"></ImageButton>
     <ImageButton android:layout_weight="0.15" android:src="@drawable/icon" android:id="@+id/imageButton15" android:layout_width="70dp" android:layout_height="70dp"></ImageButton>
 </LinearLayout>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/linearView1" android:layout_centerHorizontal="true" android:id="@+id/game5_score" android:text="@string/game5_score"></TextView>
 
 </RelativeLayout>
 </ScrollView>

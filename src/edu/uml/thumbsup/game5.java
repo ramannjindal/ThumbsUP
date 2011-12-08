@@ -6,11 +6,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
-
+import android.widget.TextView;
 
 public class game5 extends Activity implements OnClickListener {
 
@@ -19,18 +21,24 @@ public class game5 extends Activity implements OnClickListener {
 	
 	private ImageButton[] imageButtons = new ImageButton[numImageButtons];
 	private int[] imageAssignments = new int[numImageButtons];
-	private ImageButton selectedButton = null;
+	private ImageButton prevButton = null, currButton = null;
+	
+	private TextView tvScore;
 	
 	private static final Integer images[] = {
-		R.drawable.green, R.drawable.grey, R.drawable.blue, R.drawable.black,
-		R.drawable.brown, R.drawable.yellow, R.drawable.white, R.drawable.orange
+		R.drawable.ada, R.drawable.babbage, R.drawable.chen, R.drawable.darwin,
+		R.drawable.luther, R.drawable.rasputin, R.drawable.tesla, R.drawable.washington
 	};
 	private static final int thumbsUpImage = R.drawable.icon;
+	
+	private int score = 0, completed = 0; 
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.game5);
+        
+        tvScore = (TextView) this.findViewById(R.id.game5_score);
         
         imageButtons[0]  = (ImageButton) this.findViewById(R.id.imageButton00);
         imageButtons[1]  = (ImageButton) this.findViewById(R.id.imageButton01);
@@ -62,26 +70,82 @@ public class game5 extends Activity implements OnClickListener {
         	int j = imageButtonArray.get(i);
         	imageAssignments[j] = images[i % numImages];
         	imageButtons[j].setTag(images[i % numImages]);
-        	//imageButtons[j].setImageResource(images[i % numImages]);
         }
 	}
-
-	//@Override
+	
 	public void onClick(View v) {
-		ImageButton ib = (ImageButton)v;
-		ib.setImageResource((Integer)ib.getTag());
-		if (ib != selectedButton) {
-			if (selectedButton == null) {
-				selectedButton = ib;
+		currButton = (ImageButton)v;
+		currButton.setImageResource((Integer)currButton.getTag());
+		if (currButton != prevButton) {
+			if (prevButton == null) {
+				prevButton = currButton;
 			} else {
-				if (ib.getTag() == selectedButton.getTag()) {
-					ib.setVisibility(View.INVISIBLE);
-					selectedButton.setVisibility(View.INVISIBLE);
-				} else {
-					ib.setImageResource(thumbsUpImage);
-					selectedButton.setImageResource(thumbsUpImage);
+				for (int i = 0; i < numImageButtons; i++) {
+					imageButtons[i].setEnabled(false);
 				}
-				selectedButton = null;
+				if (currButton.getTag() == prevButton.getTag()) {
+					score += 10;
+					tvScore.setText("Score: " + score);
+					
+					completed++;
+					if (completed == numImages) {
+						currButton.setVisibility(View.INVISIBLE);
+						prevButton.setVisibility(View.INVISIBLE);
+						
+						String scoreMsg;
+						
+						if (score > Global.scores[4]) {
+							Global.scores[4] = score;
+							scoreMsg = "You got a new high score of " + score + "!!!";
+						} else {
+							scoreMsg = "You got a score of " + score + "!";
+						}
+						
+						 // Create the alert box
+			            AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
+			            // Set the message to display
+			            alertbox.setMessage(scoreMsg);
+						// Add a neutral button to the alert box and
+						// assign a click listener
+						alertbox.setNeutralButton("OK",
+								new DialogInterface.OnClickListener() {
+									// Click listener on the neutral button of alert box
+									public void onClick(DialogInterface arg0, int arg1) {
+										// The neutral button was clicked
+										finish();
+									}
+								});
+
+			            // show the alert box
+			            alertbox.show();
+					} else {
+						v.postDelayed(new Runnable() {
+							public void run() {
+								currButton.setVisibility(View.INVISIBLE);
+								prevButton.setVisibility(View.INVISIBLE);
+								prevButton = null;
+								currButton = null;
+								for (int i = 0; i < numImageButtons; i++) {
+									imageButtons[i].setEnabled(true);
+								}
+							}
+						}, 500);
+					}
+				} else {
+					score -= 1;
+					tvScore.setText("Score: " + score);
+					
+					v.postDelayed(new Runnable() {
+						public void run() {
+							currButton.setImageResource(thumbsUpImage);
+							prevButton.setImageResource(thumbsUpImage);
+							prevButton = currButton = null;
+							for (int i = 0; i < numImageButtons; i++) {
+								imageButtons[i].setEnabled(true);
+							}
+						}	
+					}, 500);
+				}
 			}
 		}
 	}
