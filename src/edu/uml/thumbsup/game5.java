@@ -6,12 +6,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
 
 public class game5 extends Activity implements OnClickListener {
 
@@ -30,7 +31,7 @@ public class game5 extends Activity implements OnClickListener {
 	};
 	private static final int thumbsUpImage = R.drawable.icon;
 	
-	private int score = 0; 
+	private int score = 0, completed = 0; 
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
@@ -86,17 +87,50 @@ public class game5 extends Activity implements OnClickListener {
 					score += 10;
 					tvScore.setText("Score: " + score);
 					
-					v.postDelayed(new Runnable() {
-						public void run() {
-							currButton.setVisibility(View.INVISIBLE);
-							prevButton.setVisibility(View.INVISIBLE);
-							prevButton = null;
-							currButton = null;
-							for (int i = 0; i < numImageButtons; i++) {
-								imageButtons[i].setEnabled(true);
-							}
+					completed++;
+					if (completed == numImages) {
+						currButton.setVisibility(View.INVISIBLE);
+						prevButton.setVisibility(View.INVISIBLE);
+						
+						String scoreMsg;
+						
+						if (score > Global.scores[4]) {
+							Global.scores[4] = score;
+							scoreMsg = "You got a new high score of " + score + "!!!";
+						} else {
+							scoreMsg = "You got a score of " + score + "!";
 						}
-					}, 500);
+						
+						 // Create the alert box
+			            AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
+			            // Set the message to display
+			            alertbox.setMessage(scoreMsg);
+						// Add a neutral button to the alert box and
+						// assign a click listener
+						alertbox.setNeutralButton("OK",
+								new DialogInterface.OnClickListener() {
+									// Click listener on the neutral button of alert box
+									public void onClick(DialogInterface arg0, int arg1) {
+										// The neutral button was clicked
+										finish();
+									}
+								});
+
+			            // show the alert box
+			            alertbox.show();
+					} else {
+						v.postDelayed(new Runnable() {
+							public void run() {
+								currButton.setVisibility(View.INVISIBLE);
+								prevButton.setVisibility(View.INVISIBLE);
+								prevButton = null;
+								currButton = null;
+								for (int i = 0; i < numImageButtons; i++) {
+									imageButtons[i].setEnabled(true);
+								}
+							}
+						}, 500);
+					}
 				} else {
 					score -= 1;
 					tvScore.setText("Score: " + score);
