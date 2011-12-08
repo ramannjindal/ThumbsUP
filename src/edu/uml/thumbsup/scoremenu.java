@@ -1,5 +1,7 @@
 package edu.uml.thumbsup;
 
+/* Developer - Mike Feole */
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -11,7 +13,6 @@ public class scoremenu extends Activity{
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.scoremenu);
 
-        int []my_array = getResources().getIntArray(R.array.scores);
         TextView score1 = (TextView) findViewById(R.id.textView3);
         TextView score2 = (TextView) findViewById(R.id.textView5);
         TextView score3 = (TextView) findViewById(R.id.textView7);
@@ -20,13 +21,13 @@ public class scoremenu extends Activity{
         TextView score6 = (TextView) findViewById(R.id.textView10);
         TextView score7 = (TextView) findViewById(R.id.textView15);
         
-        score1.setText(""+my_array[0]);
-        score2.setText(""+my_array[1]);
-        score3.setText(""+my_array[2]);
-        score4.setText(""+my_array[3]);
-        score5.setText(""+my_array[4]);
-        score6.setText(""+my_array[5]);
-        score7.setText(""+my_array[6]);
+        score1.setText(""+Global.scores[0]);
+        score2.setText(""+Global.scores[1]);
+        score3.setText(""+Global.scores[2]);
+        score4.setText(""+Global.scores[3]);
+        score5.setText(""+Global.scores[4]);
+        score6.setText(""+Global.scores[5]);
+        score7.setText(""+Global.scores[6]);
 	}
 	
 }

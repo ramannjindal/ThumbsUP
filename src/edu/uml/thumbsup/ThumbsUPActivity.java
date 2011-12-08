@@ -1,5 +1,7 @@
 package edu.uml.thumbsup;
 
+/*Developer - Mike Feole */
+
 import edu.uml.thumbsup.R;
 import android.app.Activity;
 import android.content.Intent;
@@ -10,7 +12,6 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.widget.Button;
-
 
 public class ThumbsUPActivity extends Activity {
     Button bNewGame, bHighScores, bOptions, bCredits;

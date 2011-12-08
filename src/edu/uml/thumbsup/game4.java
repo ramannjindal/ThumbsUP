@@ -92,15 +92,14 @@ public class game4 extends Activity {
 	
 	int scores(){
 		int value;
-		int[] score_array = getResources().getIntArray(R.array.scores);
 		
 		value = (((int)(timer) - (count*30))/10)*2;
-		if(value >= score_array[3]){
-			score_array[3]= value;
+		if(value >= Global.scores[3]){
+			Global.scores[3]= value;
 		}
 		else{
 			Context context = getApplicationContext();
-			CharSequence text = "No the Highest Score";
+			CharSequence text = "Not the Highest Score";
 			int duration = Toast.LENGTH_SHORT;
 			Toast toast = Toast.makeText(context, text, duration);
 			toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
