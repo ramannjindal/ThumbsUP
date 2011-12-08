@@ -30,7 +30,7 @@ public class game1m extends Activity{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game1);
+        setContentView(R.layout.game1m);
         
        // continue1 = (Button) findViewById(R.id.bContinue);
       
