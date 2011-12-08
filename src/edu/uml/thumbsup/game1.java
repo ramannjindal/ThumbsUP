@@ -1,5 +1,5 @@
 package edu.uml.thumbsup;
-
+//Developer Paul Gendreau
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,14 +11,8 @@ import android.widget.TextView;
 public class game1 extends Activity{
 
     /** Called when the activity is first created. */
-	
+	int []scores;
 	int    score = 0;
-	String s0 = "1/4";
-	String s1 = "1/3";
-	String s2 = "1/2";
-	double a = .25;
-	double b = .3;
-	double c = .5;
 	Button Dividing;
 	Button multiplying;
 	Button Reducing;
@@ -34,7 +28,7 @@ public class game1 extends Activity{
         setContentView(R.layout.game1);
         
         displayhome = (TextView)findViewById(R.id.tvDisplayhome);
-        displayscore = (TextView)findViewById(R.id.Score);
+        displayscore = (TextView)findViewById(R.id.gamescorehome);
         Adding = (Button) findViewById(R.id.bAdding);
         Subtracting = (Button) findViewById(R.id.bSubtracting);
         Reducing = (Button) findViewById(R.id.bReducing);
@@ -42,12 +36,13 @@ public class game1 extends Activity{
         multiplying = (Button) findViewById(R.id.bmultiplying);
         helpmenu = (Button) findViewById(R.id.bHelp);
         
+        displayscore.setText("high score "+Global.scores[0]);
         
         
         Reducing.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
-   				
-   				setContentView(R.layout.game1r);
+   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1R");
+   				startActivity(openGame1a);
    			}
    		});
         
@@ -55,41 +50,39 @@ public class game1 extends Activity{
    			public void onClick(View v) {
    				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1A");
    				startActivity(openGame1a);
-   				//setContentView(R.layout.game1a);
+   				
    			}
    		});
         
         Subtracting.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
-   				
-   				setContentView(R.layout.game1s);	
+   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1S");
+   				startActivity(openGame1a);
    			}
    		});
         
         Dividing.setOnClickListener(new View.OnClickListener() {
-        	
-       
         	public void onClick(View v) {
-		
-        		setContentView(R.layout.game1d);
+        		Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1D");
+   				startActivity(openGame1a);
 			}
 		});
         
         multiplying.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
-   				
-   				setContentView(R.layout.game1m);
+   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1M");
+   				startActivity(openGame1a);
    			}  
    		});
         
     
         helpmenu.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
-   				
-   			 setContentView(R.layout.game1help);
+   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1HELP");
+   				startActivity(openGame1a);
    			}
    		});
-        
+       
 }	
 }
     

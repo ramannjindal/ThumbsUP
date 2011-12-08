@@ -1,6 +1,7 @@
 package edu.uml.thumbsup;
 
 //Prathibas Game
+
 import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -17,15 +18,18 @@ public class game6 extends Activity {
 	ImageView iv;
 	TextView  tv1;
 	Button startGame;
+		     	
+	  
+	
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.game6);
-		
+		   	    
 		final MediaPlayer mpButtonClick = MediaPlayer.create(this, R.raw.button_click);
 		iv = (ImageView) findViewById(R.id.image);
-		tv1 = (TextView)findViewById(R.id.textView1);
+		tv1 = (TextView)findViewById(R.id.contentTextView);
 		startGame= (Button)findViewById(R.id.startgame);
 		
 		//Log.v(LOG_TAG,"working");
@@ -33,6 +37,8 @@ public class game6 extends Activity {
 		final String[] inventors = getResources().getStringArray(R.array.inventors);
 		final String[] inventions = getResources().getStringArray(R.array.inventions);
 
+		
+		
 		Button button = (Button) findViewById(R.id.button1);
 		button.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {  
@@ -41,6 +47,7 @@ public class game6 extends Activity {
 				tv1.setText(inventors[0]+ "  invented  " + inventions[0]);
 				startGame.setVisibility(View.VISIBLE);
 				mpButtonClick.start();
+				
 			}
 		});
 
@@ -219,4 +226,5 @@ public class game6 extends Activity {
 		});
 
 	}
+	
 }

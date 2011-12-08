@@ -1,5 +1,5 @@
 package edu.uml.thumbsup;
-
+//Developer Paul Gendreau
 
 import android.app.Activity;
 
@@ -11,7 +11,9 @@ import android.widget.TextView;
 public class game1a extends Activity{
 
 	 /** Called when the activity is first created. */
-	
+
+	    int []scores;
+
 		int    score = 0;
 		String s0 = "3/4";
 		String s1 = "1/3";
@@ -31,7 +33,12 @@ public class game1a extends Activity{
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.game1a);
 	        
-	       // continue1 = (Button)findViewById(R.id.bContinue);
+	        adisplay = (TextView)findViewById(R.id.tvaDisplay);
+	        displayScore = (TextView)findViewById(R.id.gameScore);
+	        aanswers0 = (Button) findViewById(R.id.baAnswers0);
+	        aanswers1 = (Button) findViewById(R.id.baAnswers1);
+	        aanswers2 = (Button) findViewById(R.id.baAnswers2);
+	      
 	      
 	       
 	        
@@ -67,12 +74,17 @@ public class game1a extends Activity{
 	    	if(z == .75){
 	    	score += 100;
 	    	displayScore.setText("score " + score);
-	    	adisplay.setText("you are correct " + s + " ");
+	    	adisplay.setText("you are correct ");
+	    	if ( score >= Global.scores[0]){
+	    	      Global.scores[0] = score;
+	    		displayScore.setText("We have a new high score! "+ score);}
+	    	    
 
+	    	
 	    	
 	    	}
 	    	else{
-	    	adisplay.setText("you are incorrect " + s + " ");
+	    	adisplay.setText("you are incorrect ");
 	    	}
 	    	
 	    	 

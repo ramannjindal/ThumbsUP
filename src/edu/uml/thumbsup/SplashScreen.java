@@ -1,8 +1,11 @@
 package edu.uml.thumbsup;
 
+/* Developer - Mike Feole */
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
 
 public class SplashScreen extends Activity  {
 
@@ -33,3 +36,5 @@ public class SplashScreen extends Activity  {
 	}	
 	
 }
+
+

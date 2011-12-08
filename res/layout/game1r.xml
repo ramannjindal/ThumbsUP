@@ -14,7 +14,7 @@ android:background="@drawable/white">
   <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text="Reduce 32/128 "
+    android:text="Reduce 32/128"
     android:textSize="30dp"
     android:layout_gravity="center"
     android:textColor="#2F2E86"

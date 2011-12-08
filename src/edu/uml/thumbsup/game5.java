@@ -1,5 +1,7 @@
 package edu.uml.thumbsup;
 
+/* Developers - Mike Feole & Elad Shahar */
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Timer;
@@ -66,6 +68,7 @@ public class game5 extends Activity implements OnClickListener {
         }
 	}
 	
+	@Override
 	public void onClick(View v) {
 		ImageButton ib = (ImageButton)v;
 		ib.setImageResource((Integer)ib.getTag());

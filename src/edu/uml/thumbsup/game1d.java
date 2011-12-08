@@ -1,9 +1,8 @@
 package edu.uml.thumbsup;
-//Paul Gendreau
+//Developer Paul Gendreau
 
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,19 +11,19 @@ import android.widget.TextView;
 public class game1d extends Activity{
 
     /** Called when the activity is first created. */
-	
+	int []scores;
 	int    score = 0;
-	String s0 = "1/4";
-	String s1 = "1/3";
-	String s2 = "1/2";
+	String s0 = "5/8";
+	String s1 = "5/7";
+	String s2 = "2/3";
 	double a = .25;
-	double b = .3;
+	double b = .66;
 	double c = .5;
-	Button continue1;
-	Button answers0;
-	Button answers1;
-	Button answers2;
-	TextView display;
+	//Button continue1;
+	Button danswers0;
+	Button danswers1;
+	Button danswers2;
+	TextView ddisplay;
 	TextView displayScore;
 	
     @Override
@@ -33,11 +32,15 @@ public class game1d extends Activity{
         setContentView(R.layout.game1d);
         
        // continue1 = (Button) findViewById(R.id.bContinue);
-      
+        ddisplay = (TextView)findViewById(R.id.tvdDisplay);
+        displayScore = (TextView)findViewById(R.id.gameScore);
+        danswers0 = (Button) findViewById(R.id.bdAnswers0);
+        danswers1 = (Button) findViewById(R.id.bdAnswers1);
+        danswers2 = (Button) findViewById(R.id.bdAnswers2);
        
         
      
-        answers0.setOnClickListener(new View.OnClickListener() {
+        danswers0.setOnClickListener(new View.OnClickListener() {
         	
         
         	public void onClick(View v) {
@@ -46,38 +49,33 @@ public class game1d extends Activity{
 			}
 		});
         
-        answers1.setOnClickListener(new View.OnClickListener() {
+        danswers1.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
    				
    				func(b,s2);	
    			}  
    		});
         
-        answers2.setOnClickListener(new View.OnClickListener() {
+        danswers2.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
    				
    				func(c,s1);	
    			}
    		});
-  
-    
-        
+     
 }
    
     private void func(double z, String s) {
-    	if(z == .25){
+    	if(z == .66){
     	score += 100;
     	displayScore.setText("score " + score);
-    	display.setText("you are correct " + s + " is equal to 4/16");
-
-			Intent openGameHelp = new Intent("edu.uml.thumbsup.game1help");
-			startActivity(openGameHelp);			
-    	
-    	
-    	
+    	ddisplay.setText("you are correct ");
+    	if ( score >= Global.scores[0]){
+  	      Global.scores[0] = score;
+  		displayScore.setText("We have a new high score! "+ score);}
     	}
     	else{
-    	display.setText("you are incorrect " + s + " is not equal to 4/16");
+    	ddisplay.setText("you are incorrect ");
     	}
     	
     	 

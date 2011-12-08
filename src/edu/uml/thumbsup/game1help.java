@@ -1,5 +1,5 @@
 package edu.uml.thumbsup;
-
+//Developer Paul Gendreau
 
 import android.app.Activity;
 import android.os.Bundle;

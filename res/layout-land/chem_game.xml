@@ -11,11 +11,11 @@
    		android:id="@+id/userInterface" 
     	android:layout_height="wrap_content" 
     	android:layout_below="@+id/textView1" 
-    	android:layout_marginTop="67dp" android:layout_alignParentLeft="true">
+    	android:layout_marginTop="67dp" android:layout_alignLeft="@+id/scoreDisplay">
     </RelativeLayout>
     <TextView android:id="@+id/scoreDisplay" android:textColor="#000000" android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="30dp" android:layout_marginTop="30dp"></TextView>
-    <Button android:text="@string/chem_hint" android:textSize="20dp" android:id="@+id/button2" android:background="@drawable/finalbutton" android:layout_width="150dp" android:onClick="getHint" android:layout_height="30dp" android:layout_alignTop="@+id/button1" android:layout_alignLeft="@+id/button1" android:layout_marginTop="60dp"></Button>
-    <Button android:text="@string/chem_submit" android:textSize="20dp" android:id="@+id/button1" android:background="@drawable/finalbutton" android:layout_width="150dp" android:onClick="submitHandler" android:layout_height="30dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="170dp"></Button>
+    <Button android:text="@string/chem_hint" android:textSize="20dp" android:id="@+id/button2" android:background="@drawable/finalbutton" android:layout_width="150dp" android:onClick="getHint" android:layout_height="30dp" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_marginBottom="50dp" android:layout_marginLeft="80dp"></Button>
+    <Button android:text="@string/chem_submit" android:textSize="20dp" android:id="@+id/button1" android:background="@drawable/finalbutton" android:layout_width="150dp" android:onClick="submitHandler" android:layout_height="30dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_marginBottom="50dp" android:layout_marginRight="80dp"></Button>
     
   
 </RelativeLayout>

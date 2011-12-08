@@ -1,5 +1,5 @@
 package edu.uml.thumbsup;
-
+//Developer Paul Gendreau
 
 
 import android.app.Activity;
@@ -11,14 +11,14 @@ import android.widget.TextView;
 public class game1s extends Activity{
 
     /** Called when the activity is first created. */
-	
+	int []scores;
 	int    score = 0;
-	String s0 = "1/4";
-	String s1 = "1/3";
+	String s0 = "2/3";
+	String s1 = "1/4";
 	String s2 = "1/2";
-	double a = .25;
+	double a = .66;
 	double b = .3;
-	double c = .5;
+	double c = .25;
 	//Button continue1;
 	Button sanswers0;
 	Button sanswers1;
@@ -32,11 +32,13 @@ public class game1s extends Activity{
         setContentView(R.layout.game1s);
         
        // continue1 = (Button)findViewById(R.id.bContinue);
+
         sanswers0 = (Button) findViewById(R.id.bsAnswers0);
         sanswers1 = (Button) findViewById(R.id.bsAnswers1);
         sanswers2 = (Button) findViewById(R.id.bsAnswers2);
-        displayScore = (TextView)findViewById(R.id.Score);
+        displayScore = (TextView)findViewById(R.id.gameScore);
         sdisplay = (TextView)findViewById(R.id.tvsDisplay);
+
        
         
      
@@ -71,12 +73,14 @@ public class game1s extends Activity{
     	if(z == .25){
     	score += 100;
     	displayScore.setText("score " + score);
-    	sdisplay.setText("you are correct " + s + " ");
-
+    	sdisplay.setText("you are correct ");
+    	if ( score >= Global.scores[0]){
+  	      Global.scores[0] = score;
+  		displayScore.setText("We have a new high score! "+ score);}
     	
     	}
     	else{
-    	sdisplay.setText("you are incorrect " + s + " ");
+    	sdisplay.setText("you are incorrect ");
     	}
     	
     	 

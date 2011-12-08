@@ -1,9 +1,8 @@
 package edu.uml.thumbsup;
-//Paul Gendreau
+//Developer Paul Gendreau
 
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,74 +11,69 @@ import android.widget.TextView;
 public class game1m extends Activity{
 
     /** Called when the activity is first created. */
-	
+	int []scores;
 	int    score = 0;
-	String s0 = "1/4";
-	String s1 = "1/3";
-	String s2 = "1/2";
-	double a = .25;
+	String s0 = "9/32";
+	String s1 = "9/8";
+	String s2 = "9/16";
+	double a = .28;
 	double b = .3;
 	double c = .5;
-	Button continue1;
-	Button answers0;
-	Button answers1;
-	Button answers2;
-	TextView display;
+	//Button continue1;
+	Button manswers0;
+	Button manswers1;
+	Button manswers2;
+	TextView mdisplay;
 	TextView displayScore;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game1);
+        setContentView(R.layout.game1m);
         
        // continue1 = (Button) findViewById(R.id.bContinue);
-      
+        mdisplay = (TextView)findViewById(R.id.tvmDisplay);
+        displayScore = (TextView)findViewById(R.id.gameScore);
+        manswers0 = (Button) findViewById(R.id.bmAnswers0);
+        manswers1 = (Button) findViewById(R.id.bmAnswers1);
+        manswers2 = (Button) findViewById(R.id.bmAnswers2);
        
         
      
-        answers0.setOnClickListener(new View.OnClickListener() {
-        	
-        //	@Override
+        manswers0.setOnClickListener(new View.OnClickListener() {
         	public void onClick(View v) {
-		//		Intent openGameh = new Intent("edu.uml.thumbsup.GAME1H");
-		//		startActivity(openGameh);			
-        //	}
+		
         		func(a , s0);	
 			}
 		});
         
-        answers1.setOnClickListener(new View.OnClickListener() {
+        manswers1.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
    				
    				func(b,s2);	
    			}  
    		});
         
-        answers2.setOnClickListener(new View.OnClickListener() {
+        manswers2.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
    				
    				func(c,s1);	
    			}
    		});
-  
-    
-        
+   
 }
    
     private void func(double z, String s) {
-    	if(z == .25){
+    	if(z == .28){
     	score += 100;
     	displayScore.setText("score " + score);
-    	display.setText("you are correct " + s + " is equal to 4/16");
-
-			Intent openGameHelp = new Intent("edu.uml.thumbsup.game1help");
-			startActivity(openGameHelp);			
-    	
-    	
-    	
+    	mdisplay.setText("you are correct ");
+    	if ( score >= Global.scores[0]){
+  	      Global.scores[0] = score;
+  		displayScore.setText("We have a new high score! "+ score);}
     	}
     	else{
-    	display.setText("you are incorrect " + s + " is not equal to 4/16");
+    	mdisplay.setText("you are incorrect ");
     	}
     	
     	 
