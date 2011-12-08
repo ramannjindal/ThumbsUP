@@ -2,6 +2,7 @@ package edu.uml.thumbsup;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -14,12 +15,16 @@ public class gamemenu extends Activity{
 	/* BE SURE TO UPDATE THIS IF WE ADD/REMOVE GAMES */
 	final int totalGames = 7;
 	Button bSelectedGame, bArrowRight, bArrowLeft;
-
+	MediaPlayer mpButtonClick;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gamemenu);
-
+		mpButtonClick = MediaPlayer.create(this, R.raw.bgmusic);
+		mpButtonClick.start();
+		
+		
 		bSelectedGame = (Button) findViewById(R.id.game_button);
 		bSelectedGame.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -50,6 +55,8 @@ public class gamemenu extends Activity{
 			}
 		});
 	}
+	 
+
 
 	private void ChangeCurrentButtonText(){
 		switch(gameNumber){
@@ -82,31 +89,44 @@ public class gamemenu extends Activity{
 		case 0:
 			Intent openGame1 = new Intent("edu.uml.thumbsup.GAME1");
 			startActivity(openGame1);
+			mpButtonClick.pause();
 			break;
 		case 1:
 			Intent openGame2 = new Intent("edu.uml.thumbsup.GAME2");
 			startActivity(openGame2);
+			mpButtonClick.pause();
 			break;
 		case 2:
 			Intent openGame3 = new Intent("edu.uml.thumbsup.GAME3");
 			startActivity(openGame3);
+			mpButtonClick.pause();
 			break;
 		case 3:
 			Intent openGame4 = new Intent("edu.uml.thumbsup.GAME4");
 			startActivity(openGame4);
+			mpButtonClick.pause();
 			break;
 		case 4:
 			Intent openGame5 = new Intent("edu.uml.thumbsup.GAME5");
 			startActivity(openGame5);
+			mpButtonClick.pause();
 			break;
 		case 5:
 			Intent openGame6 = new Intent("edu.uml.thumbsup.GAME6");
 			startActivity(openGame6);
+			mpButtonClick.pause();
 			break;
 		case 6:
 			Intent openGame8 = new Intent("edu.uml.thumbsup.GAME8");
 			startActivity(openGame8);
+			mpButtonClick.pause();
 			break;
 		}
 	}
+	
+    @Override
+    protected void onDestroy() {
+    	mpButtonClick.release();   	
+    	super.onDestroy();
+    }
 }
