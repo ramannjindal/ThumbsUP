@@ -2,6 +2,8 @@ package edu.uml.thumbsup;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -63,8 +65,7 @@ public class game5 extends Activity implements OnClickListener {
         	//imageButtons[j].setImageResource(images[i % numImages]);
         }
 	}
-
-	@Override
+	
 	public void onClick(View v) {
 		ImageButton ib = (ImageButton)v;
 		ib.setImageResource((Integer)ib.getTag());
@@ -73,13 +74,22 @@ public class game5 extends Activity implements OnClickListener {
 				selectedButton = ib;
 			} else {
 				if (ib.getTag() == selectedButton.getTag()) {
-					ib.setVisibility(View.INVISIBLE);
-					selectedButton.setVisibility(View.INVISIBLE);
+					ib.setEnabled(false);
+					selectedButton.setEnabled(false);
+					selectedButton = null;
 				} else {
-					ib.setImageResource(thumbsUpImage);
-					selectedButton.setImageResource(thumbsUpImage);
+					/*
+					Thread reset = new Thread(new Runnable(){
+						public void run() {
+						*/
+							ib.setImageResource(thumbsUpImage);
+							selectedButton.setImageResource(thumbsUpImage);
+							selectedButton = null; /*
+						}
+					});
+					reset.start();
+					*/
 				}
-				selectedButton = null;
 			}
 		}
 	}
