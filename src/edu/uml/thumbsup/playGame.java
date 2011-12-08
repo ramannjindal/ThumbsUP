@@ -139,6 +139,9 @@ public class playGame extends Activity {
 			
 			public int scores(int count){
 				int score = count * 20;
+				if(score >= Global.scores[5]){
+					Global.scores[5]= score;
+				}
 				return score;
 			}
 		});
