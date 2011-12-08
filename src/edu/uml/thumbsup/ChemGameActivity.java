@@ -140,6 +140,7 @@ public class ChemGameActivity extends Activity {
 	return;
 	}
 	private boolean setGUI(String difficulty){
+		int black = this.getResources().getColor(R.color.black);
 		int keypos = 0;
 		gameUI = (RelativeLayout) findViewById(R.id.userInterface);
 		scoreDisp = (TextView) findViewById(R.id.scoreDisplay);
@@ -198,6 +199,7 @@ public class ChemGameActivity extends Activity {
 			tv1.setText("Na");
 			tv1.setId(1);
 			tv1.setTextSize(30);
+			tv1.setTextColor(black);
 			tv1.setPadding(0, 0, 0, 0);
 			tv1.setLayoutParams(tv1lp);
 			gameUI.addView(tv1);			
@@ -213,6 +215,7 @@ public class ChemGameActivity extends Activity {
 			tv2.setText("Cl");
 			tv2.setId(2);
 			tv2.setTextSize(30);
+			tv2.setTextColor(black);
 			tv2.setPadding(0, 0, 0, 0);
 			tv2.setLayoutParams(tv2lp);
 			gameUI.addView(tv2);
@@ -228,6 +231,7 @@ public class ChemGameActivity extends Activity {
 			tv6.setText("2");
 			tv6.setId(8);
 			tv6.setTextSize(30);
+			tv6.setTextColor(black);
 			tv6.setPadding(0, 0, 0, 0);
 			tv6.setLayoutParams(tv6lp);
 			gameUI.addView(tv6);			
@@ -243,6 +247,7 @@ public class ChemGameActivity extends Activity {
 			tv3.setText("=>");
 			tv3.setId(3);
 			tv3.setTextSize(30);
+			tv3.setTextColor(black);
 			tv3.setPadding(0, 0, 0, 0);
 			tv3.setLayoutParams(tv3lp);
 			gameUI.addView(tv3);		
@@ -280,6 +285,7 @@ public class ChemGameActivity extends Activity {
 			tv4.setText("Na");
 			tv4.setId(4);
 			tv4.setTextSize(30);
+			tv4.setTextColor(black);
 			tv4.setPadding(0, 0, 0, 0);
 			tv4.setLayoutParams(tv4lp);
 			gameUI.addView(tv4);
@@ -295,6 +301,7 @@ public class ChemGameActivity extends Activity {
 			tv5.setText("Cl");
 			tv5.setId(5);
 			tv5.setTextSize(30);
+			tv5.setTextColor(black);
 			tv5.setPadding(0, 0, 0, 0);
 			tv5.setLayoutParams(tv5lp);
 			gameUI.addView(tv5);		
@@ -389,6 +396,7 @@ public class ChemGameActivity extends Activity {
 			tv1.setText("H PO");
 			tv1.setId(1);
 			tv1.setTextSize(30);
+			tv1.setTextColor(black);
 			tv1.setPadding(0, 0, 0, 0);
 			tv1.setLayoutParams(tv1lp);
 			gameUI.addView(tv1);			
@@ -406,6 +414,7 @@ public class ChemGameActivity extends Activity {
 			tv2.setText("3   4");
 			tv2.setId(2);
 			tv2.setTextSize(30);
+			tv2.setTextColor(black);
 			tv2.setPadding(0, 0, 0, 0);
 			tv2.setLayoutParams(tv2lp);
 			gameUI.addView(tv2);
@@ -422,6 +431,7 @@ public class ChemGameActivity extends Activity {
 			tv5.setText("+");
 			tv5.setId(6);
 			tv5.setTextSize(30);
+			tv5.setTextColor(black);
 			tv5.setPadding(0, 0, 0, 0);
 			tv5.setLayoutParams(tv5lp);
 			gameUI.addView(tv5);
@@ -463,6 +473,7 @@ public class ChemGameActivity extends Activity {
 			tv3.setText("HCl");
 			tv3.setId(4);
 			tv3.setTextSize(30);
+			tv3.setTextColor(black);
 			tv3.setPadding(0, 0, 0, 0);
 			tv3.setLayoutParams(tv3lp);
 			gameUI.addView(tv3);
@@ -479,6 +490,7 @@ public class ChemGameActivity extends Activity {
 			tv4.setText("");
 			tv4.setId(5);
 			tv4.setTextSize(30);
+			tv4.setTextColor(black);
 			tv4.setPadding(0, 0, 0, 0);
 			tv4.setLayoutParams(tv4lp);
 			gameUI.addView(tv4);
@@ -495,18 +507,29 @@ public class ChemGameActivity extends Activity {
 			tv6.setText("=>");
 			tv6.setId(7);
 			tv6.setTextSize(30);
+			tv6.setTextColor(black);
 			tv6.setPadding(0, 0, 0, 0);
 			tv6.setLayoutParams(tv6lp);
 			gameUI.addView(tv6);
+//important
+			RelativeLayout.LayoutParams et2lp;
 			
-			RelativeLayout.LayoutParams et2lp = 
-					new RelativeLayout.LayoutParams(defaultLayoutParams);
-			et2lp.addRule(RelativeLayout.RIGHT_OF, 
-					gameUI.getChildAt(3).getId());
-			et2lp.addRule(RelativeLayout.BELOW, 
-					gameUI.getChildAt(2).getId());
-			et2lp.setMargins(5, 0, 0, 0);
-			
+			if(getResources().getConfiguration().orientation == 1){
+				//if layout is portrait do this
+				et2lp = new RelativeLayout.LayoutParams(defaultLayoutParams);
+				et2lp.addRule(RelativeLayout.RIGHT_OF, 
+						gameUI.getChildAt(3).getId());
+				et2lp.addRule(RelativeLayout.BELOW, 
+						gameUI.getChildAt(2).getId());
+				et2lp.setMargins(5, 0, 0, 0);
+			}else{
+				et2lp = new RelativeLayout.LayoutParams(defaultLayoutParams);
+				et2lp.addRule(RelativeLayout.RIGHT_OF, 
+						gameUI.getChildAt(7).getId());
+				et2lp.addRule(RelativeLayout.ALIGN_TOP, 
+						gameUI.getChildAt(7).getId());
+				et2lp.setMargins(5, 0, 0, 0);
+			}
 			//gameUI.getChildAt(8).getId()
 			et2.setHint("X");
 			et2.setId(8);
@@ -536,6 +559,7 @@ public class ChemGameActivity extends Activity {
 			tv7.setText("PCl");
 			tv7.setId(9);
 			tv7.setTextSize(30);
+			tv7.setTextColor(black);
 			tv7.setPadding(0, 0, 0, 0);
 			tv7.setLayoutParams(tv7lp);
 			gameUI.addView(tv7);
@@ -552,6 +576,7 @@ public class ChemGameActivity extends Activity {
 			tv8.setText("5");
 			tv8.setId(10);
 			tv8.setTextSize(30);
+			tv8.setTextColor(black);
 			tv8.setPadding(0, 0, 0, 0);
 			tv8.setLayoutParams(tv8lp);
 			gameUI.addView(tv8);
@@ -568,6 +593,7 @@ public class ChemGameActivity extends Activity {
 			tv9.setText("+");
 			tv9.setId(11);
 			tv9.setTextSize(30);
+			tv9.setTextColor(black);
 			tv9.setPadding(0, 0, 0, 0);
 			tv9.setLayoutParams(tv9lp);
 			gameUI.addView(tv9);
@@ -610,6 +636,7 @@ public class ChemGameActivity extends Activity {
 			tv10.setText("H O");
 			tv10.setId(13);
 			tv10.setTextSize(30);
+			tv10.setTextColor(black);
 			tv10.setPadding(0, 0, 0, 0);
 			tv10.setLayoutParams(tv10lp);
 			gameUI.addView(tv10);
@@ -626,6 +653,7 @@ public class ChemGameActivity extends Activity {
 			tv11.setText("2");
 			tv11.setId(14);
 			tv11.setTextSize(30);
+			tv11.setTextColor(black);
 			tv11.setPadding(0, 0, 0, 0);
 			tv11.setLayoutParams(tv11lp);
 			gameUI.addView(tv11);
@@ -696,6 +724,7 @@ public class ChemGameActivity extends Activity {
 			tv1.setText("C H O");
 			tv1.setId(1);
 			tv1.setTextSize(30);
+			tv1.setTextColor(black);
 			tv1.setPadding(0, 0, 0, 0);
 			tv1.setLayoutParams(tv1lp);
 			gameUI.addView(tv1);			
@@ -713,6 +742,7 @@ public class ChemGameActivity extends Activity {
 			tv2.setText("6 6  2");
 			tv2.setId(2);
 			tv2.setTextSize(30);
+			tv2.setTextColor(black);
 			tv2.setPadding(0, 0, 0, 0);
 			tv2.setLayoutParams(tv2lp);
 			gameUI.addView(tv2);
@@ -729,6 +759,7 @@ public class ChemGameActivity extends Activity {
 			tv5.setText("+");
 			tv5.setId(6);
 			tv5.setTextSize(30);
+			tv5.setTextColor(black);
 			tv5.setPadding(0, 0, 0, 0);
 			tv5.setLayoutParams(tv5lp);
 			gameUI.addView(tv5);
@@ -770,6 +801,7 @@ public class ChemGameActivity extends Activity {
 			tv3.setText("O");
 			tv3.setId(4);
 			tv3.setTextSize(30);
+			tv3.setTextColor(black);
 			tv3.setPadding(0, 0, 0, 0);
 			tv3.setLayoutParams(tv3lp);
 			gameUI.addView(tv3);
@@ -786,6 +818,7 @@ public class ChemGameActivity extends Activity {
 			tv4.setText("2");
 			tv4.setId(5);
 			tv4.setTextSize(30);
+			tv4.setTextColor(black);
 			tv4.setPadding(0, 0, 0, 0);
 			tv4.setLayoutParams(tv4lp);
 			gameUI.addView(tv4);
@@ -802,17 +835,30 @@ public class ChemGameActivity extends Activity {
 			tv6.setText("=>");
 			tv6.setId(7);
 			tv6.setTextSize(30);
+			tv6.setTextColor(black);
 			tv6.setPadding(0, 0, 0, 0);
 			tv6.setLayoutParams(tv6lp);
 			gameUI.addView(tv6);
+//important
+
+			RelativeLayout.LayoutParams et2lp;
 			
-			RelativeLayout.LayoutParams et2lp = 
-					new RelativeLayout.LayoutParams(defaultLayoutParams);
-			et2lp.addRule(RelativeLayout.RIGHT_OF, 
-					gameUI.getChildAt(3).getId());
-			et2lp.addRule(RelativeLayout.BELOW, 
-					gameUI.getChildAt(2).getId());
-			et2lp.setMargins(5, 0, 0, 0);
+			if(getResources().getConfiguration().orientation == 1){
+				//if layout is portrait do this
+				et2lp = new RelativeLayout.LayoutParams(defaultLayoutParams);
+				et2lp.addRule(RelativeLayout.RIGHT_OF, 
+						gameUI.getChildAt(3).getId());
+				et2lp.addRule(RelativeLayout.BELOW, 
+						gameUI.getChildAt(2).getId());
+				et2lp.setMargins(5, 0, 0, 0);
+			}else{
+				et2lp = new RelativeLayout.LayoutParams(defaultLayoutParams);
+				et2lp.addRule(RelativeLayout.RIGHT_OF, 
+						gameUI.getChildAt(7).getId());
+				et2lp.addRule(RelativeLayout.ALIGN_TOP, 
+						gameUI.getChildAt(7).getId());
+				et2lp.setMargins(5, 0, 0, 0);
+			}
 			
 			//gameUI.getChildAt(8).getId()
 			et2.setHint("X");
@@ -843,6 +889,7 @@ public class ChemGameActivity extends Activity {
 			tv7.setText("CO");
 			tv7.setId(9);
 			tv7.setTextSize(30);
+			tv7.setTextColor(black);
 			tv7.setPadding(0, 0, 0, 0);
 			tv7.setLayoutParams(tv7lp);
 			gameUI.addView(tv7);
@@ -859,6 +906,7 @@ public class ChemGameActivity extends Activity {
 			tv8.setText("2");
 			tv8.setId(10);
 			tv8.setTextSize(30);
+			tv8.setTextColor(black);
 			tv8.setPadding(0, 0, 0, 0);
 			tv8.setLayoutParams(tv8lp);
 			gameUI.addView(tv8);
@@ -875,6 +923,7 @@ public class ChemGameActivity extends Activity {
 			tv9.setText("+");
 			tv9.setId(11);
 			tv9.setTextSize(30);
+			tv9.setTextColor(black);
 			tv9.setPadding(0, 0, 0, 0);
 			tv9.setLayoutParams(tv9lp);
 			gameUI.addView(tv9);
@@ -917,6 +966,7 @@ public class ChemGameActivity extends Activity {
 			tv10.setText("H O");
 			tv10.setId(13);
 			tv10.setTextSize(30);
+			tv10.setTextColor(black);
 			tv10.setPadding(0, 0, 0, 0);
 			tv10.setLayoutParams(tv10lp);
 			gameUI.addView(tv10);
@@ -933,6 +983,7 @@ public class ChemGameActivity extends Activity {
 			tv11.setText("2");
 			tv11.setId(14);
 			tv11.setTextSize(30);
+			tv11.setTextColor(black);
 			tv11.setPadding(0, 0, 0, 0);
 			tv11.setLayoutParams(tv11lp);
 			gameUI.addView(tv11);
