@@ -12,7 +12,7 @@ public class game1a extends Activity{
 
 	 /** Called when the activity is first created. */
 
-	//    int []score_array = getResources().getIntArray(R.array.scores);
+	    int []scores;
 
 		int    score = 0;
 		String s0 = "3/4";
@@ -75,9 +75,9 @@ public class game1a extends Activity{
 	    	score += 100;
 	    	displayScore.setText("score " + score);
 	    	adisplay.setText("you are correct ");
-	    	//if ( score >= Global.score[0]){
-	    	//      Global.score[0] = score;
-	    	//	displayScore.setText("We have a new high score!"+ score);}
+	    	if ( score >= Global.scores[0]){
+	    	      Global.scores[0] = score;
+	    		displayScore.setText("We have a new high score! "+ score);}
 	    	    
 
 	    	

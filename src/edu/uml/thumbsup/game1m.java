@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class game1m extends Activity{
 
     /** Called when the activity is first created. */
-	
+	int []scores;
 	int    score = 0;
 	String s0 = "9/32";
 	String s1 = "9/8";
@@ -68,7 +68,9 @@ public class game1m extends Activity{
     	score += 100;
     	displayScore.setText("score " + score);
     	mdisplay.setText("you are correct ");
-
+    	if ( score >= Global.scores[0]){
+  	      Global.scores[0] = score;
+  		displayScore.setText("We have a new high score! "+ score);}
     	}
     	else{
     	mdisplay.setText("you are incorrect ");

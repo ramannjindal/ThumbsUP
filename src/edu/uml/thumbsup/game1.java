@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class game1 extends Activity{
 
     /** Called when the activity is first created. */
-	
+	int []scores;
 	int    score = 0;
 	Button Dividing;
 	Button multiplying;
@@ -81,7 +81,7 @@ public class game1 extends Activity{
    				startActivity(openGame1a);
    			}
    		});
-        
+       
 }	
 }
     
