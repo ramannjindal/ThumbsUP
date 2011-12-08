@@ -86,8 +86,11 @@ public class ChemGameActivity extends Activity {
 				score = score * 1.2;
 			}
 			if(score > 100) score = 100;
-			
-			// code to pass score will go here
+
+				if ( score >= Global.scores[2]){
+				      Global.scores[2] = (int) score;
+				}
+
 			finish();
 			
 		}else{
