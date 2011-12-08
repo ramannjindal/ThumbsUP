@@ -206,16 +206,14 @@ public class playGame extends Activity {
 		    + ") values('SEWING MACHINE', 'MERRITT SINGER', 'JAMES WATT');";
 
 		    try {
-		      Log.i("sql1=", sql1);
-		      Log.i("sql2=", sql2);
-		      
+		     Log.i("sql1=", sql1);
+		     Log.i("sql2=", sql2);	      
 		      db.execSQL(sql1);
 		      db.execSQL(sql2);
 		      db.execSQL(sql3);
 		      db.execSQL(sql4);
 		      db.execSQL(sql5);
-		 
-		      setTitle("done");
+		 		    
 		    } catch (SQLException e) {
 		      setTitle("exception");
 		    }
@@ -231,8 +229,6 @@ public class playGame extends Activity {
 		  } */
 		  
 		  private void showItems() {
-
-			Log.i("Sunil:", "********");  
 		    SQLiteDatabase db = mOpenHelper.getReadableDatabase();
 		    String col[] = { ITEM, INVENTOR, WRONGINVENTOR };
 		    Cursor cur = db.query(TABLE_NAME, col, null, null, null, null, null);    
@@ -252,11 +248,13 @@ public class playGame extends Activity {
 		            rButtons[j].setText(inventorName);j++;      
 		            rButtons[j].setText(wronginventorName);j++;
 		            
-		            Log.i("Sunil:",itemName);
-		            Log.i("Sunil:",inventorName);
+		           // Log.i("Sunil:",itemName);
+		           // Log.i("Sunil:",inventorName);
 		            i++;
 		    	} while (cur.moveToNext());
 		    }
+		    cur.close();
+		    db.close();
 		  }
 }
 
