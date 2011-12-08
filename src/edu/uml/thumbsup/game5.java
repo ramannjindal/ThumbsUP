@@ -4,8 +4,6 @@ package edu.uml.thumbsup;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Timer;
-import java.util.TimerTask;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -21,7 +19,7 @@ public class game5 extends Activity implements OnClickListener {
 	
 	private ImageButton[] imageButtons = new ImageButton[numImageButtons];
 	private int[] imageAssignments = new int[numImageButtons];
-	private ImageButton selectedButton = null;
+	private ImageButton prevButton = null, currButton = null;
 	
 	private static final Integer images[] = {
 		R.drawable.green, R.drawable.grey, R.drawable.blue, R.drawable.black,
@@ -64,34 +62,30 @@ public class game5 extends Activity implements OnClickListener {
         	int j = imageButtonArray.get(i);
         	imageAssignments[j] = images[i % numImages];
         	imageButtons[j].setTag(images[i % numImages]);
-        	//imageButtons[j].setImageResource(images[i % numImages]);
         }
 	}
 	
 	@Override
 	public void onClick(View v) {
-		ImageButton ib = (ImageButton)v;
-		ib.setImageResource((Integer)ib.getTag());
-		if (ib != selectedButton) {
-			if (selectedButton == null) {
-				selectedButton = ib;
+		currButton = (ImageButton)v;
+		currButton.setImageResource((Integer)currButton.getTag());
+		if (currButton != prevButton) {
+			if (prevButton == null) {
+				prevButton = currButton;
 			} else {
-				if (ib.getTag() == selectedButton.getTag()) {
-					ib.setEnabled(false);
-					selectedButton.setEnabled(false);
-					selectedButton = null;
+				if (currButton.getTag() == prevButton.getTag()) {
+					currButton.setEnabled(false);
+					prevButton.setEnabled(false);
+					prevButton = null;
+					currButton = null;
 				} else {
-					/*
-					Thread reset = new Thread(new Runnable(){
+					v.postDelayed(new Runnable() {
 						public void run() {
-						*/
-							ib.setImageResource(thumbsUpImage);
-							selectedButton.setImageResource(thumbsUpImage);
-							selectedButton = null; /*
-						}
-					});
-					reset.start();
-					*/
+							currButton.setImageResource(thumbsUpImage);
+							prevButton.setImageResource(thumbsUpImage);
+							prevButton = currButton = null;
+						}	
+					}, 1000);
 				}
 			}
 		}
