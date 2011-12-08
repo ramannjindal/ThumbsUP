@@ -1,6 +1,5 @@
 package edu.uml.thumbsup;
 
-import android.R.array;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
