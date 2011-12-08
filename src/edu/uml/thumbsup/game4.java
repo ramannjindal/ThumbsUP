@@ -1,5 +1,14 @@
 package edu.uml.thumbsup;
-
+/* Developer Name - Sunil Kumar Balaganchi Thammaiah
+ * UML ID - 01155593
+ * This app works on helping the kids recognize different colors
+ * 1. In this game, I have used 'TIMER' to calculate the points. 
+ * 	  Timer begins as soon as the game starts and ends on selection of the last Color.
+ * 2. Also worked with Ms.Prathiba Dyavegowda in getting the SQLite Database up and running.
+ * 3. Designed the 'HOME PAGE BACKGROUND' for the ThumbsUP Application
+ * 4. Created the 'BACKGROUND MUSIC' for the Home Page and Game Selection Activity
+ * 5. Setup the 'BUTTON BACKGROUND' for the Home Page and Game Selection Activity
+ */
 
 import java.util.Random;
 import java.util.Vector;
@@ -7,6 +16,7 @@ import java.util.Vector;
 import android.app.Activity;
 import android.app.AlertDialog;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Resources;
 
@@ -17,6 +27,7 @@ import android.os.CountDownTimer;
 
 import android.util.Log;
 
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -25,15 +36,16 @@ import android.widget.Toast;
 public class game4 extends Activity {
 	
 	public static final String LOG_TAG = "CHECKING";
-	MediaPlayer bgSong;
-	private String[] color;;
 	private static final Random myRandom = new Random();
+	
+	private String[] color;;
 	public String colorSelect;
 	Vector<String> alreadyUsed = new Vector<String>();
+	
+	MediaPlayer bgSong;
 	int count = 0; 
 	long timer;
-	
-	
+		
 	public void repeat(){
 	    Resources res = getResources();      
         //fetches values from the array in string.xml
@@ -80,7 +92,20 @@ public class game4 extends Activity {
 	
 	int scores(){
 		int value;
+		int[] score_array = getResources().getIntArray(R.array.scores);
+		
 		value = (((int)(timer) - (count*30))/10)*2;
+		if(value >= score_array[3]){
+			score_array[3]= value;
+		}
+		else{
+			Context context = getApplicationContext();
+			CharSequence text = "No the Highest Score";
+			int duration = Toast.LENGTH_SHORT;
+			Toast toast = Toast.makeText(context, text, duration);
+			toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+			toast.show();	
+		}
 		return value;
 	}
 	
@@ -116,10 +141,9 @@ public class game4 extends Activity {
 			setContentView(R.layout.game4);	
 			Log.v(LOG_TAG, "XML WORKING FINE");
 			
-			bgSong = MediaPlayer.create(game4.this,R.raw.bgmusic) ;
+			final MediaPlayer mpButtonClick = MediaPlayer.create(this, R.raw.button_click);
 	        MyCount counter = new MyCount(500000,1000);
 	        counter.start();
-	        
 	        
 	        repeat();
 	        
@@ -141,6 +165,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("BLACK")){
 	                	blackbutton.setVisibility(View.INVISIBLE);  
+	                	mpButtonClick.start();
 	                  	repeat();
 	                }
 	                else{
@@ -155,6 +180,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("BLUE")){
 	                	bluebutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	repeat();
 	                }
 	                else{
@@ -169,6 +195,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("BROWN")){
 	                	brownbutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	repeat();
 	                }
 	                else{
@@ -183,6 +210,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("DARK BLUE")){
 	                	darkbluebutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	repeat();
 	                }
 	                else{
@@ -196,6 +224,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("GREEN")){
 	                	greenbutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -210,6 +239,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("GREY")){
 	                	greybutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -224,6 +254,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("ORANGE")){
 	                	orangebutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -238,6 +269,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("PINK")){
 	                	pinkbutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -253,6 +285,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("PURPLE")){
 	                	purplebutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -267,6 +300,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("RED")){
 	                	redbutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -281,6 +315,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("WHITE")){
 	                	whitebutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{
@@ -295,6 +330,7 @@ public class game4 extends Activity {
 	            	Log.v(LOG_TAG, "button clicked");
 	                if(colorSelect.equals("YELLOW")){
 	                	yellowbutton.setVisibility(View.INVISIBLE);
+	                	mpButtonClick.start();
 	                	 repeat();
 	                }
 	                else{

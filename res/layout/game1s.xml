@@ -18,7 +18,7 @@ android:background="@drawable/white">
     android:layout_gravity="center"
     android:textColor="#2F2E86"
     android:gravity="center"
-    android:id="@+id/tvdDisplay"
+    android:id="@+id/tvsDisplay"
     ></TextView>
     
     <TextView  
@@ -37,7 +37,7 @@ android:background="@drawable/white">
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
- android:id="@+id/bdAnswers0"
+ android:id="@+id/bsAnswers0"
  android:layout_width="250dp"
  android:layout_height="50dp"></Button>
  
@@ -46,7 +46,7 @@ android:background="@drawable/white">
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
- android:id="@+id/bdAnswers1"
+ android:id="@+id/bsAnswers1"
  android:layout_width="250dp" 
 android:layout_height="50dp"></Button>
  
@@ -55,7 +55,7 @@ android:layout_height="50dp"></Button>
  android:layout_gravity="center"
  android:background="@drawable/button3"
  android:textSize="20dp"
- android:id="@+id/bdAnswers2"
+ android:id="@+id/bsAnswers2"
  android:layout_width="250dp" 
 android:layout_height="50dp"></Button> 
   

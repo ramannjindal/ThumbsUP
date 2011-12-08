@@ -5,7 +5,7 @@
   android:orientation="vertical"
   android:layout_width="match_parent"
   android:layout_height="match_parent" android:background="@drawable/background">
-    <Button android:id="@+id/game_button" android:text="@string/game1_name" android:textSize="20dp" android:layout_width="175dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_marginRight="28dp" android:layout_marginBottom="196dp" android:background="@drawable/finalbutton" android:layout_height="55dp"></Button>
+    <Button android:id="@+id/game_button" android:text="@string/game1_name" android:textSize="20dp" android:layout_width="175dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_marginRight="28dp" android:layout_marginBottom="196dp" android:background="@drawable/finalbutton" android:layout_height="55dp" android:clickable="true" android:focusable="true" android:focusableInTouchMode="true"></Button>
     <Button android:id="@+id/arrow_right_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/arrowright" android:layout_alignTop="@+id/game_button" android:layout_alignParentRight="true" android:layout_marginTop="66dp"></Button>
     <Button android:id="@+id/arrow_left_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/arrowleft" android:layout_alignBottom="@+id/arrow_right_button" android:layout_toLeftOf="@+id/arrow_right_button"></Button>
 </RelativeLayout>

@@ -72,7 +72,7 @@ public class game1d extends Activity{
     	if(z == .66){
     	score += 100;
     	displayScore.setText("score " + score);
-    	ddisplay.setText("you are correct " + s + " is equal to 4/16");
+    	ddisplay.setText("you are correct " + s + " is equal to "+ s);
 
 			Intent openGameHelp = new Intent("edu.uml.thumbsup.game1help");
 			startActivity(openGameHelp);			

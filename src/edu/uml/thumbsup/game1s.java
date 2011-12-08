@@ -32,11 +32,13 @@ public class game1s extends Activity{
         setContentView(R.layout.game1s);
         
        // continue1 = (Button)findViewById(R.id.bContinue);
-        sanswers0 = (Button) findViewById(R.id.bdAnswers0);
-        sanswers1 = (Button) findViewById(R.id.bdAnswers1);
-        sanswers2 = (Button) findViewById(R.id.bdAnswers2);
+
+        sanswers0 = (Button) findViewById(R.id.bsAnswers0);
+        sanswers1 = (Button) findViewById(R.id.bsAnswers1);
+        sanswers2 = (Button) findViewById(R.id.bsAnswers2);
         displayScore = (TextView)findViewById(R.id.gameScore);
-        sdisplay = (TextView)findViewById(R.id.tvdDisplay);
+        sdisplay = (TextView)findViewById(R.id.tvsDisplay);
+
        
         
      
