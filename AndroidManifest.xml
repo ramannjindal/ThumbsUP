@@ -130,7 +130,8 @@
 			</intent-filter>
 		</activity>
 
-		<activity android:name=".game5" android:label="@string/game5_name">
+		<activity android:name=".game5" android:label="@string/game5_name"
+		    android:screenOrientation="portrait" >
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME5"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
