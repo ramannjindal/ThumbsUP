@@ -33,11 +33,11 @@ public class game1d extends Activity{
         setContentView(R.layout.game1d);
         
        // continue1 = (Button) findViewById(R.id.bContinue);
-        ddisplay = (TextView)findViewById(R.id.tvaDisplay);
+        ddisplay = (TextView)findViewById(R.id.tvdDisplay);
         displayScore = (TextView)findViewById(R.id.gameScore);
-        danswers0 = (Button) findViewById(R.id.baAnswers0);
-        danswers1 = (Button) findViewById(R.id.baAnswers1);
-        danswers2 = (Button) findViewById(R.id.baAnswers2);
+        danswers0 = (Button) findViewById(R.id.bdAnswers0);
+        danswers1 = (Button) findViewById(R.id.bdAnswers1);
+        danswers2 = (Button) findViewById(R.id.bdAnswers2);
        
         
      
@@ -63,25 +63,18 @@ public class game1d extends Activity{
    				func(c,s1);	
    			}
    		});
-  
-    
-        
+     
 }
    
     private void func(double z, String s) {
     	if(z == .66){
     	score += 100;
     	displayScore.setText("score " + score);
-    	ddisplay.setText("you are correct " + s + " is equal to "+ s);
-
-			Intent openGameHelp = new Intent("edu.uml.thumbsup.game1help");
-			startActivity(openGameHelp);			
-    	
-    	
+    	ddisplay.setText("you are correct ");
     	
     	}
     	else{
-    	ddisplay.setText("you are incorrect " + s + " is not equal to 4/16");
+    	ddisplay.setText("you are incorrect ");
     	}
     	
     	 

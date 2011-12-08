@@ -1,5 +1,5 @@
 package edu.uml.thumbsup;
-
+//Paul Gendreau
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,7 +28,7 @@ public class game1 extends Activity{
         setContentView(R.layout.game1);
         
         displayhome = (TextView)findViewById(R.id.tvDisplayhome);
-//        displayscore = (TextView)findViewById(R.id.Score);
+        displayscore = (TextView)findViewById(R.id.gameScore);
         Adding = (Button) findViewById(R.id.bAdding);
         Subtracting = (Button) findViewById(R.id.bSubtracting);
         Reducing = (Button) findViewById(R.id.bReducing);
@@ -62,14 +62,14 @@ public class game1 extends Activity{
         
         Dividing.setOnClickListener(new View.OnClickListener() {
         	public void onClick(View v) {
-        		Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1A");
+        		Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1D");
    				startActivity(openGame1a);
 			}
 		});
         
         multiplying.setOnClickListener(new View.OnClickListener() {
    			public void onClick(View v) {
-   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1A");
+   				Intent openGame1a = new Intent("edu.uml.thumbsup.GAME1M");
    				startActivity(openGame1a);
    			}  
    		});

@@ -1,8 +1,7 @@
 package edu.uml.thumbsup;
-
+//Paul Gendreau
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -68,12 +67,12 @@ public class game1r extends Activity{
     	if(z == .25){
     	score += 100;
     	displayScore.setText("score " + score);
-    	rdisplay.setText("you are correct " + s + " is equal to 4/16");
+    	rdisplay.setText("you are correct ");
 
     	
     	}
     	else{
-    	rdisplay.setText("you are incorrect " + s + " is not equal to 4/16");
+    	rdisplay.setText("you are incorrect ");
     	}
     		 
 		

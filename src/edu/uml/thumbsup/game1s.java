@@ -1,5 +1,5 @@
 package edu.uml.thumbsup;
-
+//Paul Gendreau
 
 
 import android.app.Activity;
@@ -73,12 +73,12 @@ public class game1s extends Activity{
     	if(z == .25){
     	score += 100;
     	displayScore.setText("score " + score);
-    	sdisplay.setText("you are correct " + s + " ");
+    	sdisplay.setText("you are correct ");
 
     	
     	}
     	else{
-    	sdisplay.setText("you are incorrect " + s + " ");
+    	sdisplay.setText("you are incorrect ");
     	}
     	
     	 

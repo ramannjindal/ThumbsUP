@@ -3,21 +3,20 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent"
- android:background="@drawable/white">
+android:background="@drawable/white">
 <LinearLayout 
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
        >
-       
-       
+        
   <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
     android:text="Add  3/8 to 6/16"
     android:textSize="30dp"
-    android:textColor="#2F2E86"
     android:layout_gravity="center"
+    android:textColor="#2F2E86"
     android:gravity="center"
     android:id="@+id/tvaDisplay"
     ></TextView>
