@@ -1,5 +1,5 @@
 package edu.uml.thumbsup;
-//Paul Gendreau
+//Developer Paul Gendreau
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,7 +28,7 @@ public class game1 extends Activity{
         setContentView(R.layout.game1);
         
         displayhome = (TextView)findViewById(R.id.tvDisplayhome);
-        displayscore = (TextView)findViewById(R.id.gameScore);
+        displayscore = (TextView)findViewById(R.id.gamescorehome);
         Adding = (Button) findViewById(R.id.bAdding);
         Subtracting = (Button) findViewById(R.id.bSubtracting);
         Reducing = (Button) findViewById(R.id.bReducing);
@@ -36,6 +36,7 @@ public class game1 extends Activity{
         multiplying = (Button) findViewById(R.id.bmultiplying);
         helpmenu = (Button) findViewById(R.id.bHelp);
         
+        displayscore.setText("high score "+Global.scores[0]);
         
         
         Reducing.setOnClickListener(new View.OnClickListener() {
