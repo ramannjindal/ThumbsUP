@@ -151,7 +151,7 @@
 		<activity android:name=".game8" android:label="@string/game8_name">
 			<intent-filter>
 				<action android:name="edu.uml.thumbsup.GAME8"></action>
-				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.DEFAULT" android:screenOrientation="portrait"></category>
 			</intent-filter>
 		</activity>
 		<activity android:name=".scoremenu" android:label="@string/app_name">
