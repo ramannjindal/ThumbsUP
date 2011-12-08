@@ -3,7 +3,6 @@ package edu.uml.thumbsup;
 
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -65,7 +64,7 @@ public class game1m extends Activity{
 }
    
     private void func(double z, String s) {
-    	if(z == .25){
+    	if(z == .28){
     	score += 100;
     	displayScore.setText("score " + score);
     	mdisplay.setText("you are correct ");
