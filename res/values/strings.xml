@@ -18,7 +18,7 @@
     <string name="game1a_name">Add Fractions</string>
     
     <!-- Game 2 - The More You Know - Anthony Scoppa -->
-    <string name="game2_name">The More You Know</string>
+    <string name="game2_name">*~* THE MORE YOU KNOW! *~*</string>
     <string-array name="topics_array">
         <item>Science</item>
         <item>Technology</item>
@@ -27,82 +27,112 @@
         <item>Movies</item>
         <item>Sports</item>
         <item>Politics</item>
-        <item>Religion</item>
-        <item>Belgium</item>        
+        <item>Religion</item>  
     </string-array>
     
     <string-array name="factArray1"> 
-	    <item>FACT ARRAY 1 FACT 1</item> 
-	    <item>FACT ARRAY 1 FACT 2</item> 
-	    <item>FACT ARRAY 1 FACT 3</item> 
-	    <item>FACT ARRAY 1 FACT 4</item> 
-	    <item>FACT ARRAY 1 FACT 5</item>
+    <item>The largest beetle is the goliath beetle</item> 
+    <item>The first plastic was called bakelite</item> 
+    <item>Palaentologists study fossils</item> 
+    <item>An Ohm is the SI unit for resistance</item> 
+    <item>The Aorta is the largest Artery in the human body</item>
+    <item>The chemical compound for Sulfuric Acid is H2 SO4</item>
+    <item>A baby Whale is called a calf</item>
+    <item>Adrenaline is a hormone that stimulates the nervous system</item>
+    <item>In Fahrenheit the boiling point of water is 212 degress</item>
+    <item>The common name for sodium chloride is salt</item>
     </string-array>
     
     <string-array name="factArray2"> 
-	    <item>FACT ARRAY 2 FACT 1</item> 
-	    <item>FACT ARRAY 2 FACT 2</item> 
-	    <item>FACT ARRAY 2 FACT 3</item> 
-	    <item>FACT ARRAY 2 FACT 4</item> 
-	    <item>FACT ARRAY 2 FACT 5</item>
+    <item>Solar power is generated from the sun</item> 
+    <item>The first Apple iPhone became available in 2007</item> 
+    <item>CPU stands for Central Processing Unit</item> 
+    <item>The Hubble Space Telescope was named after Edwin Hubble</item> 
+    <item>The first  Harley Davidson motorcycle was built in 1903</item>
+    <item>Firefox, Opera, Chrome, Safari and Explorer are web browsers</item>
+    <item>On a standard 747 jumbo jet there are 420 seats</item>
+    <item>It takes about 1,100 watts to run an electric toaster</item>
+    <item>About 1.8 billion light bulbs are produced in the United States each year</item>
     </string-array>
     
     
     <string-array name="factArray3"> 
-	    <item>FACT ARRAY 3 FACT 1</item> 
-	    <item>FACT ARRAY 3 FACT 2</item> 
-	    <item>FACT ARRAY 3 FACT 3</item> 
-	    <item>FACT ARRAY 3 FACT 4</item> 
-	    <item>FACT ARRAY 3 FACT 5</item>
+    <item>In 1000 B.C. Israelites payed their taxes with Raisins</item> 
+    <item>Until 1796 Tennessee was known as Franklin</item> 
+    <item>Abraham Lincoln was assassinated in a theatre</item> 
+    <item>Pablo Picasso had his first painting exhibition at the age of 16</item> 
+    <item>New Zealand was the first country to allow women to vote in 1903</item>
+    <item>The Titanic was the first ocean liner to have a swimming pool</item>
+    <item>The Hundred Years War lasted 116 years</item>
+    <item>Napolean died in exile on the island of St. Helen</item>
+    <item>There are 6000 men in a Roman legion</item>
+    <item>John adams was the second president of the united states</item>
 	</string-array>
+
 	<string-array name="factArray4"> 
-	    <item>FACT ARRAY 4 FACT 1</item> 
-	    <item>FACT ARRAY 4 FACT 2</item> 
-	    <item>FACT ARRAY 4 FACT 3</item> 
-	    <item>FACT ARRAY 4 FACT 4</item> 
-	    <item>FACT ARRAY 4 FACT 5</item>
+    <item>Rage Against the Machines first single debut was Bombtrack</item> 
+    <item>From The Cradle was an album written by Eric Clapton</item> 
+    <item>Bono is a member of the band U2</item> 
+    <item>George Harrison wrote My Sweet Love</item> 
+    <item>Brass in the pocket was a hit song by The Pretenders</item>
+    <item>David Bowie Teamed with Queen to write Under Pressure</item>
+    <item>Blue Oyster Cult wrote the song Dont Fear</item>
+    <item>Motown originated in Detroit</item>
+    <item>Supertramp released the song Breakfast in America</item>
+    <item>Rick Rolled</item>
     </string-array>
     
     <string-array name="factArray5"> 
-	    <item>FACT ARRAY 5 FACT 1</item> 
-	    <item>FACT ARRAY 5 FACT 2</item> 
-	    <item>FACT ARRAY 5 FACT 3</item> 
-	    <item>FACT ARRAY 5 FACT 4</item> 
-	    <item>FACT ARRAY 5 FACT 5</item>
+    <item>Ill be back was a signature line in the film The Terminator</item> 
+    <item>Al Pacino won an oscar for the line "hoo-ah"</item> 
+    <item>In the movie Philadelphia Tom Hanks and Antonio Banderas are paired as lovers</item> 
+    <item>Tom Hanks voiced the character Woody from Toy Story</item> 
+    <item>the line "You cant handle the truth" comes from the film A Few Good Men</item>
+    <item>In the move The Mask Jim Carrey plays a bank clerk</item>
+    <item>Patrick Swayze played Johnny Castle in Footloose</item>
+    <item>Harrison Ford is the famous character Indiana Jones</item>
+    <item>The song The Bear Necessities is from the movie Jungle Book</item>
+    <item>The Lady and the Tramp is about dogs</item>
     </string-array>
     
     
     <string-array name="factArray6"> 
-	    <item>FACT ARRAY 6 FACT 1</item> 
-	    <item>FACT ARRAY 6 FACT 2</item> 
-	    <item>FACT ARRAY 6 FACT 3</item> 
-	    <item>FACT ARRAY 6 FACT 4</item> 
-	    <item>FACT ARRAY 6 FACT 5</item>
-	</string-array>
-	<string-array name="factArray7"> 
-	    <item>FACT ARRAY 7 FACT 1</item> 
-	    <item>FACT ARRAY 7 FACT 2</item> 
-	    <item>FACT ARRAY 7 FACT 3</item> 
-	    <item>FACT ARRAY 7 FACT 4</item> 
-	    <item>FACT ARRAY 7 FACT 5</item>
+    <item>The term home run originated from Cricket</item> 
+    <item>The Dodgers were the only team to win two world series championships in the 1980s</item> 
+    <item>The Dallas Cowboys were the first professional football team to hire a cheerleading squad</item> 
+    <item>The Americas cup is a best of nine racing series</item> 
+    <item>32 teams are allowed at the world cup</item>
+    <item>Jockey Wilson can be associated with darts</item>
+    <item>A game of field hockey lasts 70 minutes</item>
+    <item>In the 1970s numbers made their appearence on football jerseys</item>
+    <item>Nikes logo is called the swoosh</item>
+    <item>The Detroit Red Wings are a hockey team</item>
+</string-array>
+<string-array name="factArray7"> 
+    <item>The First President was George Washington</item> 
+    <item>The Second President was John Adams</item> 
+    <item>The third president was Thomas Jefferson</item> 
+    <item>The fourth president was James Madison</item> 
+    <item>The fifth president was James Monroe</item>
+    <item>The sixth president was Andrew Jackson</item>
+    <item>The seventh president was John Quincy Adams</item>
+    <item>The eighth president was Martin Van Buren</item>
+    <item>The ninth president was William Harrison</item>
+    <item>The tenth president was John Tyler</item>
     </string-array>
     
     <string-array name="factArray8"> 
-	    <item>FACT ARRAY 8 FACT 1</item> 
-	    <item>FACT ARRAY 8 FACT 2</item> 
-	    <item>FACT ARRAY 8 FACT 3</item> 
-	    <item>FACT ARRAY 8 FACT 4</item> 
-	    <item>FACT ARRAY 8 FACT 5</item>
+    <item>FACT ARRAY 8 FACT 1</item> 
+    <item>FACT ARRAY 8 FACT 2</item> 
+    <item>FACT ARRAY 8 FACT 3</item> 
+    <item>FACT ARRAY 8 FACT 4</item> 
+    <item>FACT ARRAY 8 FACT 5</item>
+    <item>FACT ARRAY 8 FACT 6</item>
+    <item>FACT ARRAY 8 FACT 7</item>
+    <item>FACT ARRAY 8 FACT 8</item>
+    <item>FACT ARRAY 8 FACT 9</item>
+    <item>FACT ARRAY 8 FACT 10</item>
     </string-array>
-    
-    
-    <string-array name="factArray9"> 
-	    <item>FACT ARRAY 9 FACT 1</item> 
-	    <item>FACT ARRAY 9 FACT 2</item> 
-	    <item>FACT ARRAY 9 FACT 3</item> 
-	    <item>FACT ARRAY 9 FACT 4</item> 
-	    <item>FACT ARRAY 9 FACT 5</item>
-	</string-array> 
     
     <!-- Game 3 - Equation Balancer -->
     <string name="game3_name">Equation Balancer</string>

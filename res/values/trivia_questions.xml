@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="trivArray1"> 
+    <item>Which Is The Largest Species Of Beetle? </item> 
+    <item>What Was The Name Of The First Plastic Ever Developed?</item> 
+    <item>what does a palaeontologist study?</item> 
+    <item>What Is The SI Unit Of Resistance?</item> 
+    <item>what iss the largest artery in the human body?</item>    
+    <item>What has the chemical formula H2, SO4?</item>
+    <item>What is a baby whale called?</item>
+    <item>Which hormone stimulates the nervous system?</item>
+    <item>What is the boiling point of water in Fahernheit?</item>
+    <item>What Is The More Common Name For Sodium Chloride?</item>
+    </string-array>
+    
+    <string-array name="trivArray2"> 
+    <item>Solar power generates electricity from what source?</item> 
+    <item>In what year was the Apple iPhone first become available?</item> 
+    <item>In terms of computing, what does CPU stand for?</item> 
+    <item>The Hubble Space Telescope is named after which American astronomer?</item> 
+    <item>Firefox, Opera, Chrome, Safari and Explorer are types of what? </item>
+    <item>In what year was the first Harley Davidson motorcycle built?</item>
+    <item>How many seats are in a standard 747 jumbo jet?</item>
+    <item>What color is an airplanes black box? Orange</item>
+    <item>How many watts does it take to run a standard electric toaster?</item>
+    <item>How many light bulbs are manufactured in the United States each year?</item>
+    </string-array>
+    
+    
+    <string-array name="trivArray3"> 
+    <item>In 1000 B.C. Israelites paid their taxes in what?</item> 
+    <item>Franklin was a US state until 1796, what is it now called?</item> 
+    <item>Which American President Was Assassinated In A Theatre?</item> 
+    <item>Which Spanish painter had his first exhibition at the age of 16?</item> 
+    <item>Which country was the first to allow women to vote in 1893?</item>
+    <item>What was the first ocean liner to have a swimming pool?</item>
+    <item>How Long Did The 100 Years War Last?</item>
+    <item>Where Did Napoleon Bonaparte Die In Exile?</item>
+    <item>How Many Men Were There In A Roman Legion?</item>
+    <item>Who was the second President of the USA?</item>
+</string-array>
+<string-array name="trivArray4"> 
+    <item>Whose 1993 Debut Single Was Bombtrack?</item> 
+    <item>From The Cradle Was A No.1 Album For Which British artist In 1994?</item> 
+    <item>Of Which Rock Group Is Bono A Member?</item> 
+    <item>Which former Beatle wrote My Sweet Lord In 1971?</item> 
+    <item>Brass In Pocket Was A Hit For Which Band?</item>
+    <item>Who Teamed Up With Queen To Record Under Pressure?</item>
+    <item>Their Most Famous Single Is Dont Fear Who Are They?</item>
+    <item>Which American City Is Associated With Motown?</item>
+    <item>Which Band Released The Song Breakfast In America?</item>
+    <item>Who will ""never give you up"?</item>
+    </string-array>
+    
+    <string-array name="trivArray5"> 
+    <item>What movie has the signature line was: "Ill be back"?</item> 
+    <item>Who got an Oscar for incessantly exclaiming "Hoo-ah"?</item> 
+    <item>What movie pairs Tom Hanks and Antonio Banderas as lovers?</item> 
+    <item>Who was the voice behind Woody, the cowboy doll in Toy Story?</item> 
+    <item>What movie has Jack Nicholson yell at Tom Cruise: "You cant handle the truth"?</item>
+    <item>In which film did Jim Carrey play the bank clerk Stanley Ipkiss?</item>
+    <item>In which film did Patrick Swayze play Johnny Castle?</item>
+    <item>Who played the characterIndiana Jones?</item>
+    <item>Which Disney film features the song The Bear Necessities?</item>
+    <item>What type of animals were Lady and the Tramp?</item>
+    </string-array>
+    
+    
+    <string-array name="trivArray6"> 
+    <item>What sport used the term "home run" long before baseball?</item> 
+    <item>What was the only team to win two World Series in the 1980s?</item> 
+    <item>What company logo is called the "swoosh"?</item> 
+    <item>What team hired the first professional football cheerleading squad in 1972?</item> 
+    <item>What decade saw names first appear on the backs of NFL jerseys?</item>
+    <item>What racing competition became a best-of-nine series in 1995?</item>
+    <item>How many teams are allowed at the World Cup?</item>
+    <item>With which sport would you have associated Jocky Wilson?</item>
+    <item>How Long does a game of field hockey last?</item>
+    <item>Which sport do the Detroit Red Wings play?</item>
+</string-array>
+<string-array name="trivArray7"> 
+    <item>Who was the first president of the United States of America?</item> 
+    <item>Who was the second president of the United States of America?</item> 
+    <item>Who was the third president of the United States of America?</item> 
+    <item>Who was the fourth president of the United States of America?</item> 
+    <item>Who was the fifth president of the United States of America?</item>
+    <item>Who was the sixth president of the United States of America?</item>
+    <item>Who was the seventh president of the United States of America?</item>
+    <item>Who was the eight president of the United States of America?</item>
+    <item>Who was the ninth president of the United States of America?</item>
+    <item>Who was the tenth president of the United States of America?</item>
+    </string-array>
+    
+    <string-array name="trivArray8"> 
+    <item>THIS IS A TEST QUESTION</item> 
+    <item>FACT ARRAY 8 FACT 2</item> 
+    <item>FACT ARRAY 8 FACT 3</item> 
+    <item>FACT ARRAY 8 FACT 4</item> 
+    <item>FACT ARRAY 8 FACT 5</item>
+    <item>THIS IS A TEST QUESTION</item> 
+    <item>FACT ARRAY 8 FACT 2</item> 
+    <item>FACT ARRAY 8 FACT 3</item> 
+    <item>FACT ARRAY 8 FACT 4</item> 
+    <item>FACT ARRAY 8 FACT 5</item>
+    </string-array>   
+</resources>
