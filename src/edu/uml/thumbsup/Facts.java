@@ -48,7 +48,6 @@ public class Facts extends ListActivity {
 		if(position == 5){myString = res.getStringArray(R.array.factArray6); }
 		if(position == 6){myString = res.getStringArray(R.array.factArray7); }
 		if(position == 7){myString = res.getStringArray(R.array.factArray8); }
-		if(position == 8){myString = res.getStringArray(R.array.factArray9); }
 		String q = myString[rgenerator.nextInt(myString.length)];
 
 		dialog.setContentView(R.layout.custom_dialog);

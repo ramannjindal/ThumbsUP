@@ -33,7 +33,6 @@ public class MySimpleArrayAdapter extends ArrayAdapter<String> {
 		if (s.startsWith("Sports")){imageView.setImageResource(R.drawable.ball);}
 		if (s.startsWith("Politics")){imageView.setImageResource(R.drawable.question);}
 		if (s.startsWith("Religion")){imageView.setImageResource(R.drawable.star);}
-		if (s.startsWith("Belgium")){imageView.setImageResource(R.drawable.belgium);}
 		
 
 		return rowView;
